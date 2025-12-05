@@ -1,0 +1,5 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Introdução ao Git}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Como funciona}{11}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{1}{Os Três Estados}{20}{0}{1}
+\beamer@sectionintoc {2}{Atividade}{26}{0}{2}

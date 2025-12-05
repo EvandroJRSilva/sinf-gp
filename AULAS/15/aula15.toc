@@ -1,0 +1,11 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Domínios de desempenho de projeto}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Partes interessadas}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Equipe}{8}{0}{1}
+\beamer@subsectionintoc {1}{3}{Abordagem de desenvolvimento e ciclo de vida}{10}{0}{1}
+\beamer@subsectionintoc {1}{4}{Planejamento}{12}{0}{1}
+\beamer@subsectionintoc {1}{5}{Trabalho do projeto}{14}{0}{1}
+\beamer@subsectionintoc {1}{6}{Entrega}{16}{0}{1}
+\beamer@subsectionintoc {1}{7}{Medição}{18}{0}{1}
+\beamer@subsectionintoc {1}{8}{Incerteza}{20}{0}{1}
+\beamer@sectionintoc {2}{Atividade}{23}{0}{2}

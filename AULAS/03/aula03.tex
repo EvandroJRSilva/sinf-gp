@@ -1,0 +1,293 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 03]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 03}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Planejamento de Projetos}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/planejamento.jpeg}};
+}
+
+\begin{frame}{Planejamento de Projetos}
+    \begin{itemize}
+        \justifying
+        \item É um dos trabalhos mais importantes de um gerente, e envolve
+            \begin{itemize}
+                \justifying
+                \item Delegação de partes do trabalho.
+                \item Antecipação de problemas, etc.
+            \end{itemize}
+        \item O plano é criado no início do projeto e atualizado à medida em que o projeto avança. Deve mostrar:
+            \begin{itemize}
+                \justifying
+                \item Como o trabalho será feito.
+                \item Como avaliar o progresso do projeto.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planejamento de Projetos}
+    \begin{itemize}
+        \justifying
+        \item O planejamento ocorre em três estágios no ciclo de vida do projeto
+            \begin{enumerate}
+                \justifying
+                \item<2> \textbf{Durante o estágio de proposta} [especulativo]: quando se disputa um contrato para desenvolver ou fornecer um sistema de software. Nesse estágio, é preciso ter um plano para ajudar a decidir se há recursos necessários para concluir o trabalho e estipular o preço que deveria ser apresentado a um cliente.
+                \item<3> \textbf{Durante a fase inicial do projeto}: quando é necessário planejar quem trabalhará no projeto, como será decomposto, como os recursos serão alocados na empresa etc. Aqui há mais informa-ções do que no estágio de proposta e, por isso, dá para refinar as estimativas do esforço inicial feitas anteriormente.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planejamento de Projetos}
+    \begin{itemize}
+        \justifying
+        \item O planejamento ocorre em três estágios no ciclo de vida do projeto
+        \begin{enumerate}
+            \justifying
+            \setcounter{enumi}{2}
+            \item \textbf{Periodicamente ao longo do projeto}: quando o plano for atualizado para refletir as novas informações sobre o software e seu desenvolvimento. É possível aprender mais sobre o sistema que está sendo implementado e a capacidade do time de desenvolvimento. Conforme os requisitos do software mudarem, a divisão de trabalho tem de ser alterada, e o cronograma precisa ser estendido. Essas informações permitem fazer estimativas mais precisas de quanto tempo o trabalho durará.
+        \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planejamento de Projetos}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Estágio de proposta}: é preciso definir o preço que será proposto ao cliente para desenvolver o software.
+        \item Três parâmetros principais devem ser usados ao calcular os custos de um projeto de desenvolvimento de software
+            \begin{enumerate}
+                \justifying
+                \item Custos de esforço (os custos dos salários de engenheiros de software e gerentes).
+                \item Custos de hardware e software. incluindo manutenção de hardware e suporte de software.
+                \item Custos de viagem e treinamento.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Precificação}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/financeiro2.jpeg}};
+}
+
+\begin{frame}{Precificação}
+    \begin{itemize}
+        \justifying
+        \item Expectativa: custos + margem de lucro.
+        \item<2-> Realidade: quantidade enorme de fatores que influenciam
+            \begin{itemize}
+                \justifying
+                \item<3> Como calcular os custos? Quanto a empresa gasta em média em cada atividade? É preciso informações históricas.
+                \item<4> Competição: vale a pena diminuir a margem de lucro?
+                \item<5> Planejamento de longo prazo da empresa como um todo.
+                \item<6> Termos contratuais: a empresa poderá reutilizar ao menos parte do código em outros projetos?
+                \item<7> A quantidade de informações sobre o projeto é o suficiente para um cálculo razoável? Na incerteza, elevar ou abaixar o preço?
+                \item<8> Ganho de experiência: diminui a margem de lucro, mas a equipe vai ganhar bastante experiência.
+                \item<9> Coragem da equipe: estão todos confiantes de que darão conta do desafio?
+                \item<10> Complexidade do projeto: é subjetiva e depende da experiência da equipe.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Técnicas de estimativa e decomposição}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 2.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Estimativa baseada em LOC - \textit{Lines of Code}}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/financeiro.jpeg}};
+}
+
+\begin{frame}{Estimativa baseada em LOC}
+    \centering
+    Exemplo
+    \begin{block}{Escopo [preliminar]}
+        \justifying \small
+        O software CAD mecânico aceitará dados geométricos bidimensionais e tridimensionais fornecidos por um designer. O designer vai interageir e controlar o sistema CAD por meio de uma interface de usuário que vai exibir características de um bom design de interface homem-máquina. Todos os dados geométricos e outras informações de suporte serão mantidos em um banco de dados CAD. Serão desenvolvidos módulos de análise de projeto para produzir a saída exigida, a ser exibida em uma variedade de dispositivos. O software será projetado para controlar e interagir com dispositivos periféricos que incluiem \textit{touchpad}, \textit{scanner}, impressora a lase e um \textit{plotter} digital de impressão.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Estimativa baseada em LOC}
+    \begin{itemize}
+        \justifying
+        \item Suponha que tivemos um refinamento sobre o escopo e conseguimos listar as principais funções. Ao estimarmos o LOC, teremos a seguinte tabela:
+    \end{itemize}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
+
+\begin{frame}{Estimativa baseada em LOC}
+    \begin{itemize}
+        \justifying
+        \item Quando você verifica o histórico de sua empresa, você chega à conclusão de que para este tipo de software a produtividade é de 620 LOC/pm (linhas de código/pessoa-mês).
+        \begin{itemize}
+            \item A partir disso, podemos calcular o esforço necessário:\\ 
+            $LOC_{TOTAL}/(LOC/pm) = 33.200/620 \approx 54$ pessoas-mês.
+        \end{itemize}
+        \item Supondo que a média salarial da sua empresa é R\$ 6.000, o custo por linha de código será $6.000/620 \approx$ R\$ 10.
+        \item Portanto, a estimativa de custo do software será, aproximadamente: $10 \times 33.200$ = R\$ 332.000
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 2.1.2  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Estimativa baseada em FC - \textit{Function Points}}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/financeiro.jpeg}};
+}
+
+\begin{frame}{Estimativa baseada em FP}
+    \begin{itemize}
+        \justifying
+        \item A decomposição para estimativa baseada em FP concentra-se em valores do domínio da informação, em vez de em funções de software.
+        \item $FP_{estimado} = \text{contagem total} \times [0,65 + 0,01 \times \sum(F_{i})]$
+    \end{itemize}
+    \vspace{0.1cm}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura03.png}
+\end{frame}
+
+\begin{frame}{Estimativa baseada em FP}
+    \centering
+    0 (não importante) --- 5 (muito importante)\\
+    \includegraphics[width=\textwidth]{imagens/figura04.png}\\
+    $\sum(F_{i}) = 52$
+\end{frame}
+
+\begin{frame}{Estimativa baseada em FP}
+    \begin{itemize}
+        \justifying
+        \item $FP_{estimado} = \text{contagem total} \times [0,65 + 0,01 \times \sum(F_{i})]$\\
+        $= 320 \times [0,65 + 0,01 \times 52]$\\
+        $= 320 * 1,17 \approx 375$
+        \item Quando você verifica o histórico de sua empresa, você chega à conclusão de que para este tipo de software a produtividade é de 6,5 FP/pm.
+        \item Supondo que a média salarial da sua empresa é R\$ 6.000, o custo por FP será aproximadamente $6000/6,5 = $ R\$ 923.
+        \item Portanto, o custo do software será aproximadamente $923 \times 375 = $ R\$ 346.125, e o esforço será $375 / 6,5 \approx 58$ pessoas-mês.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 2.1.3  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Estimativa baseada em processo}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/financeiro.jpeg}};
+}
+
+\begin{frame}{Estimativa baseada em processo}
+    \begin{itemize}
+        \justifying
+        \item<1-> O \textbf{processo} é \textbf{decomposto} em um \textbf{conjunto} relativamente \textbf{pequeno} de atividades, ações e tarefas, e o \textbf{trabalho} necessário para executar cada uma delas é \textbf{estimado}.
+        \item<2-> Começa com um delineamento das funções de software obtidas do escopo do projeto. Para cada função, deve ser executada uma série de atividades estruturais.
+        \item<3> As funções e atividades estruturais relacionadas podem ser representadas como parte de uma tabela.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Estimativa baseada em processo}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagens/figura05.png}
+\end{frame}
+
+\begin{frame}{Estimativa baseada em processo}
+    \begin{itemize}
+        \justifying
+        \item Tanto nas linhas quanto nas colunas são estimados os esforços (e.g., pessoa-mês).
+        \item Note que somente a parte de engenharia (colunas Análise e Projeto) correspondem a 53\% do esforço.
+        \item Supondo um salário médio de R\$ 6.000, a estimativa do projeto será $6.000 \times 46 = $ R\$ 276.000
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 2.1.4  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Harmonizando as estimativas}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/financeiro.jpeg}};
+}
+
+\begin{frame}{Harmonizando as estimativas}
+    \begin{itemize}
+        \justifying
+        \item É sempre indicado utilizar duas ou três técnicas de estimativa.
+        \item Porém, se as estimativas estiverem muito divergentes, possivelmente o escopo foi mal interpretado ou os dados de produtividade são inadequados.
+        \item A estimativa final pode ser uma média simples:\\
+        $Estimativa = \frac{46 + 54 + 58}{3} \approx 53$
+        \item Ou uma média ponderada. Por exemplo, entre as estimativas mais otimista, mais provável e pessimista, podemos dar um peso maior à estimativa mais provável:\\
+        $Estimativa = \frac{1\times46 + 4\times54 + 1\times58}{6} \approx 53$ (coincidentemente).
+        \item $53 \times 6000 = $ R\$ 318.000
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Primeiro acréscimo ao trabalho: estimativa de custos!
+        \item \alert{\textbf{Não é obrigatório entregar na sexta (26/09/25)}}, mas desejável.
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

@@ -1,0 +1,9 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Planejamento de Projetos}{3}{0}{1}
+\beamer@sectionintoc {2}{Precificação}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Técnicas de estimativa e decomposição}{21}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Estimativa baseada em LOC - \textit {Lines of Code}}{22}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{2}{Estimativa baseada em FC - \textit {Function Points}}{26}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{3}{Estimativa baseada em processo}{30}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{4}{Harmonizando as estimativas}{36}{0}{2}
+\beamer@sectionintoc {3}{Atividade}{38}{0}{3}

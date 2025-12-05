@@ -1,0 +1,342 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 02]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 02}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Recapitulando}
+
+\begin{frame}
+    \begin{itemize}
+        \item Na \textbf{Aula 01} vimos:
+            \begin{itemize}
+                \justifying
+                \item<1-> O que é um projeto, e que o desenvolvimento de software também requer um projeto.
+                \item<2-> Introdução sobre o gerenciamento de projetos: algumas métricas para avaliação; dificuldades e fatores que influenciam o gerenciamento, e suas principais atividades.
+                \item<3-> Os 4 \textbf{P}s: pessoas, produto, processo e projeto.
+            \end{itemize}
+        \item<4> Hoje vamos ver 
+            \begin{itemize}
+                \justifying
+                \item Um pouco mais sobre o gerenciamento envolvendo as pessoas.
+                \item O gerenciamento de riscos.
+            \end{itemize} 
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Trabalho em Equipe}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/developer02.jpg}};
+}
+
+\begin{frame}{Trabalho em Equipe}
+    \begin{itemize}
+        \justifying
+        \item<1> Em \textbf{equipes pequenas} há \textbf{menos problemas de comunicação}
+            \begin{itemize}
+                \justifying
+                \item<1> Todos se conhecem, e o grupo todo pode sentar em uma mesa para se reunir e discutir sobre o projeto e o software que estão desenvolvendo.
+            \end{itemize}
+        \item<2-> Já as \textbf{grandes equipes} precisam ser divididas em \textbf{grupos menores}
+            \begin{itemize}
+                \justifying
+                \item<2> Cada grupo fica responsável por uma parte do software.
+                \item<2> \textbf{Desafio}: equilibrar as habilidades técnicas, experiências e personalidades $\rightarrow$ grupo coeso.
+                \item<3> ``O melhor tamanho para um grupo de engenharia de software é de quatro a seis membros e eles nunca devem ter mais de 12 membros'' (Sommerville).
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Grupo Coeso}
+
+\begin{frame}{Grupo Coeso}
+    \begin{itemize}
+        \justifying
+        \item Seus membros
+            \begin{itemize}
+                \justifying
+                \item<1-> São \textbf{motivados pelo sucesso do grupo} e também, por seus pró-prios objetivos pessoais.
+                \item<2-> São \textbf{leais} e \textbf{consideram o grupo mais importante} do que os indivíduos que o compõem.
+                \item<3-> \textbf{Se identificam com os objetivos do grupo} e com os demais membros.
+                \item<4> \textbf{Tentam proteger o grupo}, como uma entidade, de interferências externas.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+    \begin{itemize}
+        \justifying
+        \item Benefícios de um grupo coeso no desenvolvimento de software
+            \begin{enumerate}
+                \justifying
+                \item<1> \textbf{O grupo pode estabelecer seus próprios padrões de qualidade}: Como esses padrões são estabelecidos por consenso, eles estão mais propensos a serem seguidos do que os padrões externos impostos ao grupo.
+                \item<2> \textbf{Indivíduos aprendem e apoiam uns aos outros}: Os membros do grupo aprendem trabalhando juntos. As inibições causadas pela ignorância são minimizadas à medida que a aprendizagem mútua é incentivada.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+    \begin{itemize}
+        \justifying
+        \item Benefícios de um grupo coeso no desenvolvimento de software
+        \begin{enumerate}
+            \justifying
+            \setcounter{enumi}{2}
+            \item<1> \textbf{O conhecimento é compartilhado}: A continuidade pode ser mantida se um membro do grupo sair. Outros no grupo podem assumir tarefas criticas e assegurar que o projeto não seja indevidamente interrompido.
+            \item<2> \textbf{A refatoração e a melhoria continua são incentivadas}: Os membros do grupo trabalham coletivamente para fornecer resultados de alta qualidade e corrigir problemas, independentemente dos indivíduos que criaram o projeto (design) ou programa originalmente.
+        \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+    \begin{itemize}
+        \justifying
+        \item Bons gerentes de projetos devem sempre tentar incentivar a coesão do grupo
+            \begin{itemize}
+                \justifying
+                \item<1> Podem tentar estabelecer um senso de identidade do grupo ao nomeá-lo, estabelecer uma identidade e um território. [Time Macintosh vs. Restante da Apple -- Piratas do Vale do Silício].
+                \item<2> Atividades de formação de grupo explícitas, como esportes e jogos [Top Gun Maverick], eventos sociais, inclusive envolvendo as famílias [Megadeth].
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+    \begin{itemize}
+        \justifying
+        \item Situações que atrapalham a formação de um grupo coeso
+            \begin{itemize}
+                \justifying
+                \item Organização e bem estar dos funcionários em relação à empresa.
+                \item O status do projeto: risco de ser cancelado, mudanças constantes, etc.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+    \begin{itemize}
+        \justifying
+        \item Pontos principais que exigem atenção do gerente:
+            \begin{itemize}
+                \justifying
+                \item Selecionar os membros.
+                \item Organização do grupo.
+                \item Comunicação.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Gerenciamento de riscos}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/risco.png}};
+}
+
+\begin{frame}{Gerenciamento de riscos}
+    \begin{itemize}
+        \justifying
+        \item É a \textbf{atividade} de \textbf{prever} e \textbf{se preparar} para eventuais casualidades que interfiram no desenvolvimento do projeto.
+        \item Podem ser categorizados de acordo com o que afetam e, também, de acordo com o seu tipo.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de riscos}
+    \begin{itemize}
+        \justifying
+        \item Riscos de acordo com o que afetam:
+        \begin{itemize}
+            \justifying
+            \item<1> \textbf{Riscos de projeto}: Afetam o cronograma ou os recursos. Exemplo: perda de algum membro experiente da equipe.
+            \item<2> \textbf{Riscos de produto}: Afetam a qualidade ou o desempenho do software que está sendo desenvolvido. Exemplo: mal funcionamento de alguma ferramenta, ou hardware.
+            \item<3> \textbf{Riscos de negócio}: Afetam a empresa que está desenvolvendo ou comprando o software. Exemplo: uma empresa concorrente lança novos produtos antes dos seus (ao mesmo tempo que é um risco, pode ser uma oportunidade).
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de riscos}
+    \begin{itemize}
+        \justifying
+        \item Riscos de acordo com seu tipo:
+        \begin{itemize}
+            \justifying
+            \item<1-> \textbf{Estimativa}: errar a estimativa de recursos necessários.
+            \item<2-> \textbf{Organizacionais}: problemas no ambiente de trabalho.
+            \item<3-> \textbf{Pessoas}: problemas com pessoas durante o desenvolvimento.
+            \item<4-> \textbf{Requisitos}: quando há mudanças nos requisitos.
+            \item<5-> \textbf{Tecnologia}: problemas com hardware e software utilizados no desenvolvimento do projeto.
+            \item<6> \textbf{Ferramentas}: problemas nas ferramentas utilizadas no desenvolvimento.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 3.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Processo de Gerenciamento de Riscos}
+
+\begin{frame}{Processo de Gerenciamento de Riscos}
+    \begin{itemize}
+        \item Quatro etapas básicas:
+        \begin{itemize}
+            \item Identificação;
+            \item Análise;
+            \item Planejamento;
+            \item Monitoramento.
+        \end{itemize}
+    \end{itemize}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 3.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Identificação}
+
+\begin{frame}{Identificação}
+    \begin{itemize}
+        \justifying
+        \item É o processo de \textbf{antever} os possíveis riscos ao projeto (o levantamento de riscos deve ser feito com senso).
+        \item É nesta etapa que os possíveis riscos e seus tipos são previstos.
+    \end{itemize}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 3.1.2  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Análise}
+
+\begin{frame}{Análise}
+    \begin{itemize}
+        \justifying
+        \item É o processo de \textbf{classificar} os riscos identificados.
+        \item O Gerente de Projeto, junto com a equipe, podem criar uma escala da gravidade do efeito dos riscos (exemplo: insignificante, tolerável, grave, catastrófico).
+        \item Os riscos podem ser categorizados também por sua probabilidade de vir acontecer.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Análise}
+    \centering
+    Exemplo dado no livro (Sommerville):\\
+    \includegraphics[width=0.64\textwidth]{imagens/figura03.png}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 3.1.3  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Planejamento}
+
+\begin{frame}{Planejamento}
+    \begin{itemize}
+        \justifying
+        \item É o processo de se precaver em relação aos riscos levantados.
+        \item Cada risco deve ser estudado e ter pronto um plano para reação.
+    \end{itemize}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura04.png}
+\end{frame}
+
+\begin{frame}{Planejamento}
+    \begin{itemize}
+        \justifying
+        \item Três tipos de estratégias de gerenciamento de riscos
+        \begin{enumerate}
+            \justifying
+            \item Prevenção;
+            \item Minimização;
+            \item Contingência.
+        \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planejamento}
+    \centering
+    Exemplo dado no livro (Pressman | Maxim):\\
+    \includegraphics[width=0.65\textwidth]{imagens/figura05.png}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 3.1.4  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Monitoramento}
+
+\begin{frame}{Monitoramento}
+    \begin{itemize}
+        \justifying
+        \item É o processo de verificar regularmente os \textit{status} dos riscos levantados.
+        \item Alguns riscos podem ser descartados, enquanto outros podem ser tornar mais prováveis e danosos, etc.
+        \item Lembrando:
+    \end{itemize}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%===============================================================================
+% SECTION 4 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Reúnam-se em grupos de \textbf{até 7 pessoas}.
+        \item Definam um projeto de software sobre o qual vamos praticar o gerenciamento durante o semestre.
+        \item Estudem o \textbf{Capítulo 22} do livro do Sommerville
+            \begin{itemize}
+                \justifying
+                \item Comecem a documentar a \textbf{seleção} e \textbf{organização} do grupo. Ex.: definindo os cargos/papéis de cada membro (incluindo o(a) líder/gerente), listando as razões da escolha de cada um para seu respectivo cargo.
+                \item Iniciem a documentação do gerenciamento de riscos do projeto escolhido (as 4 etapas básicas).
+            \end{itemize}
+        \item As documentações dessas duas atividades devem ser entregues na \alert{sexta da semana que vem} (\textbf{26/09/25}).
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

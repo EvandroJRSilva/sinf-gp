@@ -1,0 +1,212 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 11]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 11}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Gerenciamento da qualidade -- Padrões de Software}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{Gerenciamento da qualidade -- Padrões de Software}
+    \begin{itemize}
+        \justifying
+        \item Uma parte importante da garantia de qualidade é a \textbf{definição} ou a \textbf{seleção} de \textbf{padrões} que devem ser aplicados ao processo de desenvolvimento de software ou produto de software.
+        \item Podem também ser escolhidos \textbf{ferramentas} e \textbf{métodos} para apoiar o uso desses padrões.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento da qualidade -- Padrões de Software}
+    \begin{itemize}
+        \justifying
+        \item Os padrões de software são importantes por três razões:
+            \begin{enumerate}
+                \justifying
+                \item<1> Eles capturam a sabedoria que tem valor para a organização.
+                    \begin{itemize}
+                        \justifying
+                        \item<1> Eles são baseados no conhecimento sobre a \textbf{melhor} ou a mais adequada \textbf{prática para a empresa}.
+                        \item<1> Esse conhecimento é muitas vezes adquirido apenas após uma \textbf{grande dose de tentativa e erro}.
+                        \item<1> Eles ajudam a empresa a \textbf{reutilizar essa experiência} e \textbf{evitar erros anteriore}s.
+                    \end{itemize}
+                \item<2> Fornecem um quadro de referência para definir o que significa qualidade em um determinado contexto.
+                \item<3> Ajudam a dar continuidade nos casos em que o trabalho realizado por uma pessoa é passado e continuado por outro.
+                    \begin{itemize}
+                        \justifying
+                        \item<3> Padrões garantem que \textbf{todos os engenheiros} dentro de uma orga-nização \textbf{adotem as mesmas práticas}.
+                        \item<3> Consequentemente, o \textbf{esforço} de aprendizagem necessário \textbf{ao iniciar novos trabalhos é reduzido}.
+                    \end{itemize}
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento da qualidade -- Padrões de Software}
+    \begin{itemize}
+        \justifying
+        \item Dois tipos de padrões de engenharia de software podem ser definidos e utilizados no gerenciamento da qualidade de software:
+            \begin{enumerate}
+                \justifying
+                \item \textbf{Padrões de produto}
+                    \begin{itemize}
+                        \justifying
+                        \item<1> Aplicam-se ao produto de software que está sendo desenvolvido. 
+                        \item<1> Incluem \textbf{padrões de documento}, como a estrutura de documentos de requisitos; \textbf{padrões de documentação}, como um cabeçalho de comentário padrão para uma definição de classe; e \textbf{padrões de codificação}, que definem como uma linguagem de programação deve ser usada.
+                    \end{itemize}
+                \item \textbf{Padrões de processo}
+                    \begin{itemize}
+                        \justifying
+                        \item<2> Definem os processos que devem ser seguidos durante o desenvolvimento de software.
+                        \item<2> Devem encapsular \textbf{boas práticas} de desenvolvimento e podem incluir definições de processos de especificação, de projeto e de validação, ferramentas de apoio a processos e descrições dos documentos que devem ser escritos durante esses processos.
+                    \end{itemize}
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento da qualidade -- Padrões de Software}
+    \footnotesize
+    \centering
+    \begin{tblr}{hlines, row{1} = {bg=azure3, fg=white},
+        colspec={p{0.45\textwidth} p{0.45\textwidth}}}
+        \textbf{Padrões de produto} & \textbf{Padrões de processo}\\
+        Formulário de revisão de projeto (\textit{desing}) & Conduto para revisão de projeto (\textit{design})\\
+        Estrutura de documento de requisitos & Submissão de novo código para construção do sistema\\
+        Formato de cabeçalho de método & Processo de lançamento de versão\\
+        Estilo de programação em uma linguagem & Processo de aprovação do plano de projeto\\
+        Formato de plano de projeto & Processo de controle de mudança\\
+        Formulário de solicitação de mudança & Processo de registro de teste\\
+    \end{tblr}
+\end{frame}
+
+\begin{frame}{Gerenciamento da qualidade -- Padrões de Software}
+    \begin{itemize}
+        \justifying
+        \item<1-> O gerente de projetos e o gerente da qualidade podem \textbf{evitar} os \textbf{problemas} de padrões inadequados por meio de um \textbf{planejamento da qualidade} cuidadoso \textbf{no início do projeto}.
+        \item<2-> Cabe a eles decidir \textbf{quais padrões} organizacionais \textbf{devem} \textbf{ser usados sem modificações}, quais devem \textbf{ser modificados} e quais devem \textbf{ser ignorados}.
+        \item<3> Novos padrões podem ter de ser criados em resposta aos requisitos do cliente ou do projeto.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{ISO 9000}
+
+\begin{frame}{ISO 9000}
+    \begin{itemize}
+        \justifying
+        \item O conjunto internacional de padrões utilizados no desenvolvimento de sistemas de gerenciamento da qualidade em todos os setores é chamado de ISO 9000.
+        \item ISO: \textit{International Organization for Standardization}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{ISO 9000}
+    \begin{itemize}
+        \justifying
+        \item ISO 9001
+            \begin{itemize}
+                \justifying
+                \item<1-> o mais geral desses padrões, aplica-se a organizações que projetam, desenvolvem e mantêm produtos, incluindo software.
+                \item<2-> Não é um padrão para o desenvolvimento de software, mas, sim, \textbf{um arcabouço para o desenvolvimento de padrões de software}.
+                \item<3-> Ele \textbf{estabelece princípios gerais de qualidade}, \textbf{descreve os processos} de qualidade em geral e \textbf{estabelece as normas} e os procedimentos organizacionais que devem ser definidos. 
+                \item<3-> Tudo isso deve ser documentado em um manual de qualidade organizacional.
+            \end{itemize}
+        \item<4> \href{https://en.wikipedia.org/wiki/ISO_9000_family}{\underline{Maiores detalhes}}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{ISO 9000}
+    \begin{block}{Palavras do Sommerville}
+        \justifying
+        A certificação ISO 9001 é inadequada, na minha opinião, porque define a qualidade como a conformidade aos padrões. Não leva em conta a qualidade, do modo como ela é experimentada por usuários do software.
+    \end{block}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Outros tipos de padrões}
+
+
+\begin{frame}{Outros tipos de padrões}
+    \begin{itemize}
+        \justifying
+        \item Sendo bem/corretamente utilizados, também influenciam positivamente na qualidade do software.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Outros tipos de padrões}
+    \begin{itemize}
+        \justifying
+        \item Padrões de design (\textit{design patterns})
+            \begin{itemize}
+                \justifying
+                \item<1> Pode ser entendido como boas práticas que o programador pode utilizar para resolver problemas comuns no planejamento de um software.
+                \item<1> Exemplos: \textbf{abstract factory}, \textbf{injeção de dependência}, \textbf{decorator}, \textbf{controller} (front-end), etc.
+                \item<1> \href{https://en.wikipedia.org/wiki/Software_design_pattern}{\underline{Maiores detalhes}}.
+            \end{itemize}
+        \item Padrões de arquitetura de software (\textit{software architecture patterns})
+            \begin{itemize}
+                \justifying
+                \item<2> Definem a estrutura e organização de alto nível de um sistema de software. Descreve os componentes fundamentais, suas interações e o layout geral do sistema.
+                \item<2> Exemplos: padrão de \textbf{camadas}, \textbf{cliente-servidor}, \textbf{microkernel}, etc.
+                \item<2> \href{https://www.turing.com/blog/software-architecture-patterns-types}{\underline{Maiores detalhes}}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/obras.jpg}};
+}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Definir e documentar padrões de produto e processo que estão sendo utilizados pelo grupo.
+        \item Identificar e descrever os padrões de qualidade, design e arquitetura que estão sendo utilizados.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

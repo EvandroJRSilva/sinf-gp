@@ -1,0 +1,300 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 10]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 10}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Gerenciamento da qualidade}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{Gerenciamento da qualidade}
+    \begin{itemize}
+        \justifying
+        \item O gerenciamento da qualidade de software preocupa-se em garantir que os softwares desenvolvidos
+            \begin{itemize}
+                \justifying
+                \item<1-> Atendam às \textbf{necessidades de seus usuários};
+                \item<2-> Sejam \textbf{executados} de modo \textbf{eficiente} e Sejam entregues dentro do prazo e dentro do orçamento.;
+                \item<3> Sejam \textbf{entregues} dentro do \textbf{prazo} e dentro do \textbf{orçamento}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}{%
+        \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/celulas-de-manufatura.jpg}};
+    }
+\begin{frame}{Gerenciamento da qualidade}
+    \begin{itemize}
+        \justifying
+        \item Técnicas de \textbf{gerenciamento da qualidade de software} têm suas \textbf{raízes} em métodos e técnicas que foram desenvolvidos em \textbf{indústrias manufatureira}s, nas quais os termos \alert<2>{\textit{garantia de qualidade}} e \alert<3>{\textit{controle de qualidade}} são amplamente utilizados.
+            \begin{itemize}
+                \justifying
+                \item<2> É a definição de processos e padrões que devem levar a produtos de alta qualidade e à introdução de processos de qualidade no processo de fabricação.
+                \item<3> É a aplicação desses processos de qualidade para eliminar os produtos que não são do nível exigido de qualidade.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+\setbeamertemplate{background canvas}[default]
+
+
+\begin{frame}{Gerenciamento da qualidade}
+    \begin{itemize}
+        \justifying
+        \item O gerenciamento da qualidade fornece uma verificação independente do processo de desenvolvimento de software.
+    \end{itemize}
+    \vspace{10pt}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Equipe de gerenciamento da qualidade}
+
+\begin{frame}{Equipe de gerenciamento da qualidade}
+    \begin{itemize}
+        \justifying
+        \item<1> Deve ser \textbf{independente}, e \textbf{não fazer parte do grupo de desenvolvimento de software}, \textbf{para} que possa \textbf{ter} uma \textbf{visão objetiva da qualidade do software}.
+            \begin{itemize}
+                \justifying
+                \item<1> O objetivo é poder relatar a qualidade do software sem ser influenciado por problemas de desenvolvimento de software.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Equipe de gerenciamento da qualidade}
+    \begin{itemize}
+        \justifying
+        \item A equipe deve
+            \begin{itemize}
+                \justifying
+                \item<1> Verificar os resultados do projeto para garantir que eles sejam consistentes com os padrões e metas organizacionais.
+                \item<2> Verificar também a documentação do processo, que registra as tarefas que foram concluídas por cada time que está trabalhando nesse projeto.
+                \item<3> Usar a documentação para verificar se as tarefas importantes não foram esquecidas ou se um grupo não fez suposições incorretas sobre o que outros grupos fizeram.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Plano de qualidade}
+
+\begin{frame}{Plano de qualidade}
+    \begin{itemize}
+        \justifying
+        \item<1> O planejamento formal da qualidade é parte integrante dos processos de desenvolvimento baseados em planos.
+        \item<2-> O plano de qualidade deve \textbf{definir} as \textbf{qualidades} de software \textbf{desejadas} e \textbf{descrever} \textbf{como} essas qualidades \textbf{devem ser avaliadas}. Modelo de estrutura de tópicos para um plano de qualidade:
+            \begin{enumerate}
+                \justifying
+                \item<3> \textbf{Introdução ao produto}: uma descrição do produto, seu mercado pretendido e as expectativas da qualidade para o produto.
+                \item<4> \textbf{Planos do produto}: as datas críticas de lançamento e as responsabilidades do produto, incluindo os planos de distribuição e de manutenção.
+                \item<5> \textbf{Descrições dos processos}: os processos e os padrões de desenvolvimento e serviço que devem ser utilizados para o desenvolvimento e para o gerenciamento de produtos.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Plano de qualidade}
+    \begin{itemize}
+        \justifying
+        \item O plano de qualidade deve \textbf{definir} as \textbf{qualidades} de software \textbf{desejadas} e \textbf{descrever} \textbf{como} essas qualidades \textbf{devem ser avaliadas}. Modelo de estrutura de tópicos para um plano de qualidade:
+        \begin{enumerate}
+            \justifying
+            \setcounter{enumi}{3}
+            \item<1> \textbf{Metas de qualidade}: as metas e os planos de qualidade para o produto. incluindo uma identificação e justificativa de atributos críticos da qualidade de produto.
+            \item<2> \textbf{Riscos e gerenciamento dos riscos}: os principais riscos que podem afetar a qualidade do produto e as ações a serem tomadas para resolver esses riscos.
+        \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Qualidade de software}
+
+\begin{frame}{Qualidade de software}
+    \begin{itemize}
+        \justifying
+        \item Geralmente é impossível chegar a uma conclusão objetiva sobre se um sistema de software cumpre ou não a sua especifica-ção, porque
+            \begin{itemize}
+                \justifying
+                \item<1-3> É difícil escrever requisitos de software completos e inequívocos.
+                \item<2-3> As especificações geralmente integram requisitos de várias classes de \textit{stakeholders}.
+                \item<3> É impossível medir diretamente determinadas características da qualidade (por exemplo, a manutenibilidade).
+            \end{itemize}
+        \item<4> Em razão desses problemas, a avaliação da qualidade de software é um processo \textbf{subjetivo}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Qualidade de software}
+    \begin{itemize}
+        \justifying
+        \item A equipe de gerenciamento da qualidade deve usar seu \textbf{bom senso} para decidir se um nível aceitável de qualidade foi alcan-çado.
+        \item Essa decisão envolve responder a perguntas sobre as características do sistema. Por exemplo:
+            \begin{enumerate}
+                \justifying
+                \item<2-> O software foi devidamente testado e mostrou-se que todos os requisitos foram implementados?
+                \item<3-> O software é suficientemente confiável para ser colocado em uso?
+                \item<4-> O desempenho do software é aceitável para o uso normal?
+                \item<5-> O software é usável?
+                \item<6-> O software é bem estruturado e compreensível?
+                \item<7> Os padrões de programação e de documentação foram seguidos no processo de desenvolvimento?
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Qualidade de software}
+    \begin{itemize}
+        \justifying
+        \item A equipe de gerenciamento da qualidade deve também \textbf{rever} os \textbf{testes} (sobre os requisitos) que foram desenvolvidos e \textbf{examinar} os \textbf{registros de teste} para verificar se eles foram executados adequadamente.
+        \item Contudo, a \textbf{qualidade de software} não se preocupa apenas em saber se a funcionalidade do software foi implementada corretamente, mas \textbf{também depende de atributos não funcionais} do sistema.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Qualidade de software}
+    \begin{table}
+        \caption{Atributos da qualidade de software}
+        \footnotesize
+        \begin{tblr}{vlines, hlines, colspec={X X X}}
+            Segurança (\textit{safety}) & Compreensibilidade & Portabilidade \\
+            \SetCell{p}Segurança da informação (\textit{security}) & Testabilidade & Usabilidade \\
+            Confiabilidade & Adaptabilidade & Reusabilidade \\
+            Resiliência & Modularidade & Eficiência \\
+            Robustez & Complexidade	& Apreensibilidade\\
+        \end{tblr}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Qualidade de software}
+    \begin{itemize}
+        \justifying
+        \item Não é possível otimizar todos esses atributos ao mesmo tempo.
+        \item<2> O \textbf{plano} de qualidade \textbf{deve}, portanto, \textbf{definir} os \textbf{atributos} da qualidade \textbf{mais importantes} para o software que está sendo desenvolvido.
+        \item<2> O plano deve \textbf{incluir também} uma \textbf{definição do processo de avaliação} da qualidade. Esse \textbf{processo} deve ser \textbf{uma maneira negociada de avaliar} se alguma qualidade, como a capacidade de manutenção ou a robustez, está presente no produto.
+    \end{itemize}
+    
+    \uncover<1>{\includegraphics[width=0.15\textwidth]{imagens/memes/sad.jpeg}}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Gerenciamento da qualidade de software}
+
+\begin{frame}{Gerenciamento da qualidade de software}
+    \begin{itemize}
+        \justifying
+        \item O gerenciamento tradicional da qualidade de software baseia-se na \textbf{suposição} de que a \textbf{qualidade do software} está \textbf{diretamente relacionada} à \textbf{qualidade do processo} de desenvolvimento desse software.
+    \end{itemize}
+    \vspace{10pt}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 2.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Qualidade baseada em processos}
+
+\setbeamertemplate{background canvas}{%
+        \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/implementar-a-industria-4-0.jpg}};
+    }
+
+\begin{frame}{Qualidade baseada em processos}
+    \begin{itemize}
+        \justifying
+        \item<1,2> Existe uma \textbf{ligação clara} entre o \textbf{processo} e a \textbf{qualidade do produto} na \alert{\textbf{manufatura}}, pois o processo é relativamente fácil de padronizar e de monitorar.
+        \item<2-> Entretanto, o \textbf{software é projetado}, e não manufaturado, então a relação entre a qualidade do processo e a qualidade de produto é mais complexa.
+            \begin{itemize}
+                \justifying
+                \item<2-> O projeto de software é um processo criativo, de modo que a \textbf{influência das habilidades individuais e da experiência é significativa}.
+                \item<3> \textbf{Fatores externos}, como uma nova aplicação ou a pressão comercial para a antecipação do lançamento de uma versão do produto, \textbf{também afetam a qualidade do produto}, independentemente do processo utilizado.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Qualidade baseada em processos}
+    \begin{itemize}
+        \justifying
+        \item<1,2> O \textbf{processo de desenvolvimento} usado \textbf{tem} uma \textbf{influência significativa sobre a qualidade do software}, e os bons processos são mais propensos a levar a um software de boa qualidade.
+        \item<2-> O processo de gerenciamento e de melhoria da qualidade pode resultar em menos defeitos no software a ser desenvolvido.
+            \begin{itemize}
+                \justifying
+                \item<2-3> No entanto, \textbf{é difícil avaliar atributos} da qualidade de software, como a confiabilidade e a manutenibilidade, \textbf{sem o uso do software por um longo período}. 
+                \item<3> Consequentemente, \textbf{é difícil dizer como as características do processo influenciam esses atributos}.
+                \item<4> Além disso, por causa do papel do projeto (\textit{design}) e da criatividade no processo de software, \textbf{a padronização desse processo pode}, por vezes, \textbf{sufocar a criatividade}, \textbf{levando a um software de qualidade pior}, ao invés de melhor.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Qualidade baseada em processos}
+    \begin{itemize}
+        \justifying
+        \item<1> Os processos definidos são importantes, mas os \textbf{gerentes da qualidade devem} também ter como objetivo \textbf{desenvolver uma ``cultura da qualidade''}, na qual \textbf{todos os responsáveis pelo desenvolvimento} de software \textbf{estão comprometidos em atingir um alto nível de qualidade} de produto.
+        \item<2> Embora os padrões e os procedimentos sejam a base do gerenciamento da qualidade, \textbf{os bons gerentes da qualidade reconhecem que existem aspectos intangíveis} para a qualidade do software (elegância, legibilidade, etc.) \textbf{que não podem ser incorporados a padrões}.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/obras.jpg}};
+}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Iniciar o gerenciamento da qualidade de software
+            \begin{itemize}
+                \justifying
+                \item Os grupos devem iniciar a geração de documentação relacionada ao gerenciamento de qualidade.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

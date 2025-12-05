@@ -1,0 +1,20 @@
+PLANEJAMENTO ÁGIL
+
+  - RECAPITULAÇÃO
+
+  - FOCO DA AULA: O planejamento ocorre ao se utilizar das características dos métodos de desenvolvimento.
+
+  - Os métodos de desenvolvimento de software ágeis são abordagens iterativas nas quais o software é desenvolvido e entregue aos clientes em incrementos.
+  - Ao contrário das abordagens dirigidas por plano, a funcionalidade desses incrementas não é planejada de antemão. mas decidida durante o desenvolvimento. A decisão sobre o que incluir em um incremento depende do progresso e das prioridades do cliente.
+  
+  - Os métodos de desenvolvimento ágil têm uma abordagem de dois estágios para o planejamento, que correspondem à fase inicial no desenvolvimento dirigido por plano e no planejamento de desenvolvimento:
+    1. *Planejamento de lançamento*, que projeta vários meses à frente e decide sobre as características que devem ser incluídas em um lançamento do sistema.
+    2. *Planejamento da iteração*, que tem uma perspectiva de prazo mais curto e se concentra no planejamento do próximo incremento de um sistema. o que normalmente representa 2 a 4 semanas de trabalho para o time.
+
+  - SCRUM
+	- Backlogs e revisões diárias --> Planejamento da iteração.
+  - Programação Extrema
+    - Jogo do planejamento baseado nas histórias de usuário
+    [FIGURA 23.8]
+      - O planejamento de lançamento envolve escolher e refinar as histórias que refletirão as características a serem implementadas em um lançamento do sistema e a ordem em que as histórias devem ser implementadas.
+      - O planejamento da iteração é o primeiro estágio no desenvolvimento de um incremento de sistema entregável. As histórias a serem implementadas durante a iteração são escolhidas, sendo que o número de histórias reflete o tempo para entregar um sistema funcional (normalmente 2 ou 3 semanas) e a velocidade do time.

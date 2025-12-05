@@ -1,0 +1,173 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 13]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 13}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Gerenciamento da qualidade e Desenvolvimento Ágil}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{Gerenciamento da qualidade e Desenvolvimento Ágil}
+    \centering
+    Métodos Ágeis
+    
+    \vspace{10pt}
+    \footnotesize
+    \begin{tblr}{colspec = {p{0.45\textwidth} p{0.45\textwidth}},
+        hlines, vline{2} = {1pt, solid}, row{1} = {bg=gray9}}
+        \SetCell{c} \textbf{Minimizam} & \SetCell{c} \textbf{Enfatizam}\\
+        \begin{itemize}
+            %\justifying
+            \item A documentação;
+            \item Processos que não estão diretamente relacionados com o desenvolvimento do código.
+        \end{itemize} &
+        \begin{itemize}
+            %\justifying
+            \item A importância das comunicações informais entre os membros do time em vez das comunicações baseadas em documentos de projeto.\\
+        \end{itemize}
+    \end{tblr}
+\end{frame}
+
+\begin{frame}{Gerenciamento da qualidade e Desenvolvimento Ágil}
+    \begin{itemize}
+        \justifying
+        \item No desenvolvimento ágil o gerenciamento da qualidade baseia-se em boas práticas compartilhadas, e não na documentação formal. Alguns exemplos dessas boas práticas são:
+            \begin{enumerate}
+                \justifying
+                \item \textbf{Verificar antes do \textit{check-in}}
+                    \begin{itemize}
+                        \justifying
+                        \item<2> Os programadores devem organizar suas próprias revisões de código com outros membros do time antes que o código seja submetido (\textit{commit}).
+                    \end{itemize}
+                \item \textbf{Nunca quebrar a \textit{build}}
+                    \begin{itemize}
+                        \justifying
+                        \item<3> Mudanças do código devem ser testadas contra todo o sistema. Se a \textit{build} for quebrada, espera-se que o responsável dê prioridade máxima para corrigir o problema.
+                    \end{itemize}
+                \item \textbf{Corrigir problemas quando forem encontrados}
+                    \begin{itemize}
+                        \justifying
+                        \item<4> Se um programador descobre problemas no código desenvolvido por outra pessoa, ele pode corrigir esses problemas diretamente, em vez de encaminhá-los de volta para o desenvolvedor original.
+                    \end{itemize}
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Gerenciamento da qualidade e Desenvolvimento Ágil}
+    \begin{itemize}
+        \justifying
+        \item Os processos ágeis raramente usam processos de inspeção ou de revisão formal.
+            \begin{itemize}
+                \justifying
+                \item<2> No Scrum, por exemplo, o time de desenvolvimento se reúne após cada iteração para discutir questões e problemas de qualidade. 
+                \item<2> O time pode decidir sobre mudanças na forma de trabalhar para evitar quaisquer problemas de qualidade que tenham surgido.
+            \end{itemize}
+        \item<3> Por consequência, as revisões de código podem ser tanto da responsabilidade de indivíduos quanto se basearem no uso de programação em pares.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento da qualidade e Desenvolvimento Ágil}
+    \begin{itemize}
+        \justifying
+        \item Entretanto, \textbf{a depender do tamanho do projeto}, ou [principalmente] \textbf{do cliente}, a \textbf{abordagem informal} de gerenciamento da qualidade \textbf{nos métodos ágeis pode ter de ser adaptada} para que sejam introduzidas algumas documentações e processos de qualidade.
+            \begin{itemize}
+                \justifying
+                \item Ex.: em um dos \textit{sprints}, em vez de haver desenvolvimento de software, ocorre a produção de documentação.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Medição de software}
+
+\begin{frame}{Medição de software}
+    \begin{itemize}
+        \justifying
+        \item É a \textbf{quantificação de atributos} de um sistema de software.
+        \item A partir dos valores medidos deve ser possível \textbf{tirar conclusões sobre a qualidade} do software ou avaliar a eficácia de processos de software, de ferramentas e de métodos.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Medição de software}
+    \begin{itemize}
+        \justifying
+        \item É difícil fazer medições diretas de muitos dos atributos da qualidade de software.
+            \begin{itemize}
+                \justifying
+                \item<1> Eles são afetados por \textbf{fatores subjetivos}, como a \textbf{experiência do usuário} e a \textbf{educação}, e não podem, portanto, ser medidos objetivamente.
+            \end{itemize}
+        \item<2-> Uma \textbf{forma possível} de se fazer um julgamento sobre esses atributos é \textbf{medir alguns atributos internos} do software e \textbf{presumir que eles estão relacionados} às características da qualidade que estão no foco da preocupação.
+        \item<3> Algumas empresas passaram a coletar muitos dados e tentam extrair informações a partir desses dados e suas correlações (\textbf{\textit{Big Data}} e \textbf{\textit{Data Analytics}}).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Medição de software}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagens/figura01.png}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%\subsection{O processo de revisão}
+
+\setbeamertemplate{background canvas}{%
+        \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/obras.jpg}};
+    }
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Coletar variados dados de uso e permitir ao usuário acessar tais dados.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

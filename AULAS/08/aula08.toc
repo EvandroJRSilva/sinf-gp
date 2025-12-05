@@ -1,0 +1,6 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Construção de Sistemas}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Construção frequente}{10}{0}{1}
+\beamer@sectionintoc {2}{Gerenciamento de mudanças}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ferramentas para apoiar o gerenciamento de mudanças}{16}{0}{2}
+\beamer@sectionintoc {3}{Atividade}{26}{0}{3}

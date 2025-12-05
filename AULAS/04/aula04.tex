@@ -1,0 +1,241 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 03]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 04}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Desenvolvimento Dirigido por Plano}
+
+%\setbeamertemplate{background canvas}{%
+ %   \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/planejamento.jpeg}};
+%}
+
+\begin{frame}{Desenvolvimento Dirigido por Plano}
+    \begin{itemize}
+        \justifying
+        \item É uma abordagem ``tradicional'' para a Engenharia de Software na qual o processo de desenvolvimento é planejado em detalhes.
+        \item É uma ferramenta para os gerentes como apoio na tomada de decisões, e também como uma maneira de medir o progresso.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Planos de Projeto}
+
+\begin{frame}{Planos de Projeto}
+    \begin{itemize}
+        \justifying
+        \item Um plano de projeto estabelece os \textbf{recursos disponíveis} para o projeto. a \textbf{divisão de trabalho} e um \textbf{cronograma} para executar o trabalho.
+        \item Também, o plano deve \textbf{identificar} a \textbf{abordagem} adotada para o \textbf{gerenciamento de risco}, bem como os \textbf{riscos para o projeto} e o \textbf{software} em desenvolvimento.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planos de Projeto}
+    \begin{itemize}
+        \justifying
+        \item Os planos costumam incluir as seguintes seções:
+            \begin{enumerate}
+                \item \alert<2>{Introdução}
+                    \begin{itemize}
+                        \justifying
+                        \item<2> \textbf{Descreve} resumidamente os \textbf{objetivos} do projeto e \textbf{estabelece} as \textbf{restrições} (por exemplo, orçamento e tempo) que afetam o gerenciamento do projeto.
+                    \end{itemize}
+                \item \alert<3>{Organização do projeto}
+                    \begin{itemize}
+                        \justifying
+                        \item<3> \textbf{Descreve} a maneira como o time de desenvolvimento é organizado, \textbf{as pessoas envolvidas} e \textbf{seus papéis no time}.
+                    \end{itemize}
+                \item Análise de risco
+                \item \alert<4>{Requisitos de recursos de hardware e software}
+                    \begin{itemize}
+                        \justifying
+                        \item<4> \textbf{Especifica} o \textbf{hardware} e o \textbf{software} de apoio \textbf{necessários} para realizar o desenvolvimento. Se houver necessidade de adquirir hardware, as estimativas de preço e de cronograma de entrega podem ser incluídas.
+                    \end{itemize}
+                \item Divisão de trabalho.
+                \item Cronograma de projeto.
+                \item Mecanismos de monitoramento e de divulgação.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planos de Projeto}
+    \begin{itemize}
+        \justifying
+        \item Os planos costumam incluir as seguintes seções:
+        \begin{enumerate}
+            \item Introdução
+            \item Organização do projeto
+            \item Análise de risco
+            \item Requisitos de recursos de hardware e software
+            \item \alert<1>{Divisão de trabalho}
+                \begin{itemize}
+                    \justifying
+                    \item<1> \textbf{Estabelece a divisão} do projeto \textbf{em atividades} e \textbf{identifica} as \textbf{entradas} e as \textbf{saídas} \textbf{de cada atividade} de projeto.
+                \end{itemize}
+            \item \alert<2>{Cronograma de projeto}
+                \begin{itemize}
+                    \justifying
+                    \item<2> \textbf{Mostra} as \textbf{dependências entre as atividades}, o \textbf{tempo} estimado necessário \textbf{para alcançar cada marco} e a \textbf{alocação de pessoas} às atividades.
+                \end{itemize}
+            \item \alert<3>{Mecanismos de monitoramento e de divulgação}
+                \begin{itemize}
+                    \justifying
+                    \item<3> \textbf{Define} os \textbf{relatórios} de gestão \textbf{que devem ser produzidos}, \textbf{quando} devem ser produzidos e os \textbf{mecanismos de monitoramento} de projeto a serem utilizados.
+                \end{itemize}
+        \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planos de Projeto}
+    \begin{itemize}
+        \justifying
+        \item Também é possível desenvolver uma série de planos suplementares.
+    \end{itemize}
+    \vspace{10pt}
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{O Processo de Planejamento}
+
+\begin{frame}{O Processo de Planejamento}
+    \begin{itemize}
+        \justifying
+        \item O planejamento de projeto é um \textbf{processo iterativo} que \textbf{começa} na \textbf{criação de um plano de projeto inicial} durante a fase inicial do projeto.
+        \item À medida que \textbf{mais informações} sobre o sistema e o time de projeto \textbf{são disponibilizadas}, é necessário \textbf{revisar o plano} regularmente para refletir as alterações.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{O Processo de Planejamento}
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Definição de Cronograma de Projeto}
+
+\setbeamertemplate{background canvas}{%
+       \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/gantt-chart.png}};
+    }
+    
+\begin{frame}{Definição de Cronograma de Projeto}
+    \begin{itemize}
+        \justifying
+        \item A definição do cronograma de projeto é o processo de \textbf{decidir} \textbf{como o trabalho} em um projeto \textbf{será organizado} em tarefas distintas, \textbf{quando} e \textbf{de que maneira} essas tarefas serão \textbf{executadas}.
+        \item<2-> São \textbf{estimados} os \textbf{prazos} necessários para realizar cada tarefa e o \textbf{esforço} necessário, além de serem \textbf{indicadas} as \textbf{pessoas} que trabalharão nas tarefas que foram identificadas, e também os recursos de \textbf{hardware} e de \textbf{software} necessários para completar cada tarefa.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Definição de Cronograma de Projeto}
+    \begin{itemize}
+        \justifying
+        \item E se algo der errado?
+        \item<2> Uma boa regra geral é estimar como se nada desse errado e, em seguida, aumentar a estimativa para cobrir os problemas previstos e, se possível aumentar também para imprevistos.
+    \end{itemize}
+    \vspace{20pt}
+    \uncover<2>{
+        \includegraphics[width=\textwidth]{imagens/figura03.png}
+    }
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Apresentação do Cronograma}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/gantt-chart.png}};
+}
+
+\begin{frame}{Apresentação do Cronograma}
+    \begin{itemize}
+        \justifying
+        \item Os cronogramas de projeto podem ser documentados simplesmente em uma tabela ou em uma planilha mostrando as tarefas, o esforço estimado, a duração e as dependências das tarefas.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \includegraphics[width=\textwidth]{imagens/figura04.png}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \begin{itemize}
+        \justifying
+        \item Esse estilo de apresentação dificulta a visualização das relações e das dependências entre as diferentes atividades. 
+        \item Por essa razão, foram desenvolvidas visualizações gráficas alternativas dos cronogramas de projeto, que são mais fáceis de ler e de entender.
+        \item Ex.: Diagrama/Gráfico de Gantt.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/figura05.png}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/figura06.png}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Reunir-se em grupo para iniciar o planejamento do aplicativo que tiverem escolhido.
+        \item Criar o planejamento inicial e esboçar um cronograma.
+        \item Aplicativo recomendado: Clickup.
+        \item Alternativas com versões gratuitas:
+            \begin{itemize}
+                \justifying
+                \item \href{https://everhour.com/blog/clickup-alternative/}{\textcolor{blue}{Top ClickUp Alternatives for 2025: Best Project Management Tools}}.
+                \item \href{https://startinfinity.com/blog/clickup-alternatives}{\textcolor{blue}{13 ClickUp Alternatives Worth Checking Out in 2025}}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

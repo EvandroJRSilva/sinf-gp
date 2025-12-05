@@ -1,0 +1,432 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 14]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 14}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{PMBOK}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{PMBOK}
+    \begin{itemize}
+        \justifying
+        \item O \alert<2>{PMBOK} (\textit{\textbf{P}roject \textbf{M}anagement \textbf{B}ody \textbf{o}f \textbf{K}nowledge} - Corpo de Conhecimento de Gerenciamento de Projeto) consiste em um \textbf{conjunto de terminologias e guias padronizados} para o \textbf{gerenciamento de projetos}.
+            \begin{itemize}
+                \justifying
+                \item<2> É ``formalizado'' em um livro chamado \textbf{Guia PMBOK}. 
+                \item<2> Mais especificamente o livro tem o seguinte título: Padrão de Gerenciamento de Projetos e Guia do Conhecimento em Gerenciamento de Projetos.
+            \end{itemize}
+        \item<3-> Quem organiza e publica o livro é o \href{https://www.pmi.org/}{\underline{\textbf{PMI}}} (\textit{Project Management Institute} - \alert<4>{Instituto de Gerenciamento de Projetos}).
+            \begin{itemize}
+                \justifying
+                \item<4> É uma instituição internacional sem fins lucrativos e associação profissional de gerentes/gestores de projetos.
+                \item<4> Já são mais de 680 mil associados.
+                \item<4> O mais próximo de nós é o capítulo \href{https://pmice.org.br/}{\underline{PMI Ceará, Brasil}}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{PMBOK}
+    \begin{itemize}
+        \justifying
+        \item O livro \textbf{Guia PMBOK} é distribuído gratuitamente, mas é necessário criar uma conta no site. Também \alert<2>{está em constante atualização}.
+            \begin{itemize}
+                \justifying
+                \item<2> A primeira edição é de 1996, e a sétima de 2021. Espera-se que no próximo ano (2026) saia a oitava edição.
+                \item<3-> É separado em duas partes: (1) \alert<4>{\textbf{Padrão de Gerenciamento de Projetos}} e (2) \alert<5>{\textbf{Guia do Conhecimento em Gerenciamento de Projetos}}.
+                    \begin{itemize}
+                        \justifying
+                        \item<4> Descreve o padrão a ser seguido, independente de tamanho, setor, localização ou métodos de entrega.
+                        \item<5> Descreve a ligação entre o Padrão de Gerenciamento de Projetos e o Guia PMBOK.
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{PMBOK}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Padrão de Gerenciamento de Projetos} -- possui 3 seções:
+            \begin{enumerate}
+                \justifying
+                \item<1> \textbf{Introdução}: descreve o propósito do padrão, define os termos e conceitos principais, e identifica o público do padrão.
+                \item<2> \textbf{Um sistema para entrega de valor}: define como os gerentes de projetos podem criar valor para organizações e \textit{stakeholders}; um sistema de governança para medir o valor criado; uma lista de operações de suporte ao projeto; a influência de ambientes internos e externos, e a interconexão entre projetos, portfólios, programas e produtos.
+                \item<3> \textbf{Princípios do gerenciamento de projetos}: foca em fornecer guias para os gerentes de projeto gerenciarem pessoas. Os membros da equipe precisam aderir a esses princípios para garantir os resultados almejados.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{PMBOK}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Guia do Conhecimento em Gerenciamento de Projetos} -- possui 4 seções:
+            \begin{enumerate}
+                \justifying
+                \item<1> \textbf{Introdução}: descreve a relação do Guia PMBOK com o Padrão de Gerenciamento de Projetos, as alterações aplicadas ao Guia PMBOK, e a relação com a PMIstandards+ (plataforma digital do PMI para padrões).
+                \item<2> \textbf{Domínios de desempenho de projetos}: identifica e descreve oito domínios de desempenho de projetos que compõem um sistema integrado para viabilizar a entrega bem-sucedida do projeto e os resultados pretendidos.
+                \item<3> \textbf{\textit{Tailoring}}: descreve o significado de \textit{tailoring} e apresenta uma visão geral do que pode ser classificado como \textit{tailoring} e como fazer o \textit{tailoring} em cada projeto.
+                \item<4> \textbf{Modelos, métodos e artefatos}: apresenta uma descrição sucinta dos modelos, métodos e artefatos usados comumente.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+% https://unichrone.com/blog/project-management/pmbok-guide-7th-edition/#What_does_the_PMBOK_Guide_consist_of
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Princípios do gerenciamento de projetos}
+
+\begin{frame}{Princípios do gerenciamento de projetos}
+    \begin{itemize}
+        \item São listados 12:
+            \begin{enumerate}
+                \justifying
+                \item Administração.
+                \item Equipe.
+                \item Partes interessadas.
+                \item Valor.
+                \item Pensamento Sistêmico.
+                \item Liderança.
+                \item \textit{Tailoring}.
+                \item Qualidade.
+                \item Complexidade.
+                \item Risco.
+                \item Adaptabilidade e resiliência.
+                \item Mudança.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Seja um administrador diligente, respeitoso e atencioso}
+
+\begin{frame}{Administração}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\begin{frame}{Administração}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Seja um administrador diligente, respeitoso e atencioso}
+            \begin{itemize}
+                \justifying
+                \item O objetivo da administração é alcançar os objetivos do projeto enquanto mantém a integridade, o cuidado, a confiabilidade e a conformidade. 
+                \item Administradores de projeto precisam praticar a gestão respon-sável tanto dentro quanto fora da organização. Eles devem ser diligentes, atenciosos e respeitosos com sua equipe, fornecedores, usuários finais, clientes e demais partes interessadas.
+                \item Além disso, são responsáveis pelos impactos ambientais, sociais e financeiros do projeto.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.2  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Crie um ambiente colaborativo para a equipe do projeto}
+
+\begin{frame}{Equipe}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
+
+\begin{frame}{Equipe}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Crie um ambiente colaborativo para a equipe do projeto}
+            \begin{itemize}
+                \justifying
+                \item Membros de uma equipe possuem uma variedade de habilidades, expertise e experiências. Equipes que colaboram podem, portanto, alcançar um objetivo comum mais rápida e eficientemente do que pessoas trabalhando sozinhas. Logo, é muito importante fomentar um ambiente em que todos trabalham em prol do mesmo resultado.
+                \item Papéis e deveres precisam ser claramente definidos, e a equipe precisa trabalhar junta.
+                \item Além disso, um ambiente de equipe colaborativo promove o aprendizado e o crescimento tanto individual quanto coletivo, o alinhamento com outras culturas e políticas empresariais e as melhores contribuições possíveis para o alcance dos objetivos.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.3  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Envolva-se de fato com as partes interessadas}
+
+\begin{frame}{Partes interessadas}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura03.png}
+\end{frame}
+
+\begin{frame}{Partes interessadas}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Envolva-se de fato com as partes interessadas}
+            \begin{itemize}
+                \justifying
+                \item As partes interessadas (\textit{stakeholders}) têm um impacto significativo no resultado do projeto. Portanto, é essencial incluí-las proativamente e na medida necessária para apoiar o sucesso do projeto e a satisfação do cliente. 
+                \item A comunicação eficaz é necessária para envolver as partes interessadas de forma eficiente. Isso também inclui a escolha de estratégias de comunicação, como ``como'', ``quando'' e ``com que frequência''. 
+                \item O envolvimento das partes interessadas ajuda a evitar seus potenciais impactos negativos e a aumentar os impactos positivos no projeto.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.4  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Concentre-se no valor}
+
+\begin{frame}{Valor}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura04.png}
+\end{frame}
+
+\begin{frame}{Valor}
+    \begin{itemize}
+        \item \textbf{Enfoque no valor}
+            \begin{itemize}
+                \justifying
+                \item O indicador final do sucesso de um projeto é o valor. Ele pode ser alcançado em qualquer ponto do projeto, mesmo após sua conclusão. 
+                \item Os membros da equipe devem definir o propósito do projeto e se esforçar para atender a uma necessidade específica do negócio, agregando valor ao projeto. 
+                \item Alinhar as partes interessadas com a visão é essencial para a geração de valor. As equipes devem se preocupar mais com o resultado desejado do que com as entregas. Além disso, o valor varia entre diferentes projetos e negócios.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.5  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Reconheça, avalie e reaja às interações do sistema}
+
+\begin{frame}{Pensamento Sistêmico}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura05.png}
+\end{frame}
+
+\begin{frame}{Pensamento Sistêmico}
+    \begin{itemize}
+        \item \textbf{Reconheça, avalie e reaja às interações do sistema}
+            \begin{itemize}
+                \justifying
+                \item O PMBOK 7 considera um projeto como um sistema composto por indivíduos, processos, tecnologia e outros componentes internos e externos interconectados. 
+                \item Portanto, os gerentes de projeto precisam lidar com os efeitos das mudanças nas circunstâncias internas e externas e adotar uma mentalidade holística. 
+                \item Além disso, os sistemas são dinâmicos, o que significa que tanto os fatores internos quanto os externos precisam ser monitorados continuamente.
+                \item As equipes de projeto devem, portanto, estar atentas às intera-ções do sistema para que possam aproveitar os resultados favoráveis.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.6  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Demonstre comportamentos de liderança}
+
+\begin{frame}{Liderança}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura06.png}
+\end{frame}
+
+\begin{frame}{Liderança}
+    \begin{itemize}
+        \item \textbf{Demonstre comportamentos de liderança}
+            \begin{itemize}
+                \justifying
+                \item O sucesso e os resultados favoráveis de um projeto são impulsionados por uma liderança eficaz.
+                \item Profissionais que aspiram a ser grandes líderes devem fomentar um ambiente rico em inspiração, motivação, entusiasmo, empatia e apoio. Devem estar atentos às variações de motivação entre os membros da equipe do projeto.
+                \item Além disso, devem demonstrar a conduta desejada em termos de ética, honestidade e integridade.
+                \item Sob esse tipo de liderança, os membros da equipe podem trabalhar melhor e alcançar os resultados pretendidos.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.7  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Faça a adaptação de acordo com o contexto}
+
+\begin{frame}{\textit{Tailoring}}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura07.png}
+\end{frame}
+
+\begin{frame}{\textit{Tailoring}}
+    \begin{itemize}
+        \item \textbf{Faça a adaptação de acordo com o contexto}
+            \begin{itemize}
+                \justifying
+                \item Cada projeto é único. Portanto, a equipe do projeto deve utilizar uma abordagem ``suficiente'' para maximizar o valor, gerenciar custos e aumentar a velocidade ao elaborar a estratégia de desenvolvimento do projeto, levando em consideração o contexto, os objetivos, as partes interessadas, a governança e o ambiente do projeto. 
+                \item A personalização de projetos pode aumentar a capacidade de criatividade, eficácia e produtividade de uma empresa, bem como sua capacidade de adaptação às mudanças nas condições do projeto.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.8  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Crie qualidade nos processos e nas entregas}
+
+\begin{frame}{Qualidade}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura08.png}
+\end{frame}
+
+\begin{frame}{Qualidade}
+    \begin{itemize}
+        \item \textbf{Crie qualidade nos processos e nas entregas}
+            \begin{itemize}
+                \justifying
+                \item Os gerentes de projeto devem continuar priorizando a qualidade para gerar entregas que atendam aos objetivos do projeto e estejam em conformidade com as necessidades, usos e padrões de aceitação especificados pelas partes interessadas relevantes.
+                \item Garantir que os processos do projeto sejam aceitáveis e o mais eficazes possível faz parte da qualidade do projeto. A qualidade deve ser levada em consideração em todas as etapas do projeto. A equipe pode avaliar a qualidade das entregas por meio de auditorias e inspeções.
+                \item Além disso, podem usar revisões e auditorias para confirmar o processo de garantia da qualidade.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.9  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Navegue pela complexidade}
+
+\begin{frame}{Complexidade}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura09.png}
+\end{frame}
+
+\begin{frame}{Complexidade}
+    \begin{itemize}
+        \item \textbf{Navegue pela complexidade}
+            \begin{itemize}
+                \justifying
+                \item A quantidade de riscos, ocorrências, circunstâncias e partes interessadas torna certos projetos mais complexos do que outros. 
+                \item A complexidade é uma característica de um projeto que pode ser impactada pelo comportamento do sistema, pelo comportamento humano ou pela ambiguidade e imprevisibilidade do avanço tecnológico. 
+                \item Portanto, a equipe do projeto deve ter habilidades de adaptação e estar aberta a adotar ideias inovadoras para lidar com a complexidade. Ela precisa reconhecer os componentes da complexidade e aplicar uma gama de técnicas para reduzir sua influência ou magnitude.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Otimize as respostas ao risco}
+
+\begin{frame}{Risco}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura10.png}
+\end{frame}
+
+\begin{frame}{Risco}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Otimize as respostas ao risco}
+            \begin{itemize}
+                \justifying
+                \item Todo projeto apresenta oportunidades e riscos, que podem ser positivos ou negativos. 
+                \item Portanto, os gerentes de projeto devem abordar os riscos continuamente durante o projeto. Eles precisam avaliar a exposição ao risco, incluindo ameaças e oportunidades, para limitar os impactos adversos e maximizar os efeitos positivos nos resultados do projeto. Devem ser capazes de fornecer respostas adequadas à importância do risco, economicamente viáveis, aprovadas pelas partes interessadas relevantes e de responsabilidade de um indivíduo.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.11 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Adote a capacidade de adaptação e resiliência}
+
+\begin{frame}{Adaptabilidade e resiliência}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura11.png}
+\end{frame}
+
+\begin{frame}{Adaptabilidade e resiliência}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Adote a capacidade de adaptação e resiliência}
+            \begin{itemize}
+                \justifying
+                \item Os gerentes de projeto devem ser capazes de se adaptar e responder às mudanças se quiserem aprimorar seus projetos. 
+                \item Portanto, a equipe do projeto deve incluir adaptação e resiliên-cia em seus métodos para facilitar a mudança, superar desafios e alcançar os objetivos do projeto. 
+                \item Isso deve abranger tanto mudanças externas quanto internas. Assim, os gerentes de projeto e suas equipes devem aprender a se ajustar às novas mudanças.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.12 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\subsubsection{Aceite a mudança para alcançar o futuro estado previsto}
+
+\begin{frame}{Mudança}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura12.png}
+\end{frame}
+
+\begin{frame}{Mudança}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Aceite a mudança para alcançar o futuro estado previsto}
+            \begin{itemize}
+                \justifying
+                \item Existem duas possíveis fontes de mudança em um projeto: internas e externas. Pode ser difícil permitir mudanças em um projeto, pois isso exige certa flexibilidade e conhecimento das pessoas, tanto dentro quanto fora da equipe. 
+                \item O gerente de projeto é responsável por garantir que as estratégias corretas de gestão de mudanças sejam aplicadas. Ele deve incluir as partes interessadas e incentivá-las a abraçar a mudança para garantir o sucesso.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\setbeamertemplate{background canvas}{%
+        \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/obras.jpg}};
+    }
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Cada grupo deve se reunir em sala de aula, identificar e apresentar de 3 a 5 princípios que:
+            \begin{itemize}
+                \justifying
+                \item Já estão sendo aplicados.
+                \item Precisam ser aplicados.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

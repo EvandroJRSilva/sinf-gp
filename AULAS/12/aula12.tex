@@ -1,0 +1,160 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 12]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 12}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Revisões e Inspeções}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{Revisões e Inspeções}
+    \begin{itemize}
+        \justifying
+        \item São \textbf{atividades} de garantia da qualidade \textbf{que verificam a qualidade dos entregáveis do projeto}.
+        \item Envolvem a verificação do software, sua documentação e seus registros de processo, para descobrir erros e omissões, bem como violações de padrões. A revisão abrange:
+            \begin{itemize}
+                \item<2-> As especificações de software; 
+                \item<3-> Os projetos (\textit{design}); 
+                \item<4-> O código; 
+                \item<5-> Os modelos de processo; 
+                \item<6-> Os planos de teste; 
+                \item<7-> Os procedimentos de gerenciamento de configuração; 
+                \item<8> Os padrões de processo e os manuais de usuário.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Revisões e Inspeções}
+    \begin{itemize}
+        \justifying
+        \item As revisões \textbf{não consistem apenas na checagem da conformidade aos padrões}. Também são usadas para \textbf{ajudar a descobrir problemas e omissões na documentação} de software ou de projeto.
+            \begin{itemize}
+                \justifying
+                \item<2-> Se forem descobertos problemas, os comentários dos revisores devem ser passados ao \alert<3>{autor do software} ou a quem quer que seja responsável por corrigir erros ou omissões.
+                \item<3> As revisões e inspeções \textbf{não servem para avaliar o desempenho das pessoas} no time de desenvolvimento, \textbf{mas para melhorar a qualidade de software}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{O processo de revisão}
+
+\begin{frame}{O processo de revisão}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\begin{frame}{O processo de revisão}
+    \begin{itemize}
+        \justifying
+        \item Embora existam muitas variações nos detalhes, os processos de revisão estão estruturados em três fases:
+            \begin{enumerate}
+                \justifying
+                \item \textbf{Atividades pré-revisão}: trata-se de atividades preparatórias essenciais para que a revisão seja eficaz. Normalmente, as atividades pré-revisão estão relacionadas ao \alert<2>{planejamento} e com a \alert<3>{preparação da revisão}.
+                    \begin{itemize}
+                        \justifying
+                        \item<2> Envolve a criação de uma equipe de revisão, a organização de um tempo e um lugar para a revisão e a distribuição dos documentos a serem revisados.
+                        \item<3> Consiste em uma reunião da equipe para obter uma visão geral do software a ser revisto.
+                    \end{itemize}
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{O processo de revisão}
+    \begin{itemize}
+        \justifying
+        \item Embora existam muitas variações nos detalhes, os processos de revisão estão estruturados em três fases:
+        \begin{enumerate}
+            \justifying
+            \item \textbf{Atividades pré-revisão}
+            \item \textbf{Reunião da revisão}\uncover<1>{: durante a reunião de revisão, um autor do documento ou programa que está sendo revisado deve `percorrer passo a passo' o documento com a equipe de revisão. Um membro da equipe deve presidir a revisão e outro deve registrar formalmente todas as decisões de revisão, comentários e as ações a serem tomadas.}
+            \item \textbf{Atividades pós-revisão}\uncover<2>{: depois que uma reunião de revisão terminou, devem ser abordados as questões e os problemas levantados durante a revisão. Depois que foram feitas as altera-ções, o membro da equipe que preside a de revisão pode verificar se foram levadas em conta todas as observações da revisão.}
+        \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Inspeções de programa}
+
+\begin{frame}{Inspeções de programa}
+    \begin{itemize}
+        \justifying
+        \item São \textbf{revisões por pares} em que os membros do time, os quais possuem diferentes conhecimentos, colaboram para encontrar \textit{bugs} no programa que está sendo desenvolvido.
+        \item<2-> Versões incompletas do sistema podem ser verificadas, assim como representações, como modelos UML, e também os testes.
+        \item<3-> Durante uma inspeção, frequentemente se usa um \textbf{\textit{checklist}} de erros comuns de programação.
+        \item<4> Os defeitos e problemas encontrados são descritos em uma reunião de inspeção.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/debate-istockphoto-1186244173-612x612.jpg}};
+}
+
+\begin{frame}{Inspeções de programa}
+    \begin{itemize}
+        \justifying
+        \item Estudos mais antigos mostram que inspeções são eficazes na busca de defeitos.
+        \item \textbf{Discussão}: a inspeção ``manual'' ainda é cabível nos nossos dias?
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/obras.jpg}};
+}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Criar scripts de teste para o sistema que está sendo desenvolvido.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

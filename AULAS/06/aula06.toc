@@ -1,0 +1,7 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Gerenciamento de configuração}{3}{0}{1}
+\beamer@sectionintoc {2}{Gerenciamento de versões}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{VCS Local}{33}{0}{2}
+\beamer@subsectionintoc {2}{2}{VCS Centralizado}{40}{0}{2}
+\beamer@subsectionintoc {2}{3}{VCS Distribuído}{49}{0}{2}
+\beamer@sectionintoc {3}{Atividade}{53}{0}{3}

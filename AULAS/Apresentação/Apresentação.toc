@@ -1,0 +1,7 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Informações gerais}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Ementa \& Objetivos}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Bibliografia}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Conteúdo Programático}{10}{0}{1}
+\beamer@subsectionintoc {1}{4}{Avaliação}{13}{0}{1}
+\beamer@subsectionintoc {1}{5}{Calendário}{18}{0}{1}

@@ -1,0 +1,53 @@
+# DESENVOLVIMENTO DIRIGIDO POR PLANO
+
+- É uma abordagem para a engenharia de software na qual o processo de desenvolvimento é planejado em detalhes.
+  - Um plano de projeto é criado para registrar o trabalho a ser feito, quem irá fazê-lo. o cronograma de desenvolvimento e os produtos de trabalho.
+
+- Os gerentes usam o plano para apoiar a tomada de decisões de projeto e como uma maneira de medir o progresso.
+
+- O planejamento inicial permite levar em conta as questões organizacionais (disponibilidade de pessoal. outros projetos etc.). Problemas potenciais e dependências são descobertos antes de o projeto ser iniciado, e não quando o projeto já está em andamento.
+
+- SOMMERVILLE: "a melhor abordagem para o planejamento de projeto envolve uma mistura sensata de desenvolvimento dirigido por plano e de desenvolvimento ágil."
+
+## PLANOS DE PROJETO
+
+- Um plano de projeto estabelece os recursos disponiveis para o projeto. a divisão de trabalho e um cronograma para executar o trabalho.
+
+- O plano deve identificar a abordagem adotada para o gerenciamento de risco. bem como os riscos para o projeto e o software em desenvolvimento.
+
+- Os detalhes dos planos de projeto variam dependendo do tipo de
+projeto e da organização. mas os planos incluem normalmente as seguintes seções:
+  1. Introdução. Descreve resumidamente os objetivos do projeto e estabelece as restrições (por exemplo. orçamento e tempo) que afetam o gerenciamento do projeto.
+  2. Organização do projeto. Descreve a maneira como o time de desenvolvimento é organizado, as pessoas envolvidas e seus papéis no time.
+  3. Análise de risco. Descreve os possíveis riscos do projeto, a probabilidade de esses riscos surgirem e as estratégias propostas de redução do risco (discutidas no Capitulo 22).
+  4. Requisitos de recursos de hardware e software Especifica o hardware e o software de apoio necessários para realizar o desenvolvimento. Se houver necessidade de adquirir hardware. as estimativas de preço e de cronograma de entrega podem ser incluídas.
+  5. Divisão de trabalho. Estabelece a divisão do projeto em atividades e identifica as entradas e as saídas de cada atividade de projeto.
+  6. Cronograma de projeto. Mostra as dependências entre as atividades. o tempo estimado necessário para alcançar cada marco e a alocação de pessoas às atividades. As maneiras como o cronograma pode ser apresentado são discutidas na próxima seção do capítulo
+  7. Mecanismos de monitoramen10 e de divulgação. Define os relatórios de gestão que devem ser produzidos. quando devem ser produzidos e os mecanismos de monitoramento de projeto a serem utilizados.
+  
+- Além disso. é possível desenvolver uma série de planos suplementares --> FIGURA 23.2
+
+## O PROCESSO DE PLANEJAMENTO
+
+- O planejamento de projeto é um processo iterativo que começa na criação de um plano de projeto inicial durante a fase inicial do projeto. À medida que mais informações sobre o sistema e o time de projeto são disponibilizadas durante o projeto, é necessário revisar o plano regularmente para refletir as alterações nos requisitos, no cronograma e nos riscos.
+  - As mudanças nos objetivos de negócio também levam a mudanças nos planos do projeto. A medida que os planos de negócio mudam. todos os projetos podem ser afetados. o que significa que devem ser planejados novamente.
+  
+FIGURA 23.3
+
+# DEFINIÇÃO DO CRONOGRAMA DE PROJETO
+
+- A definição do cronograma de projeto é o processo de decidir corno o trabalho em um projeto será organizado em tarefas distintas. quando e de que maneira essas tarefas serão executadas.
+- São estimados os prazos necessários para realizar cada tarefa e o esforço necessário. além de serem indicadas as pessoas que trabalharão nas tarefas que foram identificadas.
+- Também é preciso estimar os recursos de hardware e de software necessários para completar cada tarefa.
+
+- Ao estimar cronogramas, é necessário levar em conta a possibilidade de as coisas darem errado.
+  - Uma boa regra geral é estimar como se nada desse errado e, em seguida. aumentar a estimativa para cobrir os problemas previstos.
+  - Um fator de contingência adicional para cobrir os problemas imprevistos também pode ser adicionado à estimativa.
+
+FIGURA 23.4
+
+## APRESENTAÇÃO
+
+- Gráfico de Gantt: FIGURA 23.5 --> 23.6 --> 23.7
+
+- Pesquisar outras formas/gráficos de se construir um cronograma.

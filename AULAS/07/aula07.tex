@@ -1,0 +1,200 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 07]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 07}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Introdução ao Git}
+
+\setbeamertemplate{background canvas}{%
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+}
+
+\begin{frame}{Introdução ao Git}
+    \begin{itemize}
+        \item Breve histórico
+        \begin{itemize}
+            \justifying
+            \item Entre \textbf{1991} e \textbf{2002} modificações no código fonte do Linux eram distribuídas através de pacotes (\textit{patches}) e documentos arquivados.
+            \item Em 2002 o kernel passou a usar um VCS Distribuído (DVCS) proprietário, chamado \textbf{BitKeeper}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Introdução ao Git}
+    \begin{itemize}
+        \item Breve histórico
+        \begin{itemize}
+            \justifying
+            \item<1,5> Em \textbf{2005} as relações entre a comunidade que desenvolvia o kernel do Linux e a empresa dona do BitKeeper foram rompidas. Várias \textbf{ferramentas} que estavam \textbf{gratuitas}, passaram a ser \textbf{pagas}.
+            \item<2-3,5> O Linus Torvalds, junto com a comunidade, decidiu criar seu próprio sistema, aproveitando o que tinham aprendido com a experiência com o BitKeeper. Os objetivos do novo sistema eram:
+            \begin{itemize}
+                \item<3,5> Ser rápido;
+                \item<3,5> Ter um design simples;
+                \item<3,5> Forte suporte para desenvolvimento não linear (milhares de ramificações em paralelo);
+                \item<3,5> Completamente distribuído;
+                \item<3,5> Apto a lidar com grandes projetos eficientemente (como o próprio Linux).
+            \end{itemize}
+            \item<4-5> Assim o Git nasceu em 2005.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Introdução ao Git}
+    \begin{itemize}
+        \justifying
+        \item \textbf{Pro Git}: é o livro oficial do Git. 
+        \begin{itemize}
+            \justifying
+            \item Última versão em Português: 2.1.47-7-ge30df8c, 2024-10-28.
+            \item Última versão em Inglês: 2.1.448, 2025-07-25.
+        \end{itemize}
+        \item Autores: \textbf{Scott Chacon} e \textbf{Ben Straub}.
+    \end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Como funciona}
+
+\begin{frame}{Como funciona}
+    \begin{itemize}
+        \justifying
+        \item De início o Git ``vê'' os dados de forma diferente.
+        \item Os demais DVCSs \textbf{armazenam informações} como um \textbf{conjunto de arquivos} e as \textbf{modificações} feitas sobre cada arquivo ao longo do tempo (isso é chamado de controle de versão \textit{delta-based}).
+    \end{itemize}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.jpeg}
+\end{frame}
+
+\begin{frame}{Como funciona}
+    \begin{itemize}
+        \justifying
+        \item O Git trata os dados como uma série de \underline{\textit{snapshots}}.
+        \item Toda vez que é feito um commit, ou o estado do projeto é salvo, o Git basicamente ``tira uma foto'' de como todos os arquivos estão e \textbf{armazena uma referência} a essa ``foto''.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Como funciona}
+    \begin{itemize}
+        \justifying
+        \item Para ter eficiência, \textbf{se algum arquivo não foi modificado}, em vez de armazenar o arquivo novamente, o Git apenas \textbf{armazena um link para o arquivo anterior} que é idêntico e já está salvo.
+        \item Em outras palavras, o Git trata os dados como um fluxo/sequência de \textit{snapshots}.
+    \end{itemize}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagens/figura02.jpeg}
+\end{frame}
+
+
+\begin{frame}{Como funciona}
+    \begin{itemize}
+        \justifying
+        \item Praticamente todas as operações são locais
+        \begin{itemize}
+            \justifying
+            \item Uma vez que você tem uma cópia completa de um projeto em sua máquina, \textbf{você pode trabalhar em modificações e atualizações sem necessitar de acesso à Internet}.
+            \item Ao terminar, basta fazer um commit para sua cópia local, e \textbf{quando tiver acesso à Internet, subir a nova versão para algum servidor}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Como funciona}
+    \begin{itemize}
+        \justifying
+        \item O Git tem integridade
+        \begin{itemize}
+            \justifying
+            \item<1,3> \textbf{Todos os arquivos passam por um processo de \textit{checksum} antes de serem armazenados}, e então \textbf{passam a ser referenciados} a partir desse \textbf{\textit{checksum}}.
+            \item<1,3> Ou seja, é impossível realizar qualquer modificação sem que o Git não perceba.
+            \item<2-3> O mecanismo para o \textit{checksum} é o \textbf{SHA-1 hash}. O cheksum de um arquivo vai consistir em uma \textbf{string de 40 caracteres hexadecimais}, e o \textbf{cálculo} é feito \textbf{baseado nos conteúdos de um arquivo ou a estrutura de diretórios}. Um exemplo desse valor:\\
+            \texttt{24b9da6552252987aa493b52f8696cd6d3b00373}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Como funciona}
+    \begin{itemize}
+        \justifying
+        \item O Git geralmente só adiciona dados
+        \begin{itemize}
+            \justifying
+            \item Basicamente todas as ações feitas no Git apenas adicionarão dados à base de dados do Git.
+            \item Ou seja, vai ser quase impossível perder ou ``destruir'' qualquer coisa após um commit, principalmente se seu repositório estiver também na nuvem.
+            \item Isso permite que você possa fazer vários testes sem medo de ser feliz.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+% SUBSUBSECTION 1.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsubsection{Os Três Estados}
+
+\begin{frame}{Os Três Estados}
+    \begin{itemize}
+        \item São 3 os principais estados em que um arquivo pode estar:
+        \begin{itemize}
+            \justifying
+            \item \textbf{Modificado}\uncover<2>{: o arquivo foi modificado mas ainda não foi \textit{comitado} para a base de dados.}
+            \item \textbf{Preparado}/\textbf{Staged}\uncover<3>{: o arquivo modificado foi marcado em sua versão atual para fazer parte do próximo commit.}
+            \item \textbf{Committed}\uncover<4>{: os dados estão seguramente armazenados na base de dados local.}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Os Três Estados}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura03.jpeg}
+\end{frame}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Continuar o gerenciamento de configuração.
+        \item Estudar Pro Git.
+        \item Criar um repositório no github, e os membros devem começar a contribuir.
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

@@ -1,0 +1,7 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Gerenciamento de lançamentos}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Marketing}{12}{0}{1}
+\beamer@subsectionintoc {1}{2}{Criação do lançamento}{17}{0}{1}
+\beamer@subsectionintoc {1}{3}{Documentação}{25}{0}{1}
+\beamer@subsectionintoc {1}{4}{Instalação}{30}{0}{1}
+\beamer@sectionintoc {2}{Atividade}{32}{0}{2}

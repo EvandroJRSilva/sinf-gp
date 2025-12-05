@@ -1,0 +1,283 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 01]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 01}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Introdução}
+
+\begin{frame}{Introdução}
+    \begin{itemize}
+        \justifying
+        \item Onde começar a construção de uma casa?
+    \end{itemize}
+    \centering
+    \uncover<2>{\includegraphics[width=0.85\textwidth]{imagens/telhado.png}}
+\end{frame}
+
+\begin{frame}{Introdução}
+    \includegraphics[width=\textwidth]{imagens/planta baixa.jpg}
+\end{frame}
+
+\begin{frame}{Introdução}
+    \begin{itemize}
+        \justifying
+        \item Com um software não deve ser diferente!
+        \item Até mesmo os trabalhos nas disciplinas da UFPI vão precisar de algum planejamento.
+        \item Quanto mais complexo, mais pessoas vão sendo envolvidas, mais áreas vão sendo abordadas, etc. Isso acaba se tornando um projeto que precisa ser bem gerenciado! \uncover<2>{\alert{E o que é um projeto?}}
+    \end{itemize}
+    \uncover<2>{\includegraphics[width=0.35\textwidth]{imagens/memes/duvida.png}}
+\end{frame}
+
+\begin{frame}{Introdução}
+    \begin{itemize}
+        \justifying
+        \item<1> Abrir um tutorial de vez em quando para aprender uma nova linguagem de programação $\rightarrow$ é um projeto (pessoal)?
+        \item<2> Dedicar, todos os dias, uma hora para estudar uma nova linguagem de programação. Então, uma vez por mês, você toma uma semana inteira para criar programas pondo em prática tudo o que você viu da linguagem até então $\rightarrow$ é um projeto (pessoal)?
+        \item<3-> Qual a principal diferença entre as duas situações?
+            \begin{itemize}
+                \item<4> O planejamento, visando o sucesso.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Gerência de Projeto}
+
+\begin{frame}{Gerência de Projeto}
+    \begin{itemize}
+        \justifying
+        \justifying
+        \item Como calcular / definir se um projeto foi gerenciado com sucesso?
+        \item<2-> Algumas métricas:
+        \begin{itemize}
+            \justifying
+            \item<3-> O projeto foi entregue dentro do prazo;
+            \item<4-> O projeto foi concluído dentro do orçamento;
+            \item<5-> O cliente ficou satisfeito com o produto;
+            \item<6-> O time de desenvolvimento esteve bem alinhado.
+        \end{itemize}
+        \item<7-> Calcular o valor para essas métricas é difícil na Engenharia de Software!
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerência de Projeto}
+    \begin{itemize}
+        \item Algumas dificuldades
+        \begin{itemize}
+            \justifying
+            \item<1> \textbf{Um programa é intangível}. Como verificar a evolução do desenvolvimento? Não dá para ver como um objeto físico sendo construído.
+            \item<2> \textbf{Grandes projetos podem se tornar muito específicos}. A reusabilidade de códigos e ferramentas fica mais difícil.
+            \item<3> \textbf{Não temos modelos totalmente padronizados}. Ex.: a construção de pontes sempre vai seguir um modelo de construção padrão (alguns locais podem apresentar um maior desafio, mas a fórmula geral é a mesma). Na Eng. de Software, cada empresa vai ter seu processo de desenvolvimento. Os guias apenas orientam, mas nem sempre são seguidos à risca (cada empresa e cada equipe se adapta).
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Fatores que influenciam na gerência de projetos}
+
+\begin{frame}{Influências}
+    \begin{itemize}
+        \justifying
+        \item Além das dificuldades, podemos elencar outros fatores que influenciam em como o projeto será gerido.
+        \begin{itemize}
+            \justifying
+            \item<1> \textbf{Tamanho da empresa}. A gerência de projetos em empresas grande é muito diferente em empresas pequenas. Em uma empresa pequena se tem menos burocracia e formalidades.
+            \item<2> \textbf{Relacionamento com o cliente}. Alguns clientes são pessoas mais próximas, enquanto outros o tratamento tem de ser estritamente profissional. Dependendo do caso, a comunicação fica mais fácil ou mais difícil.
+            \item<3> \textbf{Tamanho do Software}. Um software menor pode ser desenvolvido por uma equipe pequena (comunicação melhor). Um software maior pode exigir diferentes equipes (a comunicação entre as equipes tem de ser bem gerenciada).
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Influências}
+    \begin{itemize}
+        \justifying
+        \item Além das dificuldades, podemos elencar outros fatores que influenciam em como o projeto será gerido.
+        \begin{itemize}
+            \justifying
+            \item<1> \textbf{Tipo de Software}. Diferentes tipos de software exigem diferentes níveis de organização. Há softwares cujas modificações podem ser decididas rapidamente, enquanto outros exigem uma documentação com justificação e detalhamento do que foi feito.
+            \item<2> \textbf{Cultura organizacional}. A cultura interna da empresa pode ter grande influência sobre como os projetos serão geridos.
+            \item<3> \textbf{Processo de desenvolvimento}. Processos mais ágeis requerem gerenciamento diferente de projetos com maior burocracia.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Atividades Fundamentais no Gerenciamento de Projetos}
+
+\begin{frame}{Atividades Fundamentais}
+    \begin{itemize}
+        \justifying
+        \item Planejamento;
+        \item Gerenciamento de riscos;
+        \item Gerenciamento de pessoas;
+        \item Preparação de relatórios;
+        \item Elaboração de propostas.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Atividades Fundamentais}
+    \begin{itemize}
+        \item \textbf{Planejamento}
+            \begin{itemize}
+                \justifying
+                \item<1> Os gerentes de projetos são responsáveis por planejar, estimar e agendar o desenvolvimento do projeto e atribuir tarefas às pessoas. Eles supervisionam o trabalho para garantir que ele seja executado e acordo com os padrões necessários e monitoram o progresso para checar se o desenvolvimento está dentro do prazo e do orçamento.
+            \end{itemize}
+        \item<2-> \textbf{Gerenciamento de riscos}
+            \begin{itemize}
+                \justifying
+                \item<2> Os gerentes de projetos têm de avaliar os riscos que podem afetar um projeto, monitorar esses riscos e tomar atitudes quando surgirem problemas.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Atividades Fundamentais}
+    \begin{itemize}
+        \item \textbf{Gerenciamento de pessoas}
+        \begin{itemize}
+            \justifying
+            \item<1> Os gerentes de projetos são responsáveis por gerenciar uma equipe de pessoas. Eles têm de escolher as pessoas para sua equipe e estabelecer maneiras de trabalhar que levem a um desempenho eficiente da equipe.
+        \end{itemize}
+        \item<2-> \textbf{Preparação de relatórios}
+        \begin{itemize}
+            \justifying
+            \item<2>  Os gerentes de projetos normalmente são responsáveis por reportar o progresso de um projeto para os clientes e os gerentes da empresa que está desenvolvendo o software. Eles têm de ser capazes de se comunicar em uma série de níveis, desde o nível da informação técnica detalhada até o dos resumos para a gerência. pois têm de escrever documentos concisos, coerentes e que sintetizem informações criticas a partir de relatórios de projeto mais detalhados. Além disso. devem ser capazes de apresentar essas informações durante as revisões de progresso.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Atividades Fundamentais}
+    \begin{itemize}
+        \item \textbf{Elaboração de propostas}
+        \begin{itemize}
+            \justifying
+            \item O primeiro estágio em um projeto de software pode envolver a elaboração de uma proposta para ganhar um contrato de execução de um item de trabalho. A proposta descreve os objetivos do projeto e como ele será executado. Normalmente, ela inclui estimativas de custo e prazo e justificativas para o contrato de projeto ser concedido a uma determinada organização ou equipe. A elaboração da proposta é uma tarefa crítica. já que a sobrevivência de muitas empresas de software depende de ter uma quantidade suficiente de propostas aceitas e contratos efetivados
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Gerenciamento de projeto de software}
+
+\begin{frame}{Gerenciamento de projeto de software}
+    \begin{itemize}
+        \justifying
+        \item É uma atividade de apoio da Engenharia de Software. Inicia antes de qualquer atividade técnica e prossegue ao longo da modelagem, construção e utilização do software.        
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de projeto de software}
+    \begin{itemize}
+        \justifying
+        \item Segundo Pressman e Maxim, o \alert<3>{gerenciamento} eficiente do desenvolvimento de software se concentra nos \textbf{4 Ps}: \alert<2-3>{Pessoas}, produto, processo e projeto.
+        \begin{itemize}
+            \justifying
+            \item<2> Toda organização precisa \underline{aprimorar continuamente} sua habilidade de \textbf{atrair}, \textbf{desenvolver}, \textbf{motivar}, \textbf{organizar} e \textbf{reter} a força de trabalho necessária para atingir os objetivos estratégicos de seus negócios.
+            \item<3> Devem ser organizadas em \textbf{equipes eficientes}, devem ser \textbf{motivadas} a realizar um \textbf{trabalho} de software \textbf{de alta qualidade} e devem ser \textbf{coordenadas para uma comunicação eficaz}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de projeto de software}
+    \begin{itemize}
+        \justifying
+        \item Segundo Pressman e Maxim, o \alert<2>{gerenciamento} eficiente do desenvolvimento de software se concentra nos \textbf{4 Ps}: Pessoas, \alert<1-2>{produto}, processo e projeto.
+        \begin{itemize}
+            \justifying
+            \item<1> Antes de se iniciar um plano de projeto, é interessante \textbf{estabelecer} os \textbf{objetivos} do produto e seu \textbf{escopo}, considerar as soluções alternativas e \textbf{identificar} as \textbf{restrições técnicas e de gerenciamento}.
+            \item<2> Requisitos de produto devem ser comunicados do cliente ao desenvolvedor, decompostos em partes e posicionados para a execução pela equipe de software.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de projeto de software}
+    \begin{itemize}
+        \justifying
+        \item Segundo Pressman e Maxim, o \alert<2>{gerenciamento} eficiente do desenvolvimento de software se concentra nos \textbf{4 Ps}: Pessoas, produto, \alert<1-2>{processo} e projeto.
+        \begin{itemize}
+            \justifying
+            \item<1> \textbf{Fornece a metodologia} por meio da qual pode ser \textbf{estabelecido} um \textbf{plano de projeto} abrangente para o desenvolvimento de software, além de \textbf{atividades de apoio}, como garantia de qualidade, gerenciamento de configuração, me-dições, etc.
+            \item<2> O processo \textbf{deve ser adaptado} às \textbf{pessoas} e ao \textbf{problema}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de projeto de software}
+    \begin{itemize}
+        \justifying
+        \item Segundo Pressman e Maxim, o \alert<2>{gerenciamento} eficiente do desenvolvimento de software se concentra nos \textbf{4 Ps}: Pessoas, produto, processo e \alert<1-2>{projeto}.
+        \begin{itemize}
+            \justifying
+            \item<1> \textbf{Planejamento} e \textbf{controle} são a \textbf{única maneira} de \textbf{administrar a complexidade}. São muitos os softwares que sofrem grande atraso, ou mesmo não são concluídos.
+            \item<2> O \textbf{projeto}  deve ser \textbf{organizado} de modo a \textbf{capacitar} a \textbf{equipe} de software a \textbf{ser bem-sucedida}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 3.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{O princípio $W^{5}$HH}
+
+\begin{frame}{O princípio $W^{5}$HH}
+    \begin{itemize}
+        \justifying
+        \item É uma abordagem voltada aos objetivos do projeto, marcos (pontos de referência) e cronogramas (agendas), responsabilidades, gerenciamento, abordagens técnicas e recursos necessários.
+        \item O nome vem de uma série de perguntas em Inglês, as quais conduzem a uma definição das características-chave do projeto e do planejamento do projeto resultante.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{O princípio $W^{5}$HH}
+    \begin{description}
+        \item[Why] \textbf{Por que o sistema está sendo desenvolvido?}
+        \item[What] \textbf{O que será feito?}
+        \item[When] \textbf{Quando será feito?}
+        \item[Who] \textbf{Quem será o responsável por uma função?}
+        \item[Where] \textbf{Onde se posicionam organizacionalmente?}
+        \item[How] \textbf{Como será realizado o trabalho de forma técnica e gerencialmente?}
+        \item[How much] \textbf{Quanto de cada recurso será necessário?}
+    \end{description}
+\end{frame} 
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

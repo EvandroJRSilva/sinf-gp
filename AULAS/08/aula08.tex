@@ -1,0 +1,346 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 08]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 08}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Construção de Sistemas}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{Construção de Sistemas}
+    \begin{itemize}
+       \justifying
+       \item<1-> É o \textbf{processo} de \textbf{criar um sistema executável completo} (chamado de \textit{build}), compilando e ligando os componentes do sistema, as bibliotecas externas, os arquivos de configuração e outras informações.
+       \item<2> Ferramentas de \textbf{construção de sistema} e ferramentas de \textbf{controle de versões} devem ser \textbf{integradas}, pois o processo de construção usa versões dos componentes do repositório gerenciado pelo sistema de controle de versões.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Construção de Sistemas}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+%\begin{frame}{Construção de Sistemas}
+%    \begin{itemize}
+%        \justifying
+%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
+%        \begin{enumerate}
+%            \justifying
+%            \item \textbf{Geração do script de construção}.
+%            \item \textbf{Integração com o sistema de controle de versão}.
+%            \item \textbf{Recompilação mínima}.
+%            \item \textbf{Automação dos testes}.
+%            \item \textbf{Emissão de relatórios}.
+%            \item \textbf{Geração da documentação}.
+%        \end{enumerate}
+%    \end{itemize}
+%\end{frame}
+
+%\begin{frame}{Construção de Sistemas}
+%    \begin{itemize}
+%        \justifying
+%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
+%            \begin{enumerate}
+%                \justifying
+%                \item \textbf{Geração do script de construção}
+%                    \begin{itemize}
+%                        \justifying
+%                        \item<2> O script de construção é uma \textbf{definição do sistema a ser construído}. Inclui \textbf{informações} sobre os \textbf{componentes} e suas \textbf{dependências} e \textbf{versões das ferramentas} usadas para compilar e ligar o sistema.
+%                        \item<3> O \textbf{sistema de construção} deve \textbf{analisar} o programa que está sendo construído, \textbf{identificar} componentes dependentes e \textbf{gerar automaticamente} um script de construção (arquivo de configuração).
+%                        \item<3> O sistema também deve permitir a criação manual e a edição de scripts de construção
+%                    \end{itemize}
+%            \end{enumerate}
+%    \end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Construção de Sistemas}
+%    \begin{itemize}
+%        \justifying
+%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
+%        \begin{enumerate}
+%            \justifying
+%            \setcounter{enumi}{1}
+%            \item \textbf{Integração com o sistema de controle de versão}
+%                \begin{itemize}
+%                    \justifying
+%                    \item<2> O sistema de construção deve fazer check-out das versões necessárias dos componentes que estão no sistema de controle de versão.
+%                \end{itemize}
+%            \item<3-> \textbf{Recompilação mínima}
+%                \begin{itemize}
+%                    \justifying
+%                    \item<3> O sistema de construção deve analisar qual código-fonte precisa ser recompilado e realizar as compilações, se necessário.
+%                \end{itemize}
+%            \item<4> \textbf{Automação dos testes}
+%                \begin{itemize}
+%                    \justifying
+%                    \item<4> Alguns sistemas de construção podem executar automaticamente testes automatizados usando ferramentas de automação de teste, os quais verificam se o \textit{build} não foi ``quebrado'' pelas mudanças.
+%                \end{itemize}
+%        \end{enumerate}
+%    \end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Construção de Sistemas}
+%    \begin{itemize}
+%        \justifying
+%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
+%        \begin{enumerate}
+%            \justifying
+%            \setcounter{enumi}{4}
+%            \item \textbf{Emissão de relatórios}
+%                \begin{itemize}
+%                    \justifying
+%                    \item<1> O sistema de construção deve fornecer \textbf{relatórios} sobre o \textbf{sucesso} ou a \textbf{falha} da construção e os \textbf{testes} que foram executados.
+%                \end{itemize}
+%            \item<2> \textbf{Geração da documentação}
+%                \begin{itemize}
+%                    \justifying
+%                    \item<2> O sistema de construção pode ser capaz de \textbf{gerar notas} de lança-mento sobre o \textit{build} e \textbf{páginas de ajuda} do sistema.
+%                \end{itemize}
+%        \end{enumerate}
+%    \end{itemize}
+%\end{frame}
+
+\begin{frame}{Construção de Sistemas}
+    \begin{itemize}
+        \justifying
+        \item A construção é um processo complexo e potencialmente propenso a erros, já que três plataformas de sistema diferentes podem estar envolvidas:
+    \end{itemize}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagens/figura02.png}
+\end{frame}
+
+\begin{frame}{Construção de Sistemas}
+    \begin{itemize}
+        \justifying
+        \item Os \textbf{métodos ágeis} recomendam que a construção do sistema seja realizada com bastante frequência, com testes automatizados utilizados para descobrir problemas de software. As construções frequentes fazem parte de um processo de \textbf{integra-ção contínua}.
+    \end{itemize}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/figura03.png}
+\end{frame}
+
+\begin{frame}{Construção de Sistemas}
+    \begin{itemize}
+        \justifying
+        \item Nem sempre é possível implementar a integração contínua:
+            \begin{enumerate}
+                \justifying
+                \item Se o sistema for muito grande.
+                \item Se a plataforma de desenvolvimento for diferente da plataforma de destino.
+            \end{enumerate}
+        \item Uma solução nesses casos pode ser a \textbf{construção frequente}. Por exemplo, construção diária.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Construção frequente}
+
+\begin{frame}{Construção frequente}
+    \begin{itemize}
+        \justifying
+        \item Vantagens
+            \begin{itemize}
+                \justifying
+                \item Maiores chances de \textbf{encontrar problemas} oriundos das interações de componentes \textbf{logo no início do processo}.
+                \item \textbf{Incentiva testes unitários} completos dos componentes.
+                \item \textbf{Psicológica}
+                    \begin{itemize}
+                        \justifying
+                        \item<2-> Os \textbf{desenvolvedores} são colocados \textbf{sob pressão} para não quebrar o \textit{build}, ou seja, eles tentam evitar o check-in de versões dos componentes que provoquem a falha do sistema inteiro.
+                        \item<3> Portanto, eles \textbf{relutam em entregar versões} de novos componentes \textbf{que não foram adequadamente testadas}. Como conse-quência, gasta-se menos tempo durante o teste do sistema descobrindo e lidando com defeitos de software, que poderiam ter sido encontrados pelo desenvolvedor.
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Gerenciamento de mudanças}
+
+\begin{frame}{Gerenciamento de mudanças}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \justifying
+                \footnotesize
+                \item É o \textbf{processo de analisar} os \textbf{custos} e os \textbf{benefícios} das mudanças propostas, \textbf{aprovando} as que têm bom custo-benefício e \textbf{controlando} quais componentes do sistema foram modificados.
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{imagens/figura04_01.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Ferramentas para apoiar o gerenciamento de mudanças}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+    \begin{itemize}
+        \justifying
+        \item Podem ser tanto \alert<2>{\textbf{sistemas relativamente simples de rastreamento de problemas ou defeitos}} quanto um \alert<3>{\textbf{software integrado a um pacote de gerenciamento de configuração de sistemas de larga escala}}.
+            \begin{itemize}
+                \justifying
+                \item<2> \href{https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues}{\textcolor{blue}{\underline{Github Issues}}}.
+                \item<3> \href{https://www.ibm.com/br-pt/products/rational-clearcase}{\textcolor{blue}{\underline{IBM Rational ClearCase}}}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \justifying
+                \footnotesize
+                \item Os sistemas de rastreamento de problemas permitem que qualquer pessoa relate um defeito ou faça uma sugestão de mudança no sistema, e controlam como o time de desenvolvimento respondeu a essas questões
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{imagens/figura04_02.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \justifying
+                \footnotesize
+                \item Depois de uma solicitação de mudança ter sido enviada. ela é conferida para garantir que seja válida.
+                \item A solicitação de mudança pode ser rejeitada nesse estágio
+                    \begin{itemize}
+                        \justifying
+                        \tiny
+                        \item O \textbf{defeito} pode já ter sido relatado e \textbf{corrigido}.
+                        \item O que as pessoas \textbf{acreditam ser problemas} pode ser, na verdade, um \textbf{mal-entendido} quanto ao que se espera que o sistema faça.
+                        \item As pessoas \textbf{pedem características} que \textbf{já foram implementadas}, \textbf{mas} sobre as quais elas \textbf{ainda não sabiam}.
+                    \end{itemize}
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{imagens/figura04_03.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \justifying
+                \footnotesize
+                \item Para as solicitações de mudança \textbf{válidas}, a próxima etapa do processo é a \textbf{avaliação da mudança} e o \textbf{cálculo dos custos}.
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{imagens/figura04_04.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+                \justifying
+                \footnotesize
+                \item Um grupo à parte decide se é rentável para a empresa fazer a mudança no software.
+                \item Nesse momento é considerado o impacto da mudança de um ponto de vista estratégico e organizacional, em vez de técnico.
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=0.95\textwidth]{imagens/figura04_05.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+    \begin{itemize}
+        \justifying
+        \item<1> Os fatores que influenciam a decisão sobre a implementação, ou não, de uma mudança incluem:
+            \begin{itemize}
+                \justifying
+                \item<1> As consequências de não fazer a mudança.
+                \item<1> Os benefícios da mudança.
+                \item<1> O número de usuários afetados pela mudança.
+                \item<1> Os custos de fazer a mudança.
+                \item<1> O ciclo de lançamento do produto.
+            \end{itemize}
+        \item<2> Conforme o time de desenvolvimento altera os componentes de software, ele deve manter um \textbf{registro das alterações} feitas em cada componente. Ex.: \textbf{changelog}.
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Testar os softwares das outras equipes, e na aba \textbf{issues} do github
+            \begin{itemize}
+                \justifying
+                \item Sugerir alterações.
+                \item Reportar bugs.
+            \end{itemize}
+        \item A equipe que receber as sugestões de alteração e bugs deve fazer e registrar o gerenciamento de mudanças.
+    \end{itemize}
+\end{frame}
+
+%\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

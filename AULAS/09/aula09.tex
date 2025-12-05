@@ -1,0 +1,202 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 09]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 09}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Gerenciamento de lançamentos}
+
+%\setbeamertemplate{background canvas}{%
+%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+%}
+
+\begin{frame}{Gerenciamento de lançamentos}
+    \begin{itemize}
+        \justifying
+        \item Um lançamento (\textit{release}) de sistema é \textbf{uma versão} do sistema de software distribuída para os clientes.
+        \item Em alguns casos é possível identificar 2 tipos de lançamentos:
+            \begin{itemize}
+                \justifying
+                \item \textit{\textbf{Major releases}}: em alguns casos referidos como \textbf{LTS} (\textit{Long Term Service}), os quais oferecem novas funcionalidades significativas. Costuma ser pago.
+                \item \textit{\textbf{Minor releases}}: que consertam defeitos e solucionam problemas relatados por clientes. Costuma ser gratuito.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de lançamentos}
+    \begin{itemize}
+        \item Python
+        
+            \begin{tabular}{lccl}
+                \href{https://peps.python.org/pep-0569/}{\underline{3.8}} & (2019-10-14) & $\rightarrow$ & 3.8.20 \\
+                \href{https://peps.python.org/pep-0596/}{\underline{3.9}} & (2020-10-05) & $\rightarrow$ & 3.9.24\\
+                \href{https://peps.python.org/pep-0619/}{\underline{3.10}} & (2021-10-04) & $\rightarrow$ & 3.10.19\\
+                \href{https://peps.python.org/pep-0664/}{\underline{3.11}} & (2022-10-24) & $\rightarrow$ & 3.11.14\\
+                \href{https://peps.python.org/pep-0693/}{\underline{3.12}} & (2023-10-02) & $\rightarrow$ & 3.12.12\\
+                \href{https://peps.python.org/pep-0719/}{\underline{3.13}} & (2024-10-07) & $\rightarrow$ & 3.13.9 \\
+                \href{https://peps.python.org/pep-0745/}{\underline{3.14}} & (2025-10-07) & $\rightarrow$ & a cada 2 meses\\
+                \href{https://peps.python.org/pep-0790/}{\underline{3.15}} & (2026-10-07) &  & \\
+            \end{tabular}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de lançamentos}
+    \begin{itemize}
+        \justifying
+        \item Um lançamento de produto de software não é apenas o código executável do sistema. O lançamento também pode incluir:
+            \begin{itemize}
+                \justifying
+                \item<2-> \textbf{Arquivos de configuração}, que definem como o lançamento deve ser configurado para instalações específicas.
+                \item<3-> \textbf{Arquivos de dados}, como arquivos de mensagens de erro em diferentes idiomas, que são necessários para a operação bem-sucedida do sistema.
+                \item<4-> \textbf{Programa de instalação}, que é usado para ajudar a instalar o sistema no hardware de destino.
+                \item<5-> \textbf{Documentação}, eletrônica e em papel, que descreva o sistema.
+                \item<6> \textbf{Embalagens e publicidade associada}, que foram concebidas para esse lançamento.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Marketing}
+
+\begin{frame}{Marketing}
+    \begin{itemize}
+        \justifying
+        \item Além do trabalho técnico envolvido na criação de uma distribu-ição do lançamento, é preciso preparar material de propaganda e publicidade:
+            \begin{itemize}
+                \justifying
+                \item<2-> Pode ser necessário conceber estratégias de marketing para convencer os clientes a comprarem o novo lançamento do sistema.
+                \item<3-> É preciso pensar muito no momento dos lançamentos:
+                    \begin{itemize}
+                        \justifying
+                        \item<4> Se eles forem \textbf{frequentes demais} ou exigirem \textbf{atualizações de hardware}, os clientes podem não passar para o novo lançamento. especialmente se tiverem que pagar por ele.
+                        \item<4> Se os lançamentos do sistema forem \textbf{pouco frequentes}, a partici-pação de mercado pode diminuir à medida que os clientes mudarem para sistemas alternativos.
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Criação do lançamento}
+
+
+\begin{frame}{Criação do lançamento}
+    \begin{itemize}
+        \justifying
+        \item É o processo de criar o conjunto de arquivos e documentação que inclui todos os componentes do lançamento do sistema. Esse processo envolve várias etapas, destacadas a seguir:
+            \begin{enumerate}
+                \justifying
+                \item<2> O \textbf{código executáve}l dos programas e todos os arquivos de dados as.saciados devem ser identificados no sistema de controle de versão e marcados com o identificador de lançamento.
+                \item<3> \textbf{Descrições de configuração} podem ter de ser escritas para diferentes sistemas operacionais e de hardware.
+                \item<4> \textbf{Instruções atualizadas} podem ter de ser escritas para os clientes que precisam configurar seus próprios sistemas.
+                \item<5> \textbf{Scripts} para o programa \textbf{de instalação} podem ter de ser escritos.
+                \item<6> \textbf{Páginas da web} precisam ser criadas descrevendo o lançamento, \textbf{com links} para a \textbf{documentação} do sistema.
+                \item<7> Finalmente, quando todas as informações estão disponíveis, uma \textbf{imagem mestre executável} do software deve ser preparada e entregue para distribuição a clientes ou para revendas.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Documentação}
+
+\begin{frame}{Documentação}
+    \begin{itemize}
+        \justifying
+        \item Para documentar um lançamento
+            \begin{itemize}
+                \justifying
+                \item<1> Devem ser registradas as \textbf{versões específicas dos componentes do código-fonte} que foram utilizadas para criar o código executável.
+                \item<2> É necessário \textbf{manter cópias} dos arquivos \textbf{do código-fonte}, \textbf{dos executáveis} correspondentes e de todos os \textbf{arquivos de dados e configurações}.
+                \item<3> Pode ser necessário manter \textbf{cópias} dos \textbf{sistemas operacionais mais antigos} e de outro software de apoio porque eles ainda podem estar em operação (Docker e/ou máquina virtual).
+                \item<4> \textbf{Registrar} as \textbf{versões do sistema operacional}, as \textbf{bibliotecas}, os \textbf{compiladores} e \textbf{outras ferramentas} utilizadas para construir o software.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.4 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Instalação}
+
+\begin{frame}{Instalação}
+    \begin{itemize}
+        \justifying
+        \item Quando se planeja a instalação de novos lançamentos do sistema, não se deve assumir que os clientes sempre instalarão esses novos lançamentos.
+            \begin{itemize}
+                \justifying
+                \item Alguns usuários podem estar felizes com um sistema atual e podem não considerar justificável absorver  o custo de mudar para um novo lançamento.
+                \item Os novos lançamentos do sistema, portanto, não podem se basear na instalação dos lançamentos prévios.
+                \item Opção viável: \textbf{SaaS}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Recapitulação das atividades
+            \begin{itemize}
+                \justifying
+                \item<1-> Criar planejamento, de acordo com o modelo de desenvolvimento escolhido (prescritivo ou ágil), e acrescentar ao documento as novas informações (cronograma, prazos, etc.).
+                \item<2-> Utilizar Click-up, Trello, ou outro software para o gerenciamento da equipe.
+                \item<3-> Gerenciamento de configuração: começar a utilizar git e github, de preferência com branches, por exemplo, de \textit{releases}, de desenvolvimento, etc. Todos os membros devem contribuir.
+                \item<4-> Testar os softwares das outras equipes, na aba issues do
+                github, sugerindo alterações e reportando bugs. E consertar/implementar essas mudanças.
+            \end{itemize}
+        \item<5> Novas atividades 
+            \begin{itemize}
+                \justifying
+                \item<5> Ter, pelo menos, 2 \textit{releases} dos sistems que vocês estão fazendo.
+                \item<5> As \textit{releases} podem estar indicadas no Github.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

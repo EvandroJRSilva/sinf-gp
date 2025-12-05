@@ -1,0 +1,15 @@
+---
+title: "Aula 08"
+author: "Evandro J.R. Silva"
+institute: "UFPI - CSHNB"
+format: revealjs
+---
+
+# Construção de sistemas
+
+## Introdução
+
+::: {.incremental}
+- É o processo de criar um sistema executável completo (chamado de *build*), compilando e ligando os componentes do sistema, as bibliotecas externas, os arquivos de configuração e outras informações.
+- Ferramentas de construção de sistema e ferramentas de controle de versões devem ser integradas, pois o processo de construção usa versões dos componentes do repositório gerenciado pelo sistema de controle de versões.
+:::

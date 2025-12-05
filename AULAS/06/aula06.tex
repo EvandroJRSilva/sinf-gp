@@ -1,0 +1,262 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 06]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 06}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Gerenciamento de configuração}
+
+%\setbeamertemplate{background canvas}{%
+ %   \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/planejamento.jpeg}};
+%}
+
+\begin{frame}{Gerenciamento de configuração}
+    \begin{itemize}
+        \justifying
+        \item<1-5,7> Os softwares \textbf{mudam constantemente} durante seu desenvolvimento e uso
+            \begin{itemize}
+                \justifying
+                \item<2-5,7> Defeitos são descobertos.
+                \item<3-5,7> Requisitos mudam.
+                \item<4-5,7> Novas versões de hardware e software.
+                \item<5,7> Concorrentes lançam novidades.
+            \end{itemize}
+        \item<6-7> À medida em que são feitas alterações no software, uma nova versão de um sistema é criado. A \textbf{maioria dos sistemas}, portanto, pode ser encarada como um \textbf{conjunto de versões}, \textbf{cada uma} delas tendo que ser \textbf{mantida e gerenciada}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de configuração}
+    \begin{itemize}
+        \justifying
+        \item O gerenciamento de configuração
+            \begin{itemize}
+                \justifying
+                \item<1,4> Está relacionado às \textbf{políticas}, aos \textbf{processos} e às \textbf{ferramentas} para o gerenciamento de sistemas de software que mudam.
+                \item<2,4> É \textbf{útil} para \textbf{projetos individuais}, pois é fácil para uma pessoa esquecer quais alterações foram feitas.
+                \item<3-4> É \textbf{essencial} para \textbf{projetos em equipe}, nos quais vários desenvolvedores trabalham em um sistema de software ao mesmo tempo.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de configuração}
+    \begin{itemize}
+        \justifying
+        \item Quatro atividades principais
+            \begin{enumerate}
+                \justifying
+                \item<1> \textbf{Controle de versão}: envolve manter o controle das várias versões dos componentes do sistema e garantir que as mudanças feitas em componentes por diferentes desenvolvedores não interfiram umas com as outras.
+                \item<2> \textbf{Construção de sistema}: processo de reunir componentes, dados e bibliotecas do programa, compilando-os e ligando-os para criar um sistema executável.
+                \item<3> \textbf{Gerenciamento de mudanças}: envolve manter o controle das solicitações de mudança de clientes e desenvolvedores no software já entregue, elaborar os custos e o impacto de fazer essas mudanças e decidir se e quando as alterações devem ser implementadas.
+                \item<4> \textbf{Gerenciamento de lançamentos} (\textit{releases}): envolve a preparação de software para o lançamento externo e o acompanhamento das versões de sistema que foram lançadas para uso do cliente.
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de configuração}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\begin{frame}{Gerenciamento de configuração}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Gerenciamento de versões}
+
+\begin{frame}{Gerenciamento de versões}
+    \begin{itemize}
+        \justifying
+        \item O que é controle de versão? Onde vive? O que faz? Do que se alimenta?
+        \begin{itemize}
+            \justifying
+            \item<2-> É um \textbf{sistema} que \textbf{armazena modificações} em um arquivo ou conjunto de arquivos em função do tempo, e \textbf{permite o acesso a versões específicas a qualquer momento}.
+            \item<3> Em nosso contexto usamos para versionar códigos-fonte, mas um controle de versionamento pode ser aplicado sobre praticamente qualquer tipo de arquivo.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de versões}
+    \begin{itemize}
+        \justifying
+        \item Com um \textbf{Sistema de Controle de Versionamento} (VCS) é possível
+        \begin{itemize}
+            \justifying
+            \item<2-> Voltar ao estado anterior dos arquivos selecionados;
+            \item<3-> Voltar ao estado anterior de todo o projeto;
+            \item<4-> Comparar diferentes modificações;
+            \item<5-> Caguetar a pessoa que fez uma modificação que está causando erro;
+            \item<6-> Saber quem adicionou alguma nota (sobre problema ou sugestão), onde e quando;
+            \item<7-> Se você sem querer apagou tudo, com um VCS é maior a probabilidade de você conseguir recuperar o que perdeu;
+            \item<8> Tudo isso sem muito custo computacional.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{VCS Local}
+
+\begin{frame}{VCS Local}
+    \begin{itemize}
+        \justifying
+        \item<1> O mais comum:\\ \vspace{5pt}
+            \includegraphics[width=0.8\textwidth]{imagens/figura03.png}
+        \item<2> De repente um pouco mais organizado
+        \begin{itemize}
+            \justifying
+            \item<2> arquivo\_2025-10-09\_08:00.doc $\rightarrow$ arquivo\_2025-10-09\_10:00.doc.
+        \end{itemize}
+        \item<3> O que são programadores senão as pessoas que fazem programas para solucionar problemas? Ou facilitar a vida?
+        \item<3> Então criaram sistemas de controle de versão local
+        \begin{itemize}
+            \justifying
+            \item<3> Basicamente um banco de dados simples que armazena todas as modificações.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{VCS Local}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/meme_quesomos.jpg}
+\end{frame}
+
+\begin{frame}{VCS Local}
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagens/figura04.jpeg}
+\end{frame}
+
+\begin{frame}{VCS Local}
+    \begin{itemize}
+        \justifying
+        \item \href{https://www.gnu.org/software/rcs/}{\underline{\textit{Revision Control System} (RCS)}} é (ou foi) um bastante popular.
+        \item Como funciona: mantém a cópia mais recente de um arquivo e modificações \textit{reversas} (chamadas \textit{deltas}), ou seja, o que tinha de diferente antes.
+    \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{VCS Centralizado}
+
+\begin{frame}{VCS Centralizado}
+    \begin{itemize}
+        \justifying
+        \item Versionamento local: OK
+        \item Versionamento de colaborações com outros desenvolvedores
+    \end{itemize}
+    \centering
+    \uncover<2->{\includegraphics[width=0.25\textwidth]{imagens/dieMeme.jpg}}
+    \begin{itemize}    
+        \justifying
+        \item<3> E novamente os desenvolvedores:
+    \end{itemize}
+    \centering
+    \uncover<3>{\includegraphics[width=0.25\textwidth]{imagens/challengeAcceptedMeme.jpg}}
+\end{frame}
+
+\begin{frame}{VCS Centralizado}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagens/figura05.jpeg}
+    \begin{itemize}
+        \item Alguns conhecidos: CVS, Subversion e Perforce.
+        \item Porém, ainda assim temos algumas desvantagens
+        \begin{itemize}
+            \justifying
+            \item Se o servidor cair, ninguém vai conseguir colaborar ou salvar novas versões enquanto o servidor não voltar.
+            \item<2-> Se o HD ou SSD onde o repositório estiver armazenado for corrompido e o último backup foi duas semanas atrás ....
+        \end{itemize}
+    \end{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \uncover<3->{\includegraphics[width=0.7\textwidth]{imagens/depressionMeme.jpg}}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \uncover<4>{Solução: VCS Distribuído}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{VCS Centralizado}
+    \centering
+    \includegraphics[width=\textwidth]{imagens/meme_glorificar.jpg}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{VCS Distribuído}
+
+\begin{frame}{VCS Distribuído}
+    \begin{itemize}
+        \justifying
+        \item Agora os clientes (programadores) não somente verificam o último estado dos arquivos (como era no centralizado).
+        \item Cada um espelha o repositório por completo, incluindo todo o seu histórico.
+        \item Portanto, todos os envolvidos naquele projeto são, por si só, backups.
+        \item<2> Outros VCS Distribuídos além do Git: Mercurial, Bazaar e Darcs.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{VCS Distribuído}
+    \centering
+    \includegraphics[height=0.9\textheight]{imagens/figura06.jpeg}
+\end{frame}
+
+%\setbeamertemplate{background canvas}[default]
+
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Iniciar o gerenciamento de configuração no projeto de vocês.
+        \item Utilizar \href{https://git-scm.com}{\textcolor{blue}{\underline{Git}}} e Github.
+        \item \href{https://git-scm.com/book/en/v2}{\textcolor{blue}{\underline{Pro Git}}}, livro oficial do Git em PDF.
+    \end{itemize}
+\end{frame}
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

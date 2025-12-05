@@ -1,0 +1,5 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Revisões e Inspeções}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{O processo de revisão}{15}{0}{1}
+\beamer@subsectionintoc {1}{2}{Inspeções de programa}{22}{0}{1}
+\beamer@sectionintoc {2}{Atividade}{28}{0}{2}

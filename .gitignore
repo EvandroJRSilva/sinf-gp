@@ -1,0 +1,16 @@
+# Extensões
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Diretórios
+2025-2/Trabalhos/
+PROVAS/
+
+# Arquivos
+listapresenca_SINF_CSHNB035_2025.2_01.pdf
+mapa_SINF_CSHNB035_2025.2_01_.pdf
+questões_av1.txt
+Plano_Ensino_Gerencia_Configuracao_assinado.pdf
+hermano-cin-slides-conceitos-basicos.pdf

@@ -1,0 +1,496 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP Revisão]{Gerência de Projetos}
+% Subtitle
+\subtitle{Revisão AV1}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Questões}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \item<1-2> O que caracteriza um \textbf{projeto} em oposição a operações rotineiras?
+            \begin{enumerate}[a)]
+                \justifying
+                \item<1-2> Ser contínuo e permanente.
+                \item<1-2> Não ter objetivos definidos.
+                \item<1-2> \alert<2>{Ter caráter temporário e resultado único}.
+                \item<1-2> Ter sempre custos zerados.
+                \item<1-2> Não envolver pessoas.
+            \end{enumerate}
+        \item<3-4> Qual das alternativas a seguir pode ser definida como uma dificuldade da gerência de projeto em Engenharia de Software?
+            \begin{enumerate}[a)]
+                \justifying
+                \item<3-4> Produto sempre tangível.
+                \item<3-4> Fácil padronização entre organizações.
+                \item<3-4> \alert<4>{Intangibilidade do software torna evolução difícil de visualizar}.
+                \item<3-4> Reutilização de código é trivial em todos os projetos.
+                \item<3-4> Sempre se segue um modelo padronizado rigidamente.
+            \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{2}
+        \item<1-2> Os ``4 Ps'' do gerenciamento eficiente de software (Pressman \& Maxim) são:
+            \begin{enumerate}[a)]
+                \justifying
+                \item<1-2> \alert<2>{Pessoas, Produto, Processo, Projeto}.
+                \item<1-2> Planejamento, Processo, Pessoas, Produto.
+                \item<1-2> Produto, Preço, Praça, Promoção.
+                \item<1-2> Pessoas, Processo, Produto, Preço.
+                \item<1-2> Projeto, Processo, Produto, Prazo.
+            \end{enumerate}
+        \item<3-4> Das alternativas a seguir, qual pode ser considerada uma atividade fundamental do gerenciamento de projetos?
+            \begin{enumerate}[a)]
+                \justifying
+                \item<3-4> Projeto sem planejamento.
+                \item<3-4> \alert<4>{Planejamento}.
+                \item<3-4> Evitar qualquer relatório.
+                \item<3-4> Não elaborar propostas.
+                \item<3-4> Ignorar riscos.
+            \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{4}
+        \item<1-2> O princípio $W^5HH$ abrange perguntas que orientam o planejamento, onde as letras do acrônimo são as iniciais de advérbios em Inglês (ex.: \textit{why}). A partir disso, qual das seguintes perguntas faz parte do $W^5HH$?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{(\textit{Who}) Quem será o responsável por alguma função?}
+            \item<1-2> (\textit{How}) Quanto tempo é irrelevante?
+            \item<1-2> (\textit{When}) Quando podermos deixar decisões indefinidas?
+            \item<1-2> (\textit{Why}) Por que não precisamos de cronograma?
+            \item<1-2> (\textit{Where}) Onde não envolver \textit{stakeholders}?
+        \end{enumerate}
+        \item<3-4> O planejamento ocorre em alguns estágios no ciclo de vida do
+        projeto. Em qual dos estágios a seguir não ocorre o planejamento?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> Estágio de proposta.
+            \item<3-4> Fase inicial do projeto.
+            \item<3-4> Periodicamente ao longo do projeto.
+            \item<3-4> \alert<4>{Quando o projeto já acabou e não há atualizações possíveis}.
+            \item<3-4> Em atualizações conforme requisitos mudam.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{6}
+        \item<1-2> Segundo Sommerville, o \textbf{tamanho ideal} para um grupo de engenharia de software é:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> 1 a 2 membros.
+            \item<1-2> \alert<2>{4 a 6 membros (e nunca mais de 12)}.
+            \item<1-2> 20 a 30 membros.
+            \item<1-2> Mais de 50 membros.
+            \item<1-2> Tamanho não importa jamais.
+        \end{enumerate}
+        \item<3-4> Um grupo coeso consiste em uma equipe em que os membros são bastante unidos e entrosados. Isto faz com que um grupo coeso naturalmente tenda a:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Estabelecer padrões de qualidade por consenso}.
+            \item<3-4> Evitar compartilhar conhecimento entre si.
+            \item<3-4> Ter baixa continuidade se algum membro sai.
+            \item<3-4> Rejeitar melhorias contínuas.
+            \item<3-4> Impedir a refatoração.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{8}
+        \item<1-2> Qual das seguintes alternativas apresenta um ponto que exige atenção do gerente para formar um grupo de desenvolvedores coeso?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Seleção dos membros}.
+            \item<1-2> Escolha das músicas do escritório.
+            \item<1-2> Limpeza do ambiente.
+            \item<1-2> A potência dos computadores.
+            \item<1-2> A marca do café.
+        \end{enumerate}
+        \item<3-4> Riscos classificados conforme o que afetam incluem:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Riscos de projeto, riscos de produto e riscos de negócio}.
+            \item<3-4> Risco de cor do logo, risco de alimentação, risco de férias.
+            \item<3-4> Riscos apenas financeiros, nada técnico.
+            \item<3-4> Risco de felicidade do gato do gerente.
+            \item<3-4> Todos os riscos são idênticos.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{10}
+        \item<1-2> Qual das seguintes alternativas é um exemplo de \textbf{risco de produto}?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Mal funcionamento de alguma ferramenta ou hardware}.
+            \item<1-2> Perda de um membro experiente da equipe.
+            \item<1-2> Concorrente lançando novo produto.
+            \item<1-2> Problema de organização interna.
+            \item<1-2> Nenhum desses.
+        \end{enumerate}
+        \item<3-4> Na fase de planejamento existem algumas estratégias para lidar com os riscos. Quais são?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Prevenção, Minimização, Contingência}.
+            \item<3-4> Aceleração, clonação, eliminação de requisitos.
+            \item<3-4> Autodestruição, espera e negação.
+            \item<3-4> Ignorar, adiar e cancelar.
+            \item<3-4> Nenhuma estratégia é necessária.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{12}
+        \item<1-2> A técnica de estimativa \textbf{LOC} (\textit{Lines of Code}) depende principalmente de:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Total de linhas de código previstas e produtividade histórica (LOC/pm)}.
+            \item<1-2> Do editor de texto.
+            \item<1-2> Quantidade de desenvolvedores.
+            \item<1-2> Marca do computador usado.
+            \item<1-2> Versão do sistema operacional do cliente.
+        \end{enumerate}
+        \item<3-4> Em uma estimativa de preço baseada em \textbf{FP} (\textit{Function Points}), a seguinte fórmula é utilizada: $FP = estimativa \times [0,65 + 0,01 \times \sum(F_i)]$. Supondo que a estimativa dos valores de domínio de informação tenha sido 320, e a soma dos fatores de complexidade ($\sum(F_i)$) seja 52, qual será, mais ou menos, o valor de FP?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> 120.
+            \item<3-4> 240.
+            \item<3-4> \alert<4>{375}.
+            \item<3-4> 1.000.
+            \item<3-4> 10.000.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \small
+        \setcounter{enumi}{14}
+        \item<1-2> Suponha que um determinado projeto tenha 375 pontos de função (FP) e o histórico de produtividade de uma empresa seja 6,5 FP/pm, onde pm significa pessoa-mês. Marque a alternativa a seguir que mostre o valor aproximado do esforço necessário para este projeto.
+        \begin{enumerate}[a)]
+            \justifying
+            \footnotesize
+            \item<1-2> 10 pm.
+            \item<1-2> \alert<2>{58 pm}.
+            \item<1-2> 375 pm.
+            \item<1-2> 6,5 pm.
+            \item<1-2> 600 pm.
+        \end{enumerate}
+        \item<3-4> A harmonização de estimativas de preço é uma forma de decidir o preço final a partir de outras precificações. Qual das alternativas a seguir apresenta a estratégia mais equilibrada para uma harmonização?
+        \begin{enumerate}[a)]
+            \justifying
+            \footnotesize
+            \item<3-4> \alert<4>{Usar duas ou três técnicas e tirar uma média simples ou ponderada}.
+            \item<3-4> Aceitar sempre a estimativa mais alta sem questionar.
+            \item<3-4> Escolher estimativa pela cor da planilha.
+            \item<3-4> Ignorar todas as estimativas e chutar um número.
+            \item<3-4> Usar apenas o menor valor sempre.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{16}
+        \item<1-2> Uma aplicação de 3 estimativas resultou nos seguintes valores de esforços: 46 pm, 54 pm, 58 pm. Se uma harmonização por média simples for aplicada, qual será a estimativa final de esforço?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> 46 pm.
+            \item<1-2> \alert<2>{53 pm}.
+            \item<1-2> 54 pm.
+            \item<1-2> 58 pm.
+            \item<1-2> 100 pm.
+        \end{enumerate}
+        \item<3-4> A preparação de relatórios é uma das atividades fundamentais no gerenciamento de projetos. Das alternativas a seguir, qual delas apresenta uma responsabilidade do gerente na pre-paração de relatórios?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Sintetizar informações críticas a partir de relatórios detalhados para níveis executivos}.
+            \item<3-4> Evitar comunicação com cliente a todo custo.
+            \item<3-4> Nunca apresentar progresso em revisões.
+            \item<3-4> Entregar relatórios vazios.
+            \item<3-4> Esconder problemas dos superiores.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{18}
+        \item<1-2> Uma das atividades fundamentais no gerenciamento de projetos é a elaboração de propostas, a qual (no início de um projeto) usualmente contém:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Objetivos, estimativas de custo e prazo, justificativas para con-tratação}.
+            \item<1-2> Apenas imagens sem texto.
+            \item<1-2> Só um link para o repositório do GitHub.
+            \item<1-2> Não informar escopo algum.
+            \item<1-2> Falta de qualquer justificativa técnica.
+        \end{enumerate}
+        \item<3-4> No princípio $W^{5}HH$, ``Where'' refere-se a:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Onde se posicionam organizacionalmente as responsabilidades}.
+            \item<3-4> Onde o gerente esconde o orçamento.
+            \item<3-4> Onde nunca comunicar o cliente.
+            \item<3-4> Onde o projeto deve parar para sempre.
+            \item<3-4> Nenhuma relação organizacional.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{20}
+        \item<1-2> No planejamento, o estágio de \textbf{proposta} é descrito como:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Especulativo, para decidir recursos e preço a propor ao cliente}.
+            \item<1-2> Etapa final do projeto já concluído.
+            \item<1-2> Somente execução sem análise de custo.
+            \item<1-2> Etapa em que não existe documentação.
+            \item<1-2> Etapa onde não se define escopo.
+        \end{enumerate}
+        \item<3-4> Variados fatores influenciam na gerência de projetos, sendo um deles o tamanho da empresa. Qual das alternativas a seguir apresenta corretamente como o tamanho de uma empresa influencia na gerência de projetos?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> Empresas grandes e pequenas gerenciam projetos exatamente da mesma forma sempre.
+            \item<3-4> \alert<4>{Empresas pequenas tendem a ter menos burocracia e formalidades no gerenciamento de projetos}.
+            \item<3-4> Empresas pequenas exigem mais formalidade que grandes.
+            \item<3-4> Tamanho da empresa não influencia em nada.
+            \item<3-4> Empresas pequenas não podem gerenciar projetos.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{22}
+        \item<1-2> O tamanho do software também é um fator que influencia na gerência de software. O que tende a ocorrer quanto maior for o tamanho do software?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> Menos equipes envolvidas e menor necessidade de comunicação.
+            \item<1-2> \alert<2>{Mais equipes envolvidas e maior necessidade de gerenciar comu-nicação entre equipes}.
+            \item<1-2> Nenhuma mudança na organização do trabalho.
+            \item<1-2> O software fica magicamente auto-gerenciável.
+            \item<1-2> O projeto deixa de ser um projeto.
+        \end{enumerate}
+        \item<3-4> Sobre \textbf{coesão de grupo}, é correto afirmar que:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> Impede o compartilhamento de conhecimento entre membros.
+            \item<3-4> \alert<4>{Incentiva o compartilhamento do conhecimento e continuidade quando um membro sai}.
+            \item<3-4> Sempre diminui a qualidade do produto.
+            \item<3-4> Torna a equipe menos capaz de refatorar código.
+            \item<3-4> Sempre aumenta o conflito interno irreparável.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{24}
+        \item<1-2> Em identificação de riscos, uma prática recomendada é:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Levantamento sensato dos riscos com a equipe (fazer lista de riscos)}.
+            \item<1-2> Não registrar riscos para evitar burocracia.
+            \item<1-2> Anunciar risco apenas após ocorrerem problemas.
+            \item<1-2> Subestimar todos os riscos intencionalmente.
+            \item<1-2> Ignorar probabilidade e impacto.
+        \end{enumerate}
+        \item<3-4> Qual técnica de estimativa concentra-se em valores do domínio da informação em vez de funções de software?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> LOC (\textit{Lines of Code}).
+            \item<3-4> \alert<4>{\textit{Function Point}s (FP)}.
+            \item<3-4> Estimativa por adivinhação.
+            \item<3-4> Método da loteria.
+            \item<3-4> Nenhuma das anteriores.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{26}
+        \item<1-2> Com FP estimado $\approx$ 375 e produtividade 6,5 FP/pm, qual é o esforço aproximado em pessoas-mês?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> 30 pm.
+            \item<1-2> \alert<2>{58 pm}.
+            \item<1-2> 100 pm.
+            \item<1-2> 375 pm.
+            \item<1-2> 6,5 pm.
+        \end{enumerate}
+        \item<3-4> Com LOC TOTAL = 33.200 e produtividade 620 LOC/pm, qual é o esforço aproximado?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> 10 pm.
+            \item<3-4> \alert<4>{54 pm}.
+            \item<3-4> 100 pm.
+            \item<3-4> 620 pm.
+            \item<3-4> 332 pm.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{28}
+        \item<1-2> Em \textbf{análise de riscos}, criar uma escala de gravidade (insignificante $\rightarrow$ catastrófico) e avaliar probabilidade é parte de:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> Identificação.
+            \item<1-2> \alert<2>{Análise}.
+            \item<1-2> Planejamento de contingência.
+            \item<1-2> Monitoramento exclusivo.
+            \item<1-2> Evitar todo o processo.
+        \end{enumerate}
+        \item<3-4> Se duas ou três técnicas de estimativa retornarem números muito divergentes, então provavelmente:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{O escopo foi mal interpretado ou os dados de produtividade são inadequados — revisar as suposições}.
+            \item<3-4> O maior número foi dobrado.
+            \item<3-4> O menor número foi ignorado.
+            \item<3-4> A culpa é do cliente.
+            \item<3-4> A culpa é da equipe.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{30}
+        \item<1-2> Qual ação é típica do gerente em relação ao planejamento?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Planejar, estimar, agendar e atribuir tarefas à equipe}.
+            \item<1-2> Não se envolver em estimativas.
+            \item<1-2> Evitar monitoramento de progresso.
+            \item<1-2> Substituir planejamento por sorteios.
+            \item<1-2> Ignorar padrões de qualidade.
+        \end{enumerate}
+        \item<3-4> A elaboração de propostas é considerada:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Uma atividade crítica, pois muitas empresas dependem de propostas aceitas para sobreviver}.
+            \item<3-4> Algo irrelevante para empresas de software.
+            \item<3-4> Sempre feita sem estimativas de custo/prazo.
+            \item<3-4> Nunca parte do gerenciamento de projetos.
+            \item<3-4> Uma atividade apenas de marketing.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{32}
+        \item<1-2> Um gerente que pretende incentivar a coesão do grupo pode:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Estabelecer senso de identidade nomeando o time e promovendo atividades sociais}.
+            \item<1-2> Proibir qualquer interação entre membros.
+            \item<1-2> Substituir reuniões por silêncio absoluto.
+            \item<1-2> Punir membros que compartilham conhecimento.
+            \item<1-2> Evitar eventos sociais.
+        \end{enumerate}
+        \item<3-4> Qual das opções abaixo \textbf{não} é uma das quatro etapas do processo de gerenciamento de riscos?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> Identificação.
+            \item<3-4> Análise.
+            \item<3-4> Planejamento.
+            \item<3-4> Monitoramento.
+            \item<3-4> \alert<4>{Execução (como uma etapa isolada)}.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \begin{enumerate}
+        \justifying
+        \setcounter{enumi}{34}
+        \item<1-2> Quando o plano do projeto deve ser atualizado?
+        \begin{enumerate}[a)]
+            \justifying
+            \item<1-2> \alert<2>{Periodicamente ao longo do projeto à medida que surgem novas informações}.
+            \item<1-2> Nunca após a aprovação inicial.
+            \item<1-2> Apenas ao final do projeto.
+            \item<1-2> Somente quando alguém reclamar.
+            \item<1-2> Uma vez e ignorado depois.
+        \end{enumerate}
+        \item<3-4> Se diversas técnicas de estimativa (LOC, FP, processo) retornam valores muito diferentes, a ação mais adequada é:
+        \begin{enumerate}[a)]
+            \justifying
+            \item<3-4> \alert<4>{Revisar o escopo e/ou os dados de produtividade, pois diver-gência indica problema de interpretação/dados}.
+            \item<3-4> Escolher arbitrariamente o maior valor sem revisar nada.
+            \item<3-4> Esconder as divergências do cliente.
+            \item<3-4> Utilizar sempre o menor valor sem justificar.
+            \item<3-4> Rejeitar todas as técnicas e fazer nada.
+        \end{enumerate}
+    \end{enumerate}
+\end{frame} 
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

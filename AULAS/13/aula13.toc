@@ -1,0 +1,4 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Gerenciamento da qualidade e Desenvolvimento Ágil}{3}{0}{1}
+\beamer@sectionintoc {2}{Medição de software}{13}{0}{2}
+\beamer@sectionintoc {3}{Atividade}{19}{0}{3}
