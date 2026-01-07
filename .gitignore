@@ -1,12 +1,19 @@
 # Extensões
 *.aux
+*.bcf
 *.log
+*.nav
 *.out
+*.run.xml
+*.snm
 *.synctex.gz
+*.toc
 
 # Diretórios
 2025-2/Trabalhos/
 PROVAS/
+apresentação_files/
+quarto/
 
 # Arquivos
 listapresenca_SINF_CSHNB035_2025.2_01.pdf
