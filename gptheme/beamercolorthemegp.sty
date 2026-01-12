@@ -1,0 +1,68 @@
+% FROM SCRATCH
+%	https://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch
+%
+% GITHUB: https://github.com/josephwright/beamer/blob/main/base/themes/color/beamercolorthemealbatross.sty
+% Metropolis theme: https://github.com/matze/mtheme
+% Simple dark blue theme: https://github.com/pm25/SimpleDarkBlue-BeamerTheme
+
+% COLORS
+%
+% 	RED GRADIENT
+% 		Night Bordeaux	#641220		100,18,32
+% 		Burgundy		#6e1423		110,20,35
+% 		Burgundy		#85182a		133,24,42
+% 		Ruby Red		#a11d33		161,29,51
+% 		Ruby Red		#a71e34		167,30,52
+% 		Carmine			#b21e35		178,30,53
+% 		Intense Cherry	#bd1f36		189,31,54
+% 		Intense Cherry	#c71f37		199,31,55
+% 		Classic Crimson	#da1e37		218,30,55
+% 		Scarlet Rush	#e01e37		224,30,55
+%
+% 	FIERY HOT FLAMES
+% 		Molten Lava		#7c0606		124,6,6
+% 		Blood Red		#930505		147,5,5
+% 		Inferno			#ab0404		171,4,4
+% 		Brick Ember		#c20303		194,3,3
+% 		Brick Ember		#d90202		217,2,2
+
+
+\mode<presentation>
+
+
+\definecolor{red_gp}{RGB}{133,24,42}
+\definecolor{block_color}{RGB}{0, 82, 155}
+
+
+\setbeamercolor{structure}{fg=red_gp}
+
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{subtitle}{fg=white}
+\setbeamercolor{frametitle}{bg=red_gp,fg=white}
+\setbeamercolor{titlepage}{bg=red_gp,fg=white}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{footer font}{fg=white}
+\setbeamercolor{alerted text}{fg=red_gp}
+
+
+% Bloco normal
+\setbeamercolor{block title}{use=structure,fg=white,bg=block_color}
+\setbeamercolor{block body}{fg=black,use=block title,bg=block_color!10}
+
+% Bloco de exemplo
+\setbeamercolor{block title example}{use=example text,fg=white,bg=green!50!black}
+\setbeamercolor{block body example}{use=block title example,fg=black,bg=green!10}
+
+% Bloco de alerta
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=red_gp}
+\setbeamercolor{block body alerted}{fg=black,use=block title alerted,bg=red_gp!10}
+
+\setbeamercolor{section in toc}{fg=black, bg=white}
+
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+
+\mode
+<all>
