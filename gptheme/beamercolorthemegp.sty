@@ -29,21 +29,23 @@
 
 \mode<presentation>
 
-
-\definecolor{red_gp}{RGB}{133,24,42}
+% Theme background
+\definecolor{burgundy}{RGB}{133,24,42}
+\definecolor{intensecherry}{RGB}{199,31,55}
+\definecolor{bloodred}{RGB}{147,5,5}
 \definecolor{block_color}{RGB}{0, 82, 155}
 
+% Basic beamer colors
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{alerted text}{fg=intensecherry}
+\setbeamercolor{structure}{fg=bloodred}
 
-\setbeamercolor{structure}{fg=red_gp}
-
+% Title page
 \setbeamercolor{title}{fg=white}
 \setbeamercolor{subtitle}{fg=white}
-\setbeamercolor{frametitle}{bg=red_gp,fg=white}
-\setbeamercolor{titlepage}{bg=red_gp,fg=white}
-\setbeamercolor{normal text}{fg=black}
-\setbeamercolor{footer font}{fg=white}
-\setbeamercolor{alerted text}{fg=red_gp}
-
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{institute}{fg=white}
+\setbeamercolor{date}{fg=white}
 
 % Bloco normal
 \setbeamercolor{block title}{use=structure,fg=white,bg=block_color}
@@ -54,15 +56,46 @@
 \setbeamercolor{block body example}{use=block title example,fg=black,bg=green!10}
 
 % Bloco de alerta
-\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=red_gp}
-\setbeamercolor{block body alerted}{fg=black,use=block title alerted,bg=red_gp!10}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=burgundy}
+\setbeamercolor{block body alerted}{fg=black,use=block title alerted,bg=burgundy!10}
 
-\setbeamercolor{section in toc}{fg=black, bg=white}
-
-\setbeamercolor{bibliography entry author}{fg=black}
-\setbeamercolor{bibliography entry title}{fg=black}
-\setbeamercolor{bibliography entry location}{fg=black}
-\setbeamercolor{bibliography entry note}{fg=black}
+% Itemize
+\setbeamercolor{item}{fg=bloodred}
 
 \mode
 <all>
+
+
+%\definecolor{red_gp}{RGB}{133,24,42}
+%\definecolor{block_color}{RGB}{0, 82, 155}
+%
+%
+%\setbeamercolor{structure}{fg=red_gp}
+%
+%\setbeamercolor{title}{fg=white}
+%\setbeamercolor{subtitle}{fg=white}
+%\setbeamercolor{frametitle}{bg=red_gp,fg=white}
+%\setbeamercolor{titlepage}{bg=red_gp,fg=white}
+%\setbeamercolor{normal text}{fg=black}
+%\setbeamercolor{footer font}{fg=white}
+%\setbeamercolor{alerted text}{fg=red_gp}
+%
+%
+%% Bloco normal
+%\setbeamercolor{block title}{use=structure,fg=white,bg=block_color}
+%\setbeamercolor{block body}{fg=black,use=block title,bg=block_color!10}
+%
+%% Bloco de exemplo
+%\setbeamercolor{block title example}{use=example text,fg=white,bg=green!50!black}
+%\setbeamercolor{block body example}{use=block title example,fg=black,bg=green!10}
+%
+%% Bloco de alerta
+%\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=red_gp}
+%\setbeamercolor{block body alerted}{fg=black,use=block title alerted,bg=red_gp!10}
+%
+%\setbeamercolor{section in toc}{fg=black, bg=white}
+%
+%\setbeamercolor{bibliography entry author}{fg=black}
+%\setbeamercolor{bibliography entry title}{fg=black}
+%\setbeamercolor{bibliography entry location}{fg=black}
+%\setbeamercolor{bibliography entry note}{fg=black}

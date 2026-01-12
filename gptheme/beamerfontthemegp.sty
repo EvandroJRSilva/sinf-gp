@@ -1,19 +1,40 @@
 \mode<presentation>
 
-\setbeamerfont{big title}{size=\Huge}
-\setbeamerfont{title}{size=\LARGE}
-\setbeamerfont{subtitle}{size=\large, series=\mdseries}
-\setbeamerfont{frametitle}{size=\LARGE}
+% Sans-serif as defautl
+\setbeamerfont{normal text}{family=\sffamily}
 
-\setbeamerfont{author}{size=\normalsize}
-\setbeamerfont{date}{size=\normalsize}
-\setbeamerfont{footer font}{size=\tiny}
+% Sizes
+\setbeamerfont{title}{size=\Huge, series=\bfseries}
+\setbeamerfont{subtitle}{size=\Large, parent=title}
+\setbeamerfont{author}{size=\large}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{date}{size=\small}
 
-\setbeamerfont{bibliography item}{size=\scriptsize}
-\setbeamerfont{bibliography entry author}{size=\scriptsize}
-\setbeamerfont{bibliography entry title}{size=\scriptsize}
-\setbeamerfont{bibliography entry location}{size=\scriptsize}
-\setbeamerfont{bibliography entry note}{size=\scriptsize}
+% Section titles in frametitle
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\normalsize, parent=frametitle}
+
+% Blocks
+\setbeamerfont{block title}{size=\large, series=\bfseries}
+\setbeamerfont{block body}{size=\normalsize}
+
+% Itemize/enumerate
+\setbeamerfont{item}{size=\large}
 
 \mode
 <all>
+
+%\setbeamerfont{big title}{size=\Huge}
+%\setbeamerfont{title}{size=\LARGE}
+%\setbeamerfont{subtitle}{size=\large, series=\mdseries}
+%\setbeamerfont{frametitle}{size=\LARGE}
+%
+%\setbeamerfont{author}{size=\normalsize}
+%\setbeamerfont{date}{size=\normalsize}
+%\setbeamerfont{footer font}{size=\tiny}
+%
+%\setbeamerfont{bibliography item}{size=\scriptsize}
+%\setbeamerfont{bibliography entry author}{size=\scriptsize}
+%\setbeamerfont{bibliography entry title}{size=\scriptsize}
+%\setbeamerfont{bibliography entry location}{size=\scriptsize}
+%\setbeamerfont{bibliography entry note}{size=\scriptsize}
