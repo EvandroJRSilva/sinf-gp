@@ -4,12 +4,12 @@
 
 % Package to Portuguese language
 \usepackage[brazil]{babel}
-% Package to Figures
+% Packages to Figures
 \usepackage{graphicx}
 \usepackage{tikz}
 % Packages to math symbols and expressions
 \usepackage{amsfonts, amssymb, amsmath}
-% Package to insert code
+% Packages to insert code
 \usepackage{listings} 
 \usepackage{verbatim}
 % Package to justify text
@@ -20,8 +20,9 @@
 \usepackage{csquotes}
 % Package to use multicols
 \usepackage{multicol}
-% Para url
-\usepackage{url}
+% Packages for url
+%	The package libertinus already loads hyperref
+%\usepackage[colorlinks=true]{hyperref}
 % Font
 %   Fira
 %\usepackage[sfdefault, lf]{FiraSans}
@@ -46,13 +47,13 @@
 
 \AtBeginSubsection{
     \begin{frame}{\subsecname}
-        \tableofcontents[subsectionstyle=show/shaded/hide, subsubsectionstyle=hide]
+        \tableofcontents[currentsection,subsectionstyle=show/shaded/hide, subsubsectionstyle=hide]
     \end{frame}
 }
 
 \AtBeginSubsubsection{
     \begin{frame}{\subsubsecname}
-        \tableofcontents[subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide/hide]
+        \tableofcontents[currentsection,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide/hide]
     \end{frame}
 }
 
@@ -75,6 +76,12 @@
 %\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg!75!black}
 %\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=structure.fg!50!black}
 \setbeamercolor*{palette quaternary}{fg=white,bg=bloodred}
+
+%	hyperref
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+	breaklinks=true}
 
 % New commands -----------------------------------------------------------------
 

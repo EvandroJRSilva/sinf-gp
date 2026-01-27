@@ -1,7 +1,5 @@
 \babel@toc {brazil}{}\relax 
 \beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Gerência de Projeto}{13}{0}{2}
-\beamer@subsectionintoc {2}{1}{Fatores que influenciam na gerência de projetos}{24}{0}{2}
-\beamer@subsectionintoc {2}{2}{Atividades Fundamentais no Gerenciamento de Projetos}{31}{0}{2}
-\beamer@sectionintoc {3}{Gerenciamento de projeto de software}{38}{0}{3}
-\beamer@subsectionintoc {3}{1}{O princípio $W^{5}$HH}{49}{0}{3}
+\beamer@sectionintoc {2}{Gerência de Projetos}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{Criação de valor}{25}{0}{2}
+\beamer@sectionintoc {3}{PMBOK}{43}{0}{3}
