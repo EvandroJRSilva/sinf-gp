@@ -1,6 +1,8 @@
 # Extensões
 *.aux
+*.bbl
 *.bcf
+*.blg
 *.fdb_latexmk
 *.fls
 *.log
@@ -12,16 +14,13 @@
 *.toc
 
 # Diretórios
-2025-2/Trabalhos/
 2026-1/
 PROVAS/
+Documentos/
 apresentação_files/
 quarto/
 gptheme/
 
 # Arquivos
-listapresenca_SINF_CSHNB035_2025.2_01.pdf
-mapa_SINF_CSHNB035_2025.2_01_.pdf
 questões_av1.txt
-Plano_Ensino_Gerencia_Configuracao_assinado.pdf
 hermano-cin-slides-conceitos-basicos.pdf

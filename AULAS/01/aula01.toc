@@ -1,5 +1,0 @@
-\babel@toc {brazil}{}\relax 
-\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Gerência de Projetos}{21}{0}{2}
-\beamer@subsectionintoc {2}{1}{Criação de valor}{25}{0}{2}
-\beamer@sectionintoc {3}{PMBOK}{43}{0}{3}
