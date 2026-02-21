@@ -15,12 +15,14 @@
 
 # Diretórios
 2026-1/
-PROVAS/
+AULAS/Apresentação/
 Documentos/
-apresentação_files/
-quarto/
 gptheme/
+Plano de Ensino/*
+PROVAS/
 
 # Arquivos
-questões_av1.txt
 hermano-cin-slides-conceitos-basicos.pdf
+
+# Exceções
+!Plano de Ensino/plano_ensino.pdf

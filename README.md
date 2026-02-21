@@ -28,7 +28,7 @@ Repositório para os materiais da disciplina Gerência de Projetos.
 #### Atualizada
 
 - Project Management Institute. **Guia do Conhecimento em Gerenciamento de Projetos (Guia PMBOK) - Sétima Edição e Padrão de Gerenciamento de Projetos**. 7. ed. Pennsylvania: Project Management Institute, Inc.: 2021.
-- roadmap.sh. **Engineering Manager**. Developer Roadmaps, 2026. Disponı́vel em: https://roadmap.sh/engineering-manager. Acesso em: 23 jan. 2026.
+- ROADMAP.SH. Engineering Manager. Developer Roadmaps, 2026. Disponı́vel em: https://roadmap.sh/engineering-manager. Acesso em: 23 jan. 2026.
 - PORTNY, Jonathan L.; PORTNY, Stanley E. **Project Management For Dummies**. 6. ed. New Jersey: Wiley, 2022.ISBN: 978-1-119-86991-7.
 - MEREDITH, Jack R.; SHAFER, Scott M. **Project Management in Practice**. 8. ed. New Jersey: Wiley, 2024. ISBN: 978-1-394-25210-7.
 - PRESSMAN, Roger S.; MAXIM, Bruce R. **Engenharia de Software: uma abordagem profissional**. 9. ed. Porto Alegre: AMGH, 2021.
@@ -48,10 +48,10 @@ Repositório para os materiais da disciplina Gerência de Projetos.
 #### Atualizada
 
 - KERZNER, Harold. **Gestão de Projetos: As melhores práticas**. 4. ed. Bookman, 2020.
-- Project Management Institute. **Practice Standard for Work Breakdown Structures**. 3. ed. Project Management Institute, 2019.
+- PROJECT MANAGEMENT INSTITUTE. **Practice Standard for Work Breakdown Structures**. 3. ed. Project Management Institute, 2019.
 - RIGBY, Darrell; ELK, Sarah; BEREZ, Steve. **Doing Agile Right: Transformation Without Chaos**. Harvard Business Review Press, 2020.
-- Smartsheet. **Project Management Guide**. Smartsheet. Disponı́vel em: https://www.smartsheet.com/project-management-guide. Acesso em: 23 jan. 2026.
-- Kanban University. **O Guia Oficial do Método Kanban**. Mauvius Group Inc., 2021. Disponível em: https://kanban.university/wp-content/uploads/2021/04/The-Official-Kanban-Guide_Portuguese_A4.pdf. Acesso em: 23 jan. 2026.
+- SMARTSHEET. **Project Management Guide**. Smartsheet. Disponı́vel em: https://www.smartsheet.com/project-management-guide. Acesso em: 23 jan. 2026.
+- KANBAN UNIVERSITY. **O Guia Oficial do Método Kanban**. Mauvius Group Inc., 2021. Disponível em: https://kanban.university/wp-content/uploads/2021/04/The-Official-Kanban-Guide_Portuguese_A4.pdf. Acesso em: 23 jan. 2026.
 - SCHWABER, Ken; SUTHERLAND, Jeff. **O Guida do Scrum: O Guia Definitivo para o Scrum: As Regras do Jogo**. Scrum Guides. Disponível em: https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf. Acesso em: 23 jan. 2026.
 
 ## Conteúdo Programático
