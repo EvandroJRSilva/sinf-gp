@@ -1,0 +1,7 @@
+- 2026.1.3
+  - Adicionado o arquivo `changelog.md`.
+  - AULAS/02/
+    - aula02.[pdf/tex] e preambulo.tex ajustados.
+  - AULAS/03/
+    - aula03.[pdf/tex] e preambulo.tex atualizados.
+    - novas imagens.
