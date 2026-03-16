@@ -5,3 +5,6 @@
   - AULAS/03/
     - aula03.[pdf/tex] e preambulo.tex atualizados.
     - novas imagens.
+- 2026.1.3.1
+  - AULAS/03/
+    - Removido arquivo .txt
