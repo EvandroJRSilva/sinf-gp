@@ -1,7 +1,0 @@
-\babel@toc {brazil}{}\relax 
-\beamer@sectionintoc {1}{Desenvolvimento Dirigido por Plano}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Planos de Projeto}{5}{0}{1}
-\beamer@subsectionintoc {1}{2}{O Processo de Planejamento}{15}{0}{1}
-\beamer@sectionintoc {2}{Definição de Cronograma de Projeto}{18}{0}{2}
-\beamer@subsectionintoc {2}{1}{Apresentação do Cronograma}{23}{0}{2}
-\beamer@sectionintoc {3}{Atividade}{29}{0}{3}

@@ -6,7 +6,7 @@
 \input{preambulo.tex}
 
 % Title
-\title[GP 03]{Gerência de Projetos}
+\title[GP 04]{Gerência de Projetos}
 % Subtitle
 \subtitle{Aula 04}
 % Author of the presentation
@@ -27,205 +27,226 @@
 %===============================================================================
 % SECTION 1 ====================================================================
 %===============================================================================
-\section{Desenvolvimento Dirigido por Plano}
+\section{Domínios de desempenho de projetos}
 
-%\setbeamertemplate{background canvas}{%
- %   \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/planejamento.jpeg}};
-%}
-
-\begin{frame}{Desenvolvimento Dirigido por Plano}
+\begin{frame}{Domínios de desempenho de projetos}
     \begin{itemize}
         \justifying
-        \item É uma abordagem ``tradicional'' para a Engenharia de Software na qual o processo de desenvolvimento é planejado em detalhes.
-        \item É uma ferramenta para os gerentes como apoio na tomada de decisões, e também como uma maneira de medir o progresso.
+        \item<1-> Um domínio de desempenho do projeto é um \textbf{grupo de atividades relacionadas}, que são \textbf{críticas para a entrega eficaz dos resultados} do projeto.
+        \item<2-> Os domínios de desempenho de projetos
+        	\begin{itemize}
+        		\justifying
+        		\item<2-> São \textbf{áreas de foco interativas}, \textbf{inter-relacionadas} e \textbf{interdependentes} que trabalham em uníssono \textbf{para alcançar os resultados desejados do projeto}.
+        		\item<3-> \textbf{São executados simultaneamente ao longo do projeto}, independentemente de como o valor seja entregue.
+        	\end{itemize}
+        \item<4> As \textbf{atividades específicas realizadas em cada um dos domínios} de desempenho \textbf{são determinadas pelo contexto da organização}, \textbf{o projeto}, \textbf{as entregas}, \textbf{a equipe do projeto}, \textbf{as partes interessadas} e outros fatores.
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Domínios de desempenho de projetos}
+	\begin{itemize}
+		\item Existem oito domínios de desempenho de projetos
+			\begin{itemize}
+				\item Partes interessadas.
+				\item Equipe.
+				\item Abordagem de desenvolvimento e ciclo de vida.
+				\item Planejamento.
+				\item Trabalho do projeto.
+				\item Entrega.
+				\item Medição.
+				\item Incerteza.
+			\end{itemize}
+	\end{itemize}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 % SUBSECTION 1.1 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{Planos de Projeto}
+\subsection{Partes interessadas}
 
-\begin{frame}{Planos de Projeto}
-    \begin{itemize}
-        \justifying
-        \item Um plano de projeto estabelece os \textbf{recursos disponíveis} para o projeto. a \textbf{divisão de trabalho} e um \textbf{cronograma} para executar o trabalho.
-        \item Também, o plano deve \textbf{identificar} a \textbf{abordagem} adotada para o \textbf{gerenciamento de risco}, bem como os \textbf{riscos para o projeto} e o \textbf{software} em desenvolvimento.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Planos de Projeto}
-    \begin{itemize}
-        \justifying
-        \item Os planos costumam incluir as seguintes seções:
-            \begin{enumerate}
-                \item \alert<2>{Introdução}
-                    \begin{itemize}
-                        \justifying
-                        \item<2> \textbf{Descreve} resumidamente os \textbf{objetivos} do projeto e \textbf{estabelece} as \textbf{restrições} (por exemplo, orçamento e tempo) que afetam o gerenciamento do projeto.
-                    \end{itemize}
-                \item \alert<3>{Organização do projeto}
-                    \begin{itemize}
-                        \justifying
-                        \item<3> \textbf{Descreve} a maneira como o time de desenvolvimento é organizado, \textbf{as pessoas envolvidas} e \textbf{seus papéis no time}.
-                    \end{itemize}
-                \item Análise de risco
-                \item \alert<4>{Requisitos de recursos de hardware e software}
-                    \begin{itemize}
-                        \justifying
-                        \item<4> \textbf{Especifica} o \textbf{hardware} e o \textbf{software} de apoio \textbf{necessários} para realizar o desenvolvimento. Se houver necessidade de adquirir hardware, as estimativas de preço e de cronograma de entrega podem ser incluídas.
-                    \end{itemize}
-                \item Divisão de trabalho.
-                \item Cronograma de projeto.
-                \item Mecanismos de monitoramento e de divulgação.
-            \end{enumerate}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Planos de Projeto}
-    \begin{itemize}
-        \justifying
-        \item Os planos costumam incluir as seguintes seções:
-        \begin{enumerate}
-            \item Introdução
-            \item Organização do projeto
-            \item Análise de risco
-            \item Requisitos de recursos de hardware e software
-            \item \alert<1>{Divisão de trabalho}
-                \begin{itemize}
-                    \justifying
-                    \item<1> \textbf{Estabelece a divisão} do projeto \textbf{em atividades} e \textbf{identifica} as \textbf{entradas} e as \textbf{saídas} \textbf{de cada atividade} de projeto.
-                \end{itemize}
-            \item \alert<2>{Cronograma de projeto}
-                \begin{itemize}
-                    \justifying
-                    \item<2> \textbf{Mostra} as \textbf{dependências entre as atividades}, o \textbf{tempo} estimado necessário \textbf{para alcançar cada marco} e a \textbf{alocação de pessoas} às atividades.
-                \end{itemize}
-            \item \alert<3>{Mecanismos de monitoramento e de divulgação}
-                \begin{itemize}
-                    \justifying
-                    \item<3> \textbf{Define} os \textbf{relatórios} de gestão \textbf{que devem ser produzidos}, \textbf{quando} devem ser produzidos e os \textbf{mecanismos de monitoramento} de projeto a serem utilizados.
-                \end{itemize}
-        \end{enumerate}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Planos de Projeto}
-    \begin{itemize}
-        \justifying
-        \item Também é possível desenvolver uma série de planos suplementares.
-    \end{itemize}
-    \vspace{10pt}
-    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\begin{frame}{Partes interessadas}
+	\begin{itemize}
+		\justifying
+		\small
+		\item Envolve engajar e trabalhar com as partes interessadas para promover relacionamentos positivos e a satisfação.
+		\item Para isso são muito importantes as habilidades interpessoais e de liderança.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=\textwidth]{imagens/figura01.png}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 % SUBSECTION 1.2 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{O Processo de Planejamento}
+\subsection{Equipe}
 
-\begin{frame}{O Processo de Planejamento}
-    \begin{itemize}
-        \justifying
-        \item O planejamento de projeto é um \textbf{processo iterativo} que \textbf{começa} na \textbf{criação de um plano de projeto inicial} durante a fase inicial do projeto.
-        \item À medida que \textbf{mais informações} sobre o sistema e o time de projeto \textbf{são disponibilizadas}, é necessário \textbf{revisar o plano} regularmente para refletir as alterações.
-    \end{itemize}
+\begin{frame}{Equipe}
+	\begin{itemize}
+		\justifying
+		\item Envolve estabelecer a cultura e o ambiente que permitem que um grupo de diversos indivíduos evolua para uma equipe de projeto de alto desempenho.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=\textwidth]{imagens/figura02.png}
 \end{frame}
 
-\begin{frame}{O Processo de Planejamento}
-    \includegraphics[width=\textwidth]{imagens/figura02.png}
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Abordagem de desenvolvimento e ciclo de vida}
+
+\begin{frame}{Abordagem de desenvolvimento e ciclo de vida}
+	\begin{itemize}
+		\justifying
+		\item Envolve o estabelecimento da abordagem de desenvolvimento, cadência de entrega e ciclo de vida do projeto necessários para otimizar os resultados do projeto.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=\textwidth]{imagens/figura03.png}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.4 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Planejamento}
+
+\begin{frame}{Planejamento}
+	\begin{itemize}
+		\justifying
+		\item O planejamento organiza, elabora e coordena o trabalho do projeto, durante todo o projeto.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=0.8\textwidth]{imagens/figura04.png}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.5 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Trabalho do projeto}
+
+\begin{frame}{Trabalho do projeto}
+	\begin{itemize}
+		\justifying
+		\item Está associado ao estabelecimento dos processos e à execução do trabalho para permitir que a equipe do projeto gere as entregas e os resultados esperados.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagens/figura05.png}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.6 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Entrega}
+
+\begin{frame}{Entrega}
+	\begin{itemize}
+		\justifying
+		\item Concentra-se em atender aos requisitos, escopo e expectativas de qualidade para produzir as entregas esperadas que conduzirão aos resultados pretendidos.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagens/figura06.png}
+\end{frame}
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.7 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Medição}
+
+\begin{frame}{Medição}
+	\begin{itemize}
+		\justifying
+		\item Avalia o grau em que o trabalho realizado no domínio de desempenho da entrega está cumprindo as métricas identificadas no domínio de desempenho do planejamento.
+	\end{itemize}
+	\vspace{5pt}
+	\centering
+	\includegraphics[width=\textwidth]{imagens/figura07.png}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.8 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Incerteza}
+
+\begin{frame}{Incerteza}
+	\begin{itemize}
+		\justifying
+		\item Aborda os vários aspectos da incerteza, suas implicações, como o risco do projeto, bem como as opções para navegar pelas várias formas de incerteza.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Incerteza}
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagens/figura08.png}
 \end{frame}
 
 %===============================================================================
 % SECTION 2 ====================================================================
-%===============================================================================
-\section{Definição de Cronograma de Projeto}
-
-\setbeamertemplate{background canvas}{%
-       \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/gantt-chart.png}};
-    }
-    
-\begin{frame}{Definição de Cronograma de Projeto}
-    \begin{itemize}
-        \justifying
-        \item A definição do cronograma de projeto é o processo de \textbf{decidir} \textbf{como o trabalho} em um projeto \textbf{será organizado} em tarefas distintas, \textbf{quando} e \textbf{de que maneira} essas tarefas serão \textbf{executadas}.
-        \item<2-> São \textbf{estimados} os \textbf{prazos} necessários para realizar cada tarefa e o \textbf{esforço} necessário, além de serem \textbf{indicadas} as \textbf{pessoas} que trabalharão nas tarefas que foram identificadas, e também os recursos de \textbf{hardware} e de \textbf{software} necessários para completar cada tarefa.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Definição de Cronograma de Projeto}
-    \begin{itemize}
-        \justifying
-        \item E se algo der errado?
-        \item<2> Uma boa regra geral é estimar como se nada desse errado e, em seguida, aumentar a estimativa para cobrir os problemas previstos e, se possível aumentar também para imprevistos.
-    \end{itemize}
-    \vspace{20pt}
-    \uncover<2>{
-        \includegraphics[width=\textwidth]{imagens/figura03.png}
-    }
-\end{frame}
-
-\setbeamertemplate{background canvas}[default]
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 2.1 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Apresentação do Cronograma}
-
-\setbeamertemplate{background canvas}{%
-    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/gantt-chart.png}};
-}
-
-\begin{frame}{Apresentação do Cronograma}
-    \begin{itemize}
-        \justifying
-        \item Os cronogramas de projeto podem ser documentados simplesmente em uma tabela ou em uma planilha mostrando as tarefas, o esforço estimado, a duração e as dependências das tarefas.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Apresentação do Cronograma}
-    \includegraphics[width=\textwidth]{imagens/figura04.png}
-\end{frame}
-
-\begin{frame}{Apresentação do Cronograma}
-    \begin{itemize}
-        \justifying
-        \item Esse estilo de apresentação dificulta a visualização das relações e das dependências entre as diferentes atividades. 
-        \item Por essa razão, foram desenvolvidas visualizações gráficas alternativas dos cronogramas de projeto, que são mais fáceis de ler e de entender.
-        \item Ex.: Diagrama/Gráfico de Gantt.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Apresentação do Cronograma}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagens/figura05.png}
-\end{frame}
-
-\begin{frame}{Apresentação do Cronograma}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagens/figura06.png}
-\end{frame}
-
-\setbeamertemplate{background canvas}[default]
-
-%===============================================================================
-% SECTION 3 ====================================================================
 %===============================================================================
 \section{Atividade}
 
 \begin{frame}{Atividade}
     \begin{itemize}
         \justifying
-        \item Reunir-se em grupo para iniciar o planejamento do aplicativo que tiverem escolhido.
-        \item Criar o planejamento inicial e esboçar um cronograma.
-        \item Aplicativo recomendado: Clickup.
-        \item Alternativas com versões gratuitas:
-            \begin{itemize}
-                \justifying
-                \item \href{https://everhour.com/blog/clickup-alternative/}{\textcolor{blue}{Top ClickUp Alternatives for 2025: Best Project Management Tools}}.
-                \item \href{https://startinfinity.com/blog/clickup-alternatives}{\textcolor{blue}{13 ClickUp Alternatives Worth Checking Out in 2025}}.
-            \end{itemize}
+        \item Dividam-se em grupos. Cada grupo receberá um ou mais domínios, sobre os quais deverão estudar o conteúdo presente no PMBOK, principalmente a seção \textbf{Verificação de Resultados}.
+        \item Para cada domínio, um cenário fictício será apresentado, e o grupo deve explicar a importância do seu domínio para o projeto do respectivo cenário.
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Atividade}
+	\begin{itemize}
+		\item Cenários
+			\begin{itemize}
+				\justifying
+				\item \textbf{Partes interessadas}: O projeto é a construção de uma usina solar. A tecnologia é perfeita e o financiamento está garantido, mas a comunidade local e uma ONG ambiental entraram com uma liminar para paralisar as obras por falta de diálogo.
+				\item \textbf{Equipe}: Uma equipe de alto nível técnico está trabalhando em silos. O clima é de desconfiança, as informações não circulam e dois desenvolvedores chave pediram demissão por burnout.
+				\item \textbf{Abordagem de Desenvolvimento e Ciclo de Vida}: Uma empresa de varejo quer lançar um super-app. Metade da diretoria quer o método Cascata (para saber o custo total logo) e a outra metade quer Ágil (para lançar logo). O projeto está travado na indecisão.
+				\item \textbf{Planejamento}: O projeto sofreu uma redução de 30\% no orçamento no meio da execução. O cronograma original agora é impossível de cumprir com os recursos atuais.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Atividade}
+	\begin{itemize}
+		\item Cenários
+		\begin{itemize}
+			\justifying
+			\item \textbf{Trabalho do Projeto}: O fluxo de trabalho está lento. Há excesso de burocracia, reuniões improdutivas e a equipe gasta mais tempo preenchendo relatórios do que produzindo as entregas.
+			\item \textbf{Entrega}: O projeto entregou todas as funcionalidades solicitadas no escopo inicial, mas o cliente final não está usando o produto porque ele não resolve o problema atual do mercado.
+			\item \textbf{Medição}: O projeto tem centenas de indicadores, mas ninguém sabe se o projeto está indo bem ou mal. Os dados são contraditórios e a diretoria está confusa.
+			\item \textbf{Incerteza}: Um projeto de inovação tecnológica enfrenta uma crise global de chips e mudanças súbitas na legislação tributária. O risco de fracasso é de 70\%.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Atividade}
+	\begin{itemize}
+		\item Desafios
+		\begin{itemize}
+			\justifying
+			\item \textbf{Partes Interessadas}: Por que gastar tempo e dinheiro com `gestão de expectativas' se o contrato já foi assinado e temos o direito legal de construir? O foco não deveria ser apenas na execução técnica?
+			\item \textbf{Equipe}: Em um projeto com prazo apertado, como você justifica investir horas em `desenvolvimento de equipe' e `cultura' em vez de simplesmente contratar substitutos e exigir que trabalhem mais rápido?
+			\item \textbf{Abordagem de Desenvolvimento e Ciclo de Vida}: Se o mercado muda a cada mês, por que perder tempo definindo um `Ciclo de Vida' agora? Não seria melhor apenas começar a programar e ver o que acontece?
+			\item \textbf{Planejamento}: Se o planejamento nunca sobrevive ao primeiro contato com a realidade e tudo mudou, por que ele ainda é considerado um domínio de desempenho e não uma perda de tempo burocrática?
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Atividade}
+	\begin{itemize}
+		\item Desafios
+		\begin{itemize}
+			\justifying
+			\item \textbf{Trabalho do Projeto}: Como você prova que `gerenciar o trabalho' (processos) agrega mais valor do que focar 100\% na `entrega final' do produto?
+			\item \textbf{Entrega}: Se o escopo foi 100\% cumprido, o domínio de Entrega foi um sucesso? Como você defende esse domínio quando o `sucesso' técnico não gera `valor' de negócio?
+			\item \textbf{Medição}: Medir custa caro e gera ansiedade na equipe. Por que não confiamos apenas no `sentimento' do gerente de projeto experiente em vez de gastar com softwares complexos de dashboard?
+			\item \textbf{Incerteza}: Se a incerteza é algo que não podemos controlar, por que não aceitamos o caos e reagimos apenas quando os problemas aparecerem, em vez de gastar energia com `planos de resposta a riscos' que podem nunca ocorrer?
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 %===============================================================================
