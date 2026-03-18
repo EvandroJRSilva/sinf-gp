@@ -8,3 +8,6 @@
 - 2026.1.3.1
   - AULAS/03/
     - Removido arquivo .txt
+- 2026.1.4
+  - AULAS/04/
+  - aula04.[pdf/tex] e preambulo.tex atualizados.
