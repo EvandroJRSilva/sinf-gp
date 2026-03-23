@@ -10,4 +10,7 @@
     - Removido arquivo .txt
 - 2026.1.4
   - AULAS/04/
-  - aula04.[pdf/tex] e preambulo.tex atualizados.
+    - aula04.[pdf/tex] e preambulo.tex atualizados.
+- 2026.1.5
+  - AULAS/05/
+    - aula05.[pdf/tex] e preambulo.tex atualizados.
