@@ -14,3 +14,7 @@
 - 2026.1.5
   - AULAS/05/
     - aula05.[pdf/tex] e preambulo.tex atualizados.
+- 2026.1.5.1
+  - AULAS/05/
+    - aula05.[pdf/tex] foi separado nos arquivos exercicios-cp1-2.[pdf/tex] e exercicios-principios.[pdf/tex].
+    - Exercícios sobre Princípios do Gerenciamento de Projetos adicionados ao arquivo "homônimo".
