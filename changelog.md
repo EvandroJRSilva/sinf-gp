@@ -18,3 +18,8 @@
   - AULAS/05/
     - aula05.[pdf/tex] foi separado nos arquivos exercicios-cp1-2.[pdf/tex] e exercicios-principios.[pdf/tex].
     - Exercícios sobre Princípios do Gerenciamento de Projetos adicionados ao arquivo "homônimo".
+- 2026.1.5.2
+  - AULAS/05/
+    - aula05.[pdf/tex] recriada, agora com conteúdo novo.
+    - Os arquivos de exercícios foram movidos para a pasta `Exercícios/slides`.
+  - Ajuste no arquivo `.gitignore`.
