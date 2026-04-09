@@ -27,227 +27,220 @@
 %===============================================================================
 % SECTION 1 ====================================================================
 %===============================================================================
-\section{Gerenciamento de configuração}
+\section{Métodos Ágeis}
 
-%\setbeamertemplate{background canvas}{%
- %   \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/planejamento.jpeg}};
-%}
-
-\begin{frame}{Gerenciamento de configuração}
+\begin{frame}{Métodos Ágeis}
     \begin{itemize}
         \justifying
-        \item<1-5,7> Os softwares \textbf{mudam constantemente} durante seu desenvolvimento e uso
-            \begin{itemize}
-                \justifying
-                \item<2-5,7> Defeitos são descobertos.
-                \item<3-5,7> Requisitos mudam.
-                \item<4-5,7> Novas versões de hardware e software.
-                \item<5,7> Concorrentes lançam novidades.
-            \end{itemize}
-        \item<6-7> À medida em que são feitas alterações no software, uma nova versão de um sistema é criado. A \textbf{maioria dos sistemas}, portanto, pode ser encarada como um \textbf{conjunto de versões}, \textbf{cada uma} delas tendo que ser \textbf{mantida e gerenciada}.
+        \item São metodologias de processo de software que
+        	\begin{itemize}
+        		\justifying 
+        		\item \textbf{Incentivam maior comunicação} entre os membros da equipe de desenvolvimento, e entre a equipe e outras pessoas envolvidas no projeto.
+        		\item Enfatiza a \textbf{entrega rápida} do sotware operacional.
+        		\item Diminui a importância dos artefatos intermediários.
+        		\item \textbf{O Cliente passa a ser parte da equipe}, uma vez que possui maior participação durante o desenvolvimento.
+        		\item Reconhece que o planejamento em um mundo incerto tem seus limites, portanto, \textbf{o plano de projeto deve ser flexível}.
+        	\end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Gerenciamento de configuração}
-    \begin{itemize}
-        \justifying
-        \item O gerenciamento de configuração
-            \begin{itemize}
-                \justifying
-                \item<1,4> Está relacionado às \textbf{políticas}, aos \textbf{processos} e às \textbf{ferramentas} para o gerenciamento de sistemas de software que mudam.
-                \item<2,4> É \textbf{útil} para \textbf{projetos individuais}, pois é fácil para uma pessoa esquecer quais alterações foram feitas.
-                \item<3-4> É \textbf{essencial} para \textbf{projetos em equipe}, nos quais vários desenvolvedores trabalham em um sistema de software ao mesmo tempo.
-            \end{itemize}
-    \end{itemize}
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Scrum}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\justifying
+		\item<1> É um framework leve que ajuda pessoas, times e organizações a \textbf{gerar valor} por meio de soluções adaptativas para problemas complexos.
+		\item<2-> Em suma, \textit{Scrum} requer um \textit{Scrum Master} para promover um ambiente onde:
+			\begin{enumerate}
+				\justifying
+				\item<2-> Um \textit{Product Owner} ordena o trabalho para um problema complexo em um \textit{Product Backlog}.
+				\item<3-> O \textit{Scrum Team} transforma uma seleção do trabalho em um incremento de valor durante uma \textit{Sprint}.
+				\item<4-> O \textit{Scrum Team} e seus \textit{stakeholders} inspecionam os resultados e se ajustam para a próxima \textit{Sprint}.
+				\item<5> Repita.
+			\end{enumerate}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Gerenciamento de configuração}
-    \begin{itemize}
-        \justifying
-        \item Quatro atividades principais
-            \begin{enumerate}
-                \justifying
-                \item<1> \textbf{Controle de versão}: envolve manter o controle das várias versões dos componentes do sistema e garantir que as mudanças feitas em componentes por diferentes desenvolvedores não interfiram umas com as outras.
-                \item<2> \textbf{Construção de sistema}: processo de reunir componentes, dados e bibliotecas do programa, compilando-os e ligando-os para criar um sistema executável.
-                \item<3> \textbf{Gerenciamento de mudanças}: envolve manter o controle das solicitações de mudança de clientes e desenvolvedores no software já entregue, elaborar os custos e o impacto de fazer essas mudanças e decidir se e quando as alterações devem ser implementadas.
-                \item<4> \textbf{Gerenciamento de lançamentos} (\textit{releases}): envolve a preparação de software para o lançamento externo e o acompanhamento das versões de sistema que foram lançadas para uso do cliente.
-            \end{enumerate}
-    \end{itemize}
+\begin{frame}{Scrum}
+	\includegraphics[width=\textwidth]{imagens/figura01.jpeg}
 \end{frame}
 
-\begin{frame}{Gerenciamento de configuração}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Scrum Team}: 
+			\begin{itemize}
+				\justifying
+				\item É um \textbf{pequeno time de pessoas} (10 ou menos pessoas), e consiste em um \textit{Scrum Master}, um \textit{Product owner} e \textit{Developers}. Não há sub-times ou hierarquias, portanto trata-se de uma unidade coesa de profissionais focados em um objetivo de cada vez, a Meta do Produto.
+			\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Gerenciamento de configuração}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Scrum Team}
+			\begin{itemize}
+				\item \textbf{Developers}
+				\begin{itemize}
+					\justifying
+					\item<1> São as pessoas do \textit{Scrum Team} que estão comprometidas em criar qualquer aspecto de um Incremento utilizável a cada \textit{Sprint}.
+				\end{itemize}
+				\item<2> \textbf{Product Owner}
+				\begin{itemize}
+					\justifying
+					\item<2> Tradução direta: dono do produto. Mas pode ser um representante das necessidades de muitos \textit{stakeholders} no \textit{Product Backlog}.
+					\item<2> É responsável pelo gerenciamento eficaz do \textit{Product Backlog}, que inclui: (1) desenvolver e comunicar explicitamente a meta do produto; (2) criar e comunicar claramente os itens do \textit{Product Backlog}; (3) ordenar os itens do \textit{Product Backlog}; e (4) garantir que o \textit{Product Backlog} seja transparente, visível e compreensível.
+				\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Scrum Team}
+		\begin{itemize}
+			\item \textbf{Developers}
+			\item \textbf{Product Owner}
+			\item \textbf{Scrum Master}
+			\begin{itemize}
+				\justifying
+				\item São verdadeiros líderes que servem ao Scrum Team e à organização como um todo.
+				\item Comandam a reunião diária do Scrum e é responsável por remover os obstáculos identificados pelos membros da equipe durante uma reunião.
+				\item Orientam o desenvolvedores para que consigam ajudar uns aos outros a completar as tarefas da \textit{Sprint}.
+				\item Ajudam o \textit{Product Owner} a identificar técnicas para gerenciar itens do \textit{Product Backlog} e a garantir que os itens do \textit{Backlog} estejam enunciados de forma clara e concisa.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Eventos Scrum}
+			\begin{itemize}
+				\item \textbf{Sprint}
+					\begin{itemize}
+						\justifying
+						\item<1> Período de 2 a 4 semanas onde ocorre o desenvolvimento incremental do protótipo.
+						\item<1> Sua duração vai depender da satisfação do \textit{Product Owner} em relação ao incremento.
+					\end{itemize}
+				\item<2-> \textbf{Sprint Planning}
+					\begin{itemize}
+						\justifying
+						\item<2> Requisitos são levantados e discutidos.
+						\item<2> O \textit{Product Owner} e os desenvolvedores ordenam os itens no \textit{Product Backlog}, levando em consideração a importância das necessidades de negócio e a complexidade de desenvolvimento.
+						\item<2> O \textit{Scrum Master} e os desenvolvedores selecionam os itens a serem transferidos para o \textit{Sprint Backlog}.
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Eventos Scrum}
+		\begin{itemize}
+			\item \textbf{Sprint}
+			\item \textbf{Sprint Planning}
+			\item \textbf{Daily Scrum}
+			\begin{itemize}
+				\justifying
+				\item Reunião de aproximadamente 15 minutos no início ou fim de cada dia de trabalho.
+				\item É composta pelo \textit{Scrum Master} e os \textit{Developers}. O \textit{Scrum Master} conduz a reunião.
+				\item São feitas 3 perguntas-chave que são respondidas por todos os membros da equipe: (1) O que você realizou desde a última reunião da equipe?; (2) Quais obstáculos está encontrando?; (3) O que planeja realizar até a próxima reunião da equipe?
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Eventos Scrum}
+		\begin{itemize}
+			\item \textbf{Sprint}
+			\item \textbf{Sprint Planning}
+			\item \textbf{Daily Scrum}
+			\item \textbf{Sprint Review}
+				\begin{itemize}
+					\justifying
+					\item<1> Ocorre ao final da \textit{Sprint} e deve durar algumas horas. Ex.: 4 horas para um sprint de 4 semanas.
+					\item<1> O \textit{Scrum Team} apresenta os resultados de seu trabalho para os principais \textit{stakeholders} e o progresso em direção a Meta do Produto é discutido.
+				\end{itemize}
+			\item<2> \textbf{Sprint Retrospective}
+				\begin{itemize}
+					\justifying
+					\item<2> Idealmente deve acontecer antes da Reunião de planejamento da próxima \textit{Sprint}, e pode durar algumas horas.
+					\item<2> O \textit{Scrum Team} debate sobre: (1) o que deu certo na \textit{Sprint}; (2) o que poderia melhorar; (3) com o que a equipe se compromete em melhorar na próxima \textit{Sprint}.
+				\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\item \textbf{Artefatos Scrum}
+			\begin{itemize}
+				\item \textbf{Product Backlog}
+					\begin{itemize}
+						\justifying
+						\item<1> Lista priorizada de requisitos ou características do artefato que agregam valor de negócio para o cliente.
+						\item<1> É ordenada pelo \textit{Product Owner} para cumprir as metas mais importantes de todos os envolvidos.
+					\end{itemize}
+				\item<2-> \textbf{Sprint Backlog}
+					\begin{itemize}
+						\justifying
+						\item<2> É composto pela Meta da \textit{Sprint}, o conjunto de itens do \textit{Product Backlog} selecionados para a \textit{Sprint}, bem como um plano de ação para entregar o Incremento.
+					\end{itemize}
+				\item<3> \textbf{Incremento}
+					\begin{itemize}
+						\justifying
+						\item<3> É um trampolim concreto em direção a Meta do produto. Cada incremento é adicionado a todos os incrementos anteriores e completamente verificado, garantindo que todos os incrementos funcionem juntos. A fim de fornecer valor, o incremento deve ser utilizável.
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Scrum}
+	\begin{itemize}
+		\justifying
+		\item É \textbf{propositalmente incompleto}, apenas definindo as partes necessárias para implementar a teoria \textit{Scrum}.
+		\item Vários processos, técnicas e métodos podem ser empregados com o framework. Por exemplo, o \textbf{Método Kanban}.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Método Kanban}
+
+\begin{frame}{Método Kanban}
+	\begin{itemize}
+		\justifying
+		\item<1> Consiste em um sistema visual de gestão de trabalho que busca conduzir cada tarefa por um fluxo predefinido de trabalho (\textit{workflow}) que busca indicar (e limitar) o trabalho em andamento (ou WIP, \textit{Work In Progress})\footnote{\href{https://www.totvs.com/blog/negocios/kanban/}{
+				Fonte: TOTVS}}.
+		\item<2> Em geral, o conceito de Kanban pode ser definido pelos seguintes itens:
+			\begin{itemize}
+				\item<2> \textbf{Sistema visual:} um processo, definido em um quadro com colunas de separação, que permite dividir o trabalho em segmentos ou pelo seu status. Ele fixa cada item em um cartão e coloca em uma coluna apropriada para indicar onde ele está em todo o fluxo de trabalho.
+				\item<2> \textbf{Cartões}: descrevem o trabalho real que transita pelo processo.
+				\item<2> \textbf{Limitação do trabalho em andamento:} permite atribuir os limites de quantos itens podem estar em andamento em cada segmento ou estado do fluxo de trabalho.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Método Kanban}
+	\centering
+	\includegraphics[width=0.95\textwidth]{imagens/kanban.jpg}
+\end{frame}
+
+\begin{frame}{Método Kanban}
+	\centering
+	\includegraphics[width=0.9\textwidth]{imagens/figura02.png}
 \end{frame}
 
 %===============================================================================
 % SECTION 2 ====================================================================
 %===============================================================================
-\section{Gerenciamento de versões}
-
-\begin{frame}{Gerenciamento de versões}
-    \begin{itemize}
-        \justifying
-        \item O que é controle de versão? Onde vive? O que faz? Do que se alimenta?
-        \begin{itemize}
-            \justifying
-            \item<2-> É um \textbf{sistema} que \textbf{armazena modificações} em um arquivo ou conjunto de arquivos em função do tempo, e \textbf{permite o acesso a versões específicas a qualquer momento}.
-            \item<3> Em nosso contexto usamos para versionar códigos-fonte, mas um controle de versionamento pode ser aplicado sobre praticamente qualquer tipo de arquivo.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Gerenciamento de versões}
-    \begin{itemize}
-        \justifying
-        \item Com um \textbf{Sistema de Controle de Versionamento} (VCS) é possível
-        \begin{itemize}
-            \justifying
-            \item<2-> Voltar ao estado anterior dos arquivos selecionados;
-            \item<3-> Voltar ao estado anterior de todo o projeto;
-            \item<4-> Comparar diferentes modificações;
-            \item<5-> Caguetar a pessoa que fez uma modificação que está causando erro;
-            \item<6-> Saber quem adicionou alguma nota (sobre problema ou sugestão), onde e quando;
-            \item<7-> Se você sem querer apagou tudo, com um VCS é maior a probabilidade de você conseguir recuperar o que perdeu;
-            \item<8> Tudo isso sem muito custo computacional.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 2.1 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{VCS Local}
-
-\begin{frame}{VCS Local}
-    \begin{itemize}
-        \justifying
-        \item<1> O mais comum:\\ \vspace{5pt}
-            \includegraphics[width=0.8\textwidth]{imagens/figura03.png}
-        \item<2> De repente um pouco mais organizado
-        \begin{itemize}
-            \justifying
-            \item<2> arquivo\_2025-10-09\_08:00.doc $\rightarrow$ arquivo\_2025-10-09\_10:00.doc.
-        \end{itemize}
-        \item<3> O que são programadores senão as pessoas que fazem programas para solucionar problemas? Ou facilitar a vida?
-        \item<3> Então criaram sistemas de controle de versão local
-        \begin{itemize}
-            \justifying
-            \item<3> Basicamente um banco de dados simples que armazena todas as modificações.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{VCS Local}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagens/meme_quesomos.jpg}
-\end{frame}
-
-\begin{frame}{VCS Local}
-    \centering
-    \includegraphics[width=0.7\textwidth]{imagens/figura04.jpeg}
-\end{frame}
-
-\begin{frame}{VCS Local}
-    \begin{itemize}
-        \justifying
-        \item \href{https://www.gnu.org/software/rcs/}{\underline{\textit{Revision Control System} (RCS)}} é (ou foi) um bastante popular.
-        \item Como funciona: mantém a cópia mais recente de um arquivo e modificações \textit{reversas} (chamadas \textit{deltas}), ou seja, o que tinha de diferente antes.
-    \end{itemize}
-\end{frame}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 2.2 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{VCS Centralizado}
-
-\begin{frame}{VCS Centralizado}
-    \begin{itemize}
-        \justifying
-        \item Versionamento local: OK
-        \item Versionamento de colaborações com outros desenvolvedores
-    \end{itemize}
-    \centering
-    \uncover<2->{\includegraphics[width=0.25\textwidth]{imagens/dieMeme.jpg}}
-    \begin{itemize}    
-        \justifying
-        \item<3> E novamente os desenvolvedores:
-    \end{itemize}
-    \centering
-    \uncover<3>{\includegraphics[width=0.25\textwidth]{imagens/challengeAcceptedMeme.jpg}}
-\end{frame}
-
-\begin{frame}{VCS Centralizado}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagens/figura05.jpeg}
-    \begin{itemize}
-        \item Alguns conhecidos: CVS, Subversion e Perforce.
-        \item Porém, ainda assim temos algumas desvantagens
-        \begin{itemize}
-            \justifying
-            \item Se o servidor cair, ninguém vai conseguir colaborar ou salvar novas versões enquanto o servidor não voltar.
-            \item<2-> Se o HD ou SSD onde o repositório estiver armazenado for corrompido e o último backup foi duas semanas atrás ....
-        \end{itemize}
-    \end{itemize}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \centering
-            \uncover<3->{\includegraphics[width=0.7\textwidth]{imagens/depressionMeme.jpg}}
-        \end{column}
-        
-        \begin{column}{0.5\textwidth}
-            \uncover<4>{Solução: VCS Distribuído}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-\begin{frame}{VCS Centralizado}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/meme_glorificar.jpg}
-\end{frame}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 2.3 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{VCS Distribuído}
-
-\begin{frame}{VCS Distribuído}
-    \begin{itemize}
-        \justifying
-        \item Agora os clientes (programadores) não somente verificam o último estado dos arquivos (como era no centralizado).
-        \item Cada um espelha o repositório por completo, incluindo todo o seu histórico.
-        \item Portanto, todos os envolvidos naquele projeto são, por si só, backups.
-        \item<2> Outros VCS Distribuídos além do Git: Mercurial, Bazaar e Darcs.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{VCS Distribuído}
-    \centering
-    \includegraphics[height=0.9\textheight]{imagens/figura06.jpeg}
-\end{frame}
-
-%\setbeamertemplate{background canvas}[default]
-
-
-%===============================================================================
-% SECTION 3 ====================================================================
-%===============================================================================
-\section{Atividade}
-
-\begin{frame}{Atividade}
-    \begin{itemize}
-        \justifying
-        \item Iniciar o gerenciamento de configuração no projeto de vocês.
-        \item Utilizar \href{https://git-scm.com}{\textcolor{blue}{\underline{Git}}} e Github.
-        \item \href{https://git-scm.com/book/en/v2}{\textcolor{blue}{\underline{Pro Git}}}, livro oficial do Git em PDF.
-    \end{itemize}
-\end{frame}
+%\section{Gerenciamento de versões}
 
 %===============================================================================
 % FIM ==========================================================================

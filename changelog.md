@@ -23,3 +23,10 @@
     - aula05.[pdf/tex] recriada, agora com conteúdo novo.
     - Os arquivos de exercícios foram movidos para a pasta `Exercícios/slides`.
   - Ajuste no arquivo `.gitignore`.
+- 2026.1.6
+  - AULAS/05/
+    - aula05.[pdf/tex]: consertado o subtítulo.
+  - AULAS/06/
+    - aula06.[pdf/tex] e preambulo.tex atualizados.
+  - AULAS/memes/
+    - Imagens de memes unificados em uma pasta específica.
