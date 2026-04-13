@@ -30,3 +30,9 @@
     - aula06.[pdf/tex] e preambulo.tex atualizados.
   - AULAS/memes/
     - Imagens de memes unificados em uma pasta específica.
+- 2026.1.7
+  - AULAS/07/
+    - aula06.[pdf/tex] e preambulo.tex atualizados.
+    - Novas imagens.
+  - AULAS/backgrounds/
+    - Novas imagens.

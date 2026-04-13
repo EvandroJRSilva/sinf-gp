@@ -27,165 +27,449 @@
 %===============================================================================
 % SECTION 1 ====================================================================
 %===============================================================================
-\section{Introdução ao Git}
+\section{Gerenciamento de Pessoas}
 
 \setbeamertemplate{background canvas}{%
-    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/developer02.jpg}};
 }
 
-\begin{frame}{Introdução ao Git}
-    \begin{itemize}
-        \item Breve histórico
-        \begin{itemize}
-            \justifying
-            \item Entre \textbf{1991} e \textbf{2002} modificações no código fonte do Linux eram distribuídas através de pacotes (\textit{patches}) e documentos arquivados.
-            \item Em 2002 o kernel passou a usar um VCS Distribuído (DVCS) proprietário, chamado \textbf{BitKeeper}.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Introdução ao Git}
-    \begin{itemize}
-        \item Breve histórico
-        \begin{itemize}
-            \justifying
-            \item<1,5> Em \textbf{2005} as relações entre a comunidade que desenvolvia o kernel do Linux e a empresa dona do BitKeeper foram rompidas. Várias \textbf{ferramentas} que estavam \textbf{gratuitas}, passaram a ser \textbf{pagas}.
-            \item<2-3,5> O Linus Torvalds, junto com a comunidade, decidiu criar seu próprio sistema, aproveitando o que tinham aprendido com a experiência com o BitKeeper. Os objetivos do novo sistema eram:
-            \begin{itemize}
-                \item<3,5> Ser rápido;
-                \item<3,5> Ter um design simples;
-                \item<3,5> Forte suporte para desenvolvimento não linear (milhares de ramificações em paralelo);
-                \item<3,5> Completamente distribuído;
-                \item<3,5> Apto a lidar com grandes projetos eficientemente (como o próprio Linux).
-            \end{itemize}
-            \item<4-5> Assim o Git nasceu em 2005.
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Introdução ao Git}
+\begin{frame}{Gerenciamento de Pessoas}
     \begin{itemize}
         \justifying
-        \item \textbf{Pro Git}: é o livro oficial do Git. 
-        \begin{itemize}
-            \justifying
-            \item Última versão em Português: 2.1.47-7-ge30df8c, 2024-10-28.
-            \item Última versão em Inglês: 2.1.448, 2025-07-25.
-        \end{itemize}
-        \item Autores: \textbf{Scott Chacon} e \textbf{Ben Straub}.
+        \item As pessoas que trabalham em uma organização de software são os seus \textbf{maiores ativos}
+        	\begin{itemize}
+        		\justifying
+        		\item<1-2> É caro recrutar e reter pessoas boas.
+        		\item<2> Cabe aos gerentes de software garantir que os engenheiros que trabalham em um projeto sejam tão produtivos quanto for possível.
+        	\end{itemize}
+        \item<3> Essa produtividade é alcançada quando as pessoas são \textbf{motivadas} e  \textbf{respeitadas} pela organização, e \textbf{recebem responsabilidades que refletem suas habilidades e experiência}.
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de Pessoas}
+	\begin{itemize}
+		\justifying
+		\item<1> Além de \textbf{compreender as questões técnicas} que influenciam o desenvolvimento de software, o gerente de projetos deve estar ciente dos possíveis problemas de gerenciamento de pessoas e \textbf{tentar desenvolver habilidades para gerenciar pessoas} (\textit{soft skills}).
+		\item<2-> Existem quatro fatores críticos que influenciam o relacionamento entre um gerente e as pessoas que ele gerencia:
+			\begin{enumerate}
+				\justifying
+				\item<3> \textbf{Consistência}. Todas as pessoas em um time de projeto devem ser tratadas de modo comparável.
+				\item<4> \textbf{Respeito}. Pessoas diferentes têm habilidades diferentes, e os gerentes devem respeitar essas diferenças.
+				\item<5> \textbf{Inclusão}. As pessoas contribuem efetivamente quando sentem que são ouvidas e que suas propostas são levadas em consideração.
+				\item<6> \textbf{Honestidade}. O gerente deve sempre ser honesto a respeito do que está indo bem e do que está indo mal com o time; também deve \textbf{reconhecer seu próprio nível de conhecimento técnico} e \textbf{estar disposto a submeter-se à pessoa com mais conhecimento quando for necessário}.
+			\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Motivação das pessoas}
+
+\begin{frame}{Motivação das pessoas}
+	\begin{itemize}
+		\justifying
+		\item O gerente de projetos deve \textbf{motivar} as pessoas do time \textbf{para que elas contribuam com o melhor das habilidades delas}.
+			\begin{itemize}
+				\justifying
+				\item \textbf{Se as pessoas não estiverem motivadas}, elas estarão menos interessadas no trabalho que estão fazendo e \textbf{trabalharão mais devagar}, estarão \textbf{mais propensas a cometer erros} e \textbf{não contribuirão para as metas} do time ou da organização.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Motivação das pessoas}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\centering
+			\textbf{Modelo de Maslow}\\
+			\vspace{5pt}
+			\includegraphics[width=1.3\textwidth]{imagens/figura01.png}
+		\end{column}
+		
+		\begin{column}{0.6\textwidth}
+			\begin{itemize}
+				\small
+				\justifying
+				\item<1> Para satisfazer as \textbf{necessidades sociais}: dar tempo às pessoas para se encontrarem com seus colegas de trabalho e proporcionar lugares para que esses encontros aconteçam.
+				\item<2> Para satisfazer as \textbf{necessidades de estima}: mostrar às pessoas que elas são valorizadas pela organização.
+				\item<3> Para satisfazer as \textbf{necessidades de autorrealização}: dar às pessoas responsabilidade, alocá-las em tarefas que exijam delas e proporcionar oportunidades para treinamento e desenvolvimento.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Motivação das pessoas}
+	\begin{itemize}
+		\justifying
+		\item O modelo de motivação de Maslow é útil até certo ponto, mas ele não leva em conta o fato de que as \textbf{pessoas se sentem parte de uma organização}, um grupo profissional e uma ou mais culturas.
+		\item \textbf{Ser membro de um grupo coeso é altamente motivador para a maioria das pessoas}. As pessoas com trabalhos gratificantes costumam gostar de ir trabalhar porque são motivadas pelas pessoas com as quais trabalham e pelo trabalho que realizam
+		\item Portanto, \textbf{o gerente também deve pensar em como um grupo pode ser motivado como um todo}.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Trabalho em Equipe}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/developer03.jpg}};
+}
+
+\begin{frame}{Trabalho em Equipe}
+	\begin{itemize}
+		\justifying
+		\item<1> Em \textbf{equipes pequenas} há \textbf{menos problemas de comunicação}
+		\begin{itemize}
+			\justifying
+			\item<1> Todos se conhecem, e o grupo todo pode sentar em uma mesa para se reunir e discutir sobre o projeto e o software que estão desenvolvendo.
+		\end{itemize}
+		\item<2-> Já as \textbf{grandes equipes} precisam ser divididas em \textbf{grupos menores}
+		\begin{itemize}
+			\justifying
+			\item<2> Cada grupo fica responsável por uma parte do software.
+			\item<2> \textbf{Desafio}: equilibrar as habilidades técnicas, experiências e personalidades $\rightarrow$ grupo coeso.
+			\item<3> ``O melhor tamanho para um grupo de engenharia de software é de quatro a seis membros e eles nunca devem ter mais de 12 membros'' (Sommerville).
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \setbeamertemplate{background canvas}[default]
 
 %-------------------------------------------------------------------------------
-% SUBSECTION 1.1 ---------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{Como funciona}
+\subsection{Grupo Coeso}
 
-\begin{frame}{Como funciona}
-    \begin{itemize}
-        \justifying
-        \item De início o Git ``vê'' os dados de forma diferente.
-        \item Os demais DVCSs \textbf{armazenam informações} como um \textbf{conjunto de arquivos} e as \textbf{modificações} feitas sobre cada arquivo ao longo do tempo (isso é chamado de controle de versão \textit{delta-based}).
-    \end{itemize}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura01.jpeg}
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/developer03.jpg}};
+}
+
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Seus membros
+		\begin{itemize}
+			\justifying
+			\item<1-> São \textbf{motivados pelo sucesso do grupo} e também, por seus próprios objetivos pessoais.
+			\item<2-> São \textbf{leais} e \textbf{consideram o grupo mais importante} do que os indivíduos que o compõem.
+			\item<3-> \textbf{Se identificam com os objetivos do grupo} e com os demais membros.
+			\item<4> \textbf{Tentam proteger o grupo}, como uma entidade, de interferências externas.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Como funciona}
-    \begin{itemize}
-        \justifying
-        \item O Git trata os dados como uma série de \underline{\textit{snapshots}}.
-        \item Toda vez que é feito um commit, ou o estado do projeto é salvo, o Git basicamente ``tira uma foto'' de como todos os arquivos estão e \textbf{armazena uma referência} a essa ``foto''.
-    \end{itemize}
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Benefícios de um grupo coeso no desenvolvimento de software
+		\begin{enumerate}
+			\justifying
+			\item<1> \textbf{O grupo pode estabelecer seus próprios padrões de qualidade}: Como esses padrões são estabelecidos por consenso, eles estão mais propensos a serem seguidos do que os padrões externos impostos ao grupo.
+			\item<2> \textbf{Indivíduos aprendem e apoiam uns aos outros}: Os membros do grupo aprendem trabalhando juntos. As inibições causadas pela ignorância são minimizadas à medida que a aprendizagem mútua é incentivada.
+		\end{enumerate}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Como funciona}
-    \begin{itemize}
-        \justifying
-        \item Para ter eficiência, \textbf{se algum arquivo não foi modificado}, em vez de armazenar o arquivo novamente, o Git apenas \textbf{armazena um link para o arquivo anterior} que é idêntico e já está salvo.
-        \item Em outras palavras, o Git trata os dados como um fluxo/sequência de \textit{snapshots}.
-    \end{itemize}
-    \centering
-    \includegraphics[width=0.9\textwidth]{imagens/figura02.jpeg}
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Benefícios de um grupo coeso no desenvolvimento de software
+		\begin{enumerate}
+			\justifying
+			\setcounter{enumi}{2}
+			\item<1> \textbf{O conhecimento é compartilhado}: A continuidade pode ser mantida se um membro do grupo sair. Outros no grupo podem assumir tarefas criticas e assegurar que o projeto não seja indevidamente interrompido.
+			\item<2> \textbf{A refatoração e a melhoria continua são incentivadas}: Os membros do grupo trabalham coletivamente para fornecer resultados de alta qualidade e corrigir problemas, independentemente dos indivíduos que criaram o projeto (design) ou programa originalmente.
+		\end{enumerate}
+	\end{itemize}
 \end{frame}
 
-
-\begin{frame}{Como funciona}
-    \begin{itemize}
-        \justifying
-        \item Praticamente todas as operações são locais
-        \begin{itemize}
-            \justifying
-            \item Uma vez que você tem uma cópia completa de um projeto em sua máquina, \textbf{você pode trabalhar em modificações e atualizações sem necessitar de acesso à Internet}.
-            \item Ao terminar, basta fazer um commit para sua cópia local, e \textbf{quando tiver acesso à Internet, subir a nova versão para algum servidor}.
-        \end{itemize}
-    \end{itemize}
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Bons gerentes de projetos devem sempre tentar incentivar a coesão do grupo}
+	\end{itemize}
+	
+	\begin{columns}
+		\begin{column}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagens/Movieposterposv.jpg}
+		\end{column}
+		
+		\begin{column}{0.7\textwidth}
+			\begin{itemize}
+				\justifying \small
+				\item \textbf{Podem tentar estabelecer um senso de identidade do grupo} ao nomeá-lo, estabelecer uma identidade e um território.
+				\item Exemplo do filme: time do Macintosh vs. outros times da Apple.
+			\end{itemize}
+		\end{column}
+	\end{columns}
 \end{frame}
 
-\begin{frame}{Como funciona}
-    \begin{itemize}
-        \justifying
-        \item O Git tem integridade
-        \begin{itemize}
-            \justifying
-            \item<1,3> \textbf{Todos os arquivos passam por um processo de \textit{checksum} antes de serem armazenados}, e então \textbf{passam a ser referenciados} a partir desse \textbf{\textit{checksum}}.
-            \item<1,3> Ou seja, é impossível realizar qualquer modificação sem que o Git não perceba.
-            \item<2-3> O mecanismo para o \textit{checksum} é o \textbf{SHA-1 hash}. O cheksum de um arquivo vai consistir em uma \textbf{string de 40 caracteres hexadecimais}, e o \textbf{cálculo} é feito \textbf{baseado nos conteúdos de um arquivo ou a estrutura de diretórios}. Um exemplo desse valor:\\
-            \texttt{24b9da6552252987aa493b52f8696cd6d3b00373}
-        \end{itemize}
-    \end{itemize}
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Bons gerentes de projetos devem sempre tentar incentivar a coesão do grupo}
+	\end{itemize}
+	
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=1.1\textwidth]{imagens/topgun-maverick.jpeg}
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying \small
+				\item Atividades de formação de grupo explícitas, como esportes e jogos, eventos sociais, inclusive envolvendo as famílias [Megadeth].
+				\item Exemplo: Top Gun - Maverick
+			\end{itemize}
+		\end{column}
+	\end{columns}
 \end{frame}
 
-\begin{frame}{Como funciona}
-    \begin{itemize}
-        \justifying
-        \item O Git geralmente só adiciona dados
-        \begin{itemize}
-            \justifying
-            \item Basicamente todas as ações feitas no Git apenas adicionarão dados à base de dados do Git.
-            \item Ou seja, vai ser quase impossível perder ou ``destruir'' qualquer coisa após um commit, principalmente se seu repositório estiver também na nuvem.
-            \item Isso permite que você possa fazer vários testes sem medo de ser feliz.
-        \end{itemize}
-    \end{itemize}
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Pontos principais que exigem atenção do gerente:
+		\begin{itemize}
+			\justifying
+			\item Seleção dos membros.
+			\item Organização do grupo.
+			\item Comunicação.
+			\item Avaliação de desempenho.
+			\item Planejamento do desenvolvimento de carreira.
+			\item Mentoria e treinamento (\textit{coaching}).
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-% SUBSUBSECTION 1.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\subsubsection{Os Três Estados}
+\setbeamertemplate{background canvas}[default]
 
-\begin{frame}{Os Três Estados}
-    \begin{itemize}
-        \item São 3 os principais estados em que um arquivo pode estar:
-        \begin{itemize}
-            \justifying
-            \item \textbf{Modificado}\uncover<2>{: o arquivo foi modificado mas ainda não foi \textit{comitado} para a base de dados.}
-            \item \textbf{Preparado}/\textbf{Staged}\uncover<3>{: o arquivo modificado foi marcado em sua versão atual para fazer parte do próximo commit.}
-            \item \textbf{Committed}\uncover<4>{: os dados estão seguramente armazenados na base de dados local.}
-        \end{itemize}
-    \end{itemize}
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Seleção dos membros}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}
+	\begin{itemize}
+		\justifying
+		\item<1> O recrutamento da(s) pessoa(s) certa(s) é vital.
+		\item<1> É da responsabilidade do gerente entender quais habilidades estão sendo necessárias em seus times e identificar indivíduos com tais habilidades.
+		\item<1> \textbf{Desafio} $\rightarrow$ balancear habilidades técnicas com sociais (ou \textit{hard} e \textit{soft skills}).
+		\item<2> Para ter sucesso o gerente precisa 
+		\begin{itemize}
+			\justifying
+			\item<2> Ter um entendimento claro das necessidades da empresa e/ou dos projetos futuros.
+			\item<2> Saber quais as qualidades buscar nos candidatos e trabalhar junto com o RH, usando de sua \textit{expertise} técnica para \textbf{criar descrições de vaga de emprego efetivas} e \textbf{conduzir entrevistas}.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Os Três Estados}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura03.jpeg}
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Organização do grupo}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}{Organização do grupo}
+	%\centering
+	\begin{tblr}{colspec={Q[0.48\textwidth] Q[0.48\textwidth]}, hlines, vlines, row{1}={c}, hline{1,2}={1.5pt, solid}, vline{1-3}={1}{1.5pt, solid}}
+		\textbf{Grupos hierárquicos} & \textbf{Grupos pequenos}\\
+		\justifying\scriptsize O líder do grupo está no topo da hierarquia, tem autoridade mais formal do que os membros do grupo e, portanto, pode dirigir o trabalho deles. & \justifying\scriptsize Normalmente são organizados de maneira informal e o líder se envolve no desenvolvimento de software com outros membros do grupo.\\
+		\justifying\scriptsize Há uma estrutura organizacional clara e as decisões são tomadas na direção do topo da hierarquia e implementadas pelas pessoas mais abaixo. & \justifying\scriptsize Todos discutem o trabalho a ser executado, e as tarefas são alocadas de acordo com a capacidade e a experiência.\\
+		\justifying\scriptsize Conseguem trabalhar bem quando um problema bem compreendido pode ser facilmente dividido em componentes de software que possam ser desenvolvidos em diferentes partes da hierarquia. & \justifying\scriptsize Podem ser bem sucedidos quando a maioria dos membros do grupo é experiente e competente. Se um grupo for composto principalmente de membros pouco experientes ou pouco competentes o resultado pode ser a falta de coordenação entre os membros do grupo e, possivelmente, o eventual fracasso do projeto.
+	\end{tblr}
 \end{frame}
 
-%===============================================================================
-% SECTION 3 ====================================================================
-%===============================================================================
-\section{Atividade}
-
-\begin{frame}{Atividade}
-    \begin{itemize}
-        \justifying
-        \item Continuar o gerenciamento de configuração.
-        \item Estudar Pro Git.
-        \item Criar um repositório no github, e os membros devem começar a contribuir.
-    \end{itemize}
+\begin{frame}{Organização do grupo}
+	\begin{itemize}
+		\justifying
+		\item As \textbf{principais responsabilidades} do gerente incluem:
+			\begin{itemize}
+				\justifying
+				\item Determinar os cargos necessários.
+				\item Definir quem melhor se encaixa em cada cargo.
+				\item Estabelecer canais eficientes de comunicação.
+			\end{itemize}
+		\item<2-> \textbf{Desafio}: alinhar o design do time com as demandas do projeto enquanto balanceia talentos e proficiências individuais.
+		\item<3> \textbf{Para ter sucesso} o gerente precisa \textbf{ter um conhecimento robusto sobre os processos de desenvolvimento}, \textbf{inteligência emocional} (para relacionamentos interpessoais efetivos) e \textbf{habilidade de planejamento estratégico} para organização adaptável dos times.
+	\end{itemize}
 \end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.4 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Comunicação}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_6b9mzp6b9mzp6b9m.png}};
+}
+
+\begin{frame}{Comunicação}
+	\begin{itemize}
+		\justifying
+		\item É \textbf{absolutamente essencial} que os membros do grupo se comuniquem com \textbf{eficácia} e \textbf{eficiência} uns com os outros e com os outros \textit{stakeholders} do projeto.
+		\item Os membros do grupo devem trocar informações sobre
+			\begin{itemize}
+				\justifying
+				\item O status do seu trabalho.
+				\item As decisões de projeto que foram tomadas.
+				\item As mudanças nas decisões de projeto anteriores.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Comunicação}
+	\begin{itemize}
+		\justifying
+		\item<1> A eficácia e a eficiência da comunicação são influenciadas por:
+			\begin{enumerate}
+				\item<1> Tamanho do grupo.
+				\item<1> Estrutura do grupo.
+				\item<1> Composição do grupo.
+				\item<1> Ambiente físico de trabalho.
+				\item<1> Canais de comunicação disponíveis.
+			\end{enumerate}
+		\item<2> A comunicação eficaz é alcançada quando é \textbf{bidirecional} e as pessoas envolvidas podem discutir questões e informações e estabelecer um entendimento comum das propostas e problemas.
+			\begin{itemize}
+				\justifying
+				\item<2> Isso pode ser feito por meio de \textbf{reuniões}.
+				\item<2> Mas pode ser feito também através de \textbf{discussões informais}, nas quais um gerente se reúne com o time para um café (muitas vezes mais eficazes).
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Comunicação}
+	\begin{itemize}
+		\justifying
+		\item Cada vez mais times de projeto incluem membros remotos, o que também torna mais difícil fazer reuniões [presenciais]. ara envolvê-los na comunicação, também é possível usar:
+			\begin{itemize}
+				\justifying
+				\item \textbf{Wikis}: apoiam a criação colaborativa e a edição de documentos.
+				\item \textbf{Blogs}: apoiam discussões encadeadas sobre perguntas e comentários feitos pelos membros do grupo.
+				\item \textbf{Aplicativos mensageiros}: WhatsApp ou Telegram.
+				\item \textbf{Teleconferências}: Google Meet, MS Teams, etc.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.5 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Avaliação de desempenho}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_fhwp3yfhwp3yfhwp.png}};
+}
+
+
+\begin{frame}{Avaliação de desempenho}
+	\begin{itemize}
+		\justifying
+		\item A avaliação de desempenho consiste em fornecer \textbf{regularmente} \textbf{\textit{feedbacks} construtivos} aos membros equipe.
+		\item Uma responsabilidade fundamental é avaliar o desempenho dos membros da equipe no cumprimento de suas metas de entrega e na contribuição para os projetos. 
+		\item É crucial \textbf{definir métricas} de resultados \textbf{claras} e \textbf{manter um diálogo constante sobre o progresso}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Avaliação de desempenho}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Desafio}
+			\begin{itemize}
+				\justifying
+				\item Encontrar um ponto de equilíbrio entre a crítica e o reconhecimento.
+				\item É essencial manter perspectiva justa e sem enviesamento, e comunicar o \textit{feedback} de forma construtiva.
+			\end{itemize}
+		\item Para ter sucesso um Gerente precisa ter uma \textbf{forte habilidade em comunicação}, \textbf{empatia}, e um foco maior sobre resolução de problemas, em vez de ficar procurando falhas.
+		\item Ao promover um ambiente aberto e transparente onde as discussões relacionadas ao desempenho são incentivadas, os Gerentes podem garantir o desenvolvimento e o crescimento consistentes dentro da equipe.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.6 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Planejamento do desenvolvimento de carreira}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}{Planejamento do desenvolvimento de carreira}
+	\begin{itemize}
+		\justifying
+		\item O suporte do Gerente ao crescimento na carreira de seu time é imprescindível. Isso requer um \textbf{alinhamento de crescimento individual} com os \textbf{objetivos da empresa} e as \textbf{necessidades de habilidades do time}.
+		\item Não consiste apenas em discutir sobre cargos futuros, mas também em promover um \textbf{crescimento profissional e aprendizado em longo prazo}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Planejamento do desenvolvimento de carreira}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Desafio}
+		\begin{itemize}
+			\justifying
+			\item Encontrar um ponto de equilíbrio entre a carga de trabalho atual e as necessidades de desenvolvimento de cada membro.
+		\end{itemize}
+		\item Para ter sucesso, um gerente precisa ter \textbf{fortes habilidades de comunica-ção}, \textbf{empatia} e \textbf{compromisso com o desenvolvimento do time}. 
+		\item Um gerente eficaz precisa estar apto a \textbf{guiar o seu time} e garantir que \textbf{estejam com sua carreira em crescimento}, ao mesmo tempo em que \textbf{atingem as metas da empresa}.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.7 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Mentoria e treinamento (\textit{coaching})}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}{Mentoria e treinamento (\textit{coaching})}
+	\begin{itemize}
+		\justifying
+		\item Um Gerente de Projetos frequentemente de mentoria e treinamento de seu time. Ele é responsável por \textbf{fornecer \textit{feedbacks} regulares}, \textbf{aconselhando sobre} o \textbf{desenvolvimento técnico e profissional}, e também sobre \textbf{quais objetivos traçar}.
+		\item Esse envolvimento ajuda a cultivar uma cultura de aprendizado e crescimento contínuos.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Mentoria e treinamento (\textit{coaching})}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Desafio}
+			\begin{itemize}
+				\justifying
+				\item Encontrar o ponto certo entre dar suporte ou incentivar os membros da equipe a encontrarem uma solução por conta própria.
+				\item Manter a imparcialidade e a consistência na abordagem que adotam em relação a diferentes indivíduos.
+			\end{itemize}
+		\item Para ter sucesso um Engenheiro precisa de forte habilidade de comunicação, empatia e um bom entendimento de pontos fortes e fracos de cada membro de sua equipe.
+		\item Além disso, é adotar um pensamento mais voltado ao treinamento, de forma ajudar sua equipe a sobrepor obstáculos, desenvolver novas habilidades e alcançar seu potencial completo.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
 
 %===============================================================================
 % FIM ==========================================================================
