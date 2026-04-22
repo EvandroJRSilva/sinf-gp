@@ -27,310 +27,364 @@
 %===============================================================================
 % SECTION 1 ====================================================================
 %===============================================================================
-\section{Construção de Sistemas}
+\section{Trabalho em Equipe}
 
-%\setbeamertemplate{background canvas}{%
-%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
-%}
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/developer03.jpg}};
+}
 
-\begin{frame}{Construção de Sistemas}
-    \begin{itemize}
-       \justifying
-       \item<1-> É o \textbf{processo} de \textbf{criar um sistema executável completo} (chamado de \textit{build}), compilando e ligando os componentes do sistema, as bibliotecas externas, os arquivos de configuração e outras informações.
-       \item<2> Ferramentas de \textbf{construção de sistema} e ferramentas de \textbf{controle de versões} devem ser \textbf{integradas}, pois o processo de construção usa versões dos componentes do repositório gerenciado pelo sistema de controle de versões.
-    \end{itemize}
+\begin{frame}{Trabalho em Equipe}
+	\begin{itemize}
+		\justifying
+		\item<1> Em \textbf{equipes pequenas} há \textbf{menos problemas de comunicação}
+		\begin{itemize}
+			\justifying
+			\item<1> Todos se conhecem, e o grupo todo pode sentar em uma mesa para se reunir e discutir sobre o projeto e o software que estão desenvolvendo.
+		\end{itemize}
+		\item<2-> Já as \textbf{grandes equipes} precisam ser divididas em \textbf{grupos menores}
+		\begin{itemize}
+			\justifying
+			\item<2> Cada grupo fica responsável por uma parte do software.
+			\item<2> \textbf{Desafio}: equilibrar as habilidades técnicas, experiências e personalidades $\rightarrow$ grupo coeso.
+			\item<3> ``O melhor tamanho para um grupo de engenharia de software é de quatro a seis membros e eles nunca devem ter mais de 12 membros'' (Sommerville).
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Construção de Sistemas}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura01.png}
-\end{frame}
-
-%\begin{frame}{Construção de Sistemas}
-%    \begin{itemize}
-%        \justifying
-%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
-%        \begin{enumerate}
-%            \justifying
-%            \item \textbf{Geração do script de construção}.
-%            \item \textbf{Integração com o sistema de controle de versão}.
-%            \item \textbf{Recompilação mínima}.
-%            \item \textbf{Automação dos testes}.
-%            \item \textbf{Emissão de relatórios}.
-%            \item \textbf{Geração da documentação}.
-%        \end{enumerate}
-%    \end{itemize}
-%\end{frame}
-
-%\begin{frame}{Construção de Sistemas}
-%    \begin{itemize}
-%        \justifying
-%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
-%            \begin{enumerate}
-%                \justifying
-%                \item \textbf{Geração do script de construção}
-%                    \begin{itemize}
-%                        \justifying
-%                        \item<2> O script de construção é uma \textbf{definição do sistema a ser construído}. Inclui \textbf{informações} sobre os \textbf{componentes} e suas \textbf{dependências} e \textbf{versões das ferramentas} usadas para compilar e ligar o sistema.
-%                        \item<3> O \textbf{sistema de construção} deve \textbf{analisar} o programa que está sendo construído, \textbf{identificar} componentes dependentes e \textbf{gerar automaticamente} um script de construção (arquivo de configuração).
-%                        \item<3> O sistema também deve permitir a criação manual e a edição de scripts de construção
-%                    \end{itemize}
-%            \end{enumerate}
-%    \end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Construção de Sistemas}
-%    \begin{itemize}
-%        \justifying
-%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
-%        \begin{enumerate}
-%            \justifying
-%            \setcounter{enumi}{1}
-%            \item \textbf{Integração com o sistema de controle de versão}
-%                \begin{itemize}
-%                    \justifying
-%                    \item<2> O sistema de construção deve fazer check-out das versões necessárias dos componentes que estão no sistema de controle de versão.
-%                \end{itemize}
-%            \item<3-> \textbf{Recompilação mínima}
-%                \begin{itemize}
-%                    \justifying
-%                    \item<3> O sistema de construção deve analisar qual código-fonte precisa ser recompilado e realizar as compilações, se necessário.
-%                \end{itemize}
-%            \item<4> \textbf{Automação dos testes}
-%                \begin{itemize}
-%                    \justifying
-%                    \item<4> Alguns sistemas de construção podem executar automaticamente testes automatizados usando ferramentas de automação de teste, os quais verificam se o \textit{build} não foi ``quebrado'' pelas mudanças.
-%                \end{itemize}
-%        \end{enumerate}
-%    \end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Construção de Sistemas}
-%    \begin{itemize}
-%        \justifying
-%        \item Ferramentas para integração e construção de sistemas incluem algumas ou todas as seguintes funcionalidades:
-%        \begin{enumerate}
-%            \justifying
-%            \setcounter{enumi}{4}
-%            \item \textbf{Emissão de relatórios}
-%                \begin{itemize}
-%                    \justifying
-%                    \item<1> O sistema de construção deve fornecer \textbf{relatórios} sobre o \textbf{sucesso} ou a \textbf{falha} da construção e os \textbf{testes} que foram executados.
-%                \end{itemize}
-%            \item<2> \textbf{Geração da documentação}
-%                \begin{itemize}
-%                    \justifying
-%                    \item<2> O sistema de construção pode ser capaz de \textbf{gerar notas} de lança-mento sobre o \textit{build} e \textbf{páginas de ajuda} do sistema.
-%                \end{itemize}
-%        \end{enumerate}
-%    \end{itemize}
-%\end{frame}
-
-\begin{frame}{Construção de Sistemas}
-    \begin{itemize}
-        \justifying
-        \item A construção é um processo complexo e potencialmente propenso a erros, já que três plataformas de sistema diferentes podem estar envolvidas:
-    \end{itemize}
-    \centering
-    \includegraphics[width=0.9\textwidth]{imagens/figura02.png}
-\end{frame}
-
-\begin{frame}{Construção de Sistemas}
-    \begin{itemize}
-        \justifying
-        \item Os \textbf{métodos ágeis} recomendam que a construção do sistema seja realizada com bastante frequência, com testes automatizados utilizados para descobrir problemas de software. As construções frequentes fazem parte de um processo de \textbf{integra-ção contínua}.
-    \end{itemize}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagens/figura03.png}
-\end{frame}
-
-\begin{frame}{Construção de Sistemas}
-    \begin{itemize}
-        \justifying
-        \item Nem sempre é possível implementar a integração contínua:
-            \begin{enumerate}
-                \justifying
-                \item Se o sistema for muito grande.
-                \item Se a plataforma de desenvolvimento for diferente da plataforma de destino.
-            \end{enumerate}
-        \item Uma solução nesses casos pode ser a \textbf{construção frequente}. Por exemplo, construção diária.
-    \end{itemize}
-\end{frame}
+\setbeamertemplate{background canvas}[default]
 
 %-------------------------------------------------------------------------------
 % SUBSECTION 1.1 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{Construção frequente}
+\subsection{Grupo Coeso}
 
-\begin{frame}{Construção frequente}
-    \begin{itemize}
-        \justifying
-        \item Vantagens
-            \begin{itemize}
-                \justifying
-                \item Maiores chances de \textbf{encontrar problemas} oriundos das interações de componentes \textbf{logo no início do processo}.
-                \item \textbf{Incentiva testes unitários} completos dos componentes.
-                \item \textbf{Psicológica}
-                    \begin{itemize}
-                        \justifying
-                        \item<2-> Os \textbf{desenvolvedores} são colocados \textbf{sob pressão} para não quebrar o \textit{build}, ou seja, eles tentam evitar o check-in de versões dos componentes que provoquem a falha do sistema inteiro.
-                        \item<3> Portanto, eles \textbf{relutam em entregar versões} de novos componentes \textbf{que não foram adequadamente testadas}. Como conse-quência, gasta-se menos tempo durante o teste do sistema descobrindo e lidando com defeitos de software, que poderiam ter sido encontrados pelo desenvolvedor.
-                    \end{itemize}
-            \end{itemize}
-    \end{itemize}
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/developer03.jpg}};
+}
+
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Seus membros
+		\begin{itemize}
+			\justifying
+			\item<1-> São \textbf{motivados pelo sucesso do grupo} e também, por seus próprios objetivos pessoais.
+			\item<2-> São \textbf{leais} e \textbf{consideram o grupo mais importante} do que os indivíduos que o compõem.
+			\item<3-> \textbf{Se identificam com os objetivos do grupo} e com os demais membros.
+			\item<4> \textbf{Tentam proteger o grupo}, como uma entidade, de interferências externas.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-%===============================================================================
-% SECTION 2 ====================================================================
-%===============================================================================
-\section{Gerenciamento de mudanças}
-
-\begin{frame}{Gerenciamento de mudanças}
-    \begin{columns}
-        \begin{column}{0.4\textwidth}
-            \begin{itemize}
-                \justifying
-                \footnotesize
-                \item É o \textbf{processo de analisar} os \textbf{custos} e os \textbf{benefícios} das mudanças propostas, \textbf{aprovando} as que têm bom custo-benefício e \textbf{controlando} quais componentes do sistema foram modificados.
-            \end{itemize}
-        \end{column}
-        
-        \begin{column}{0.6\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{imagens/figura04_01.png}
-        \end{column}
-    \end{columns}
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Benefícios de um grupo coeso no desenvolvimento de software
+		\begin{enumerate}
+			\justifying
+			\item<1> \textbf{O grupo pode estabelecer seus próprios padrões de qualidade}: Como esses padrões são estabelecidos por consenso, eles estão mais propensos a serem seguidos do que os padrões externos impostos ao grupo.
+			\item<2> \textbf{Indivíduos aprendem e apoiam uns aos outros}: Os membros do grupo aprendem trabalhando juntos. As inibições causadas pela ignorância são minimizadas à medida que a aprendizagem mútua é incentivada.
+		\end{enumerate}
+	\end{itemize}
 \end{frame}
+
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Benefícios de um grupo coeso no desenvolvimento de software
+		\begin{enumerate}
+			\justifying
+			\setcounter{enumi}{2}
+			\item<1> \textbf{O conhecimento é compartilhado}: A continuidade pode ser mantida se um membro do grupo sair. Outros no grupo podem assumir tarefas criticas e assegurar que o projeto não seja indevidamente interrompido.
+			\item<2> \textbf{A refatoração e a melhoria continua são incentivadas}: Os membros do grupo trabalham coletivamente para fornecer resultados de alta qualidade e corrigir problemas, independentemente dos indivíduos que criaram o projeto (design) ou programa originalmente.
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Bons gerentes de projetos devem sempre tentar incentivar a coesão do grupo}
+	\end{itemize}
+	
+	\begin{columns}
+		\begin{column}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagens/Movieposterposv.jpg}
+		\end{column}
+		
+		\begin{column}{0.7\textwidth}
+			\begin{itemize}
+				\justifying \small
+				\item \textbf{Podem tentar estabelecer um senso de identidade do grupo} ao nomeá-lo, estabelecer uma identidade e um território.
+				\item Exemplo do filme: time do Macintosh vs. outros times da Apple.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Bons gerentes de projetos devem sempre tentar incentivar a coesão do grupo}
+	\end{itemize}
+	
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=1.1\textwidth]{imagens/topgun-maverick.jpeg}
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying \small
+				\item Atividades de formação de grupo explícitas, como esportes e jogos, eventos sociais, inclusive envolvendo as famílias [Megadeth].
+				\item Exemplo: Top Gun - Maverick
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Grupo Coeso}
+	\begin{itemize}
+		\justifying
+		\item Pontos principais que exigem atenção do gerente:
+		\begin{itemize}
+			\justifying
+			\item Seleção dos membros.
+			\item Organização do grupo.
+			\item Comunicação.
+			\item Avaliação de desempenho.
+			\item Planejamento do desenvolvimento de carreira.
+			\item Mentoria e treinamento (\textit{coaching}).
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
 
 %-------------------------------------------------------------------------------
-% SUBSECTION 2.1 ---------------------------------------------------------------
+% SUBSECTION 1.2 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{Ferramentas para apoiar o gerenciamento de mudanças}
+\subsection{Seleção dos membros}
 
-\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
-    \begin{itemize}
-        \justifying
-        \item Podem ser tanto \alert<2>{\textbf{sistemas relativamente simples de rastreamento de problemas ou defeitos}} quanto um \alert<3>{\textbf{software integrado a um pacote de gerenciamento de configuração de sistemas de larga escala}}.
-            \begin{itemize}
-                \justifying
-                \item<2> \href{https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues}{\textcolor{blue}{\underline{Github Issues}}}.
-                \item<3> \href{https://www.ibm.com/br-pt/products/rational-clearcase}{\textcolor{blue}{\underline{IBM Rational ClearCase}}}.
-            \end{itemize}
-    \end{itemize}
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}
+	\begin{itemize}
+		\justifying
+		\item<1> O recrutamento da(s) pessoa(s) certa(s) é vital.
+		\item<1> É da responsabilidade do gerente entender quais habilidades estão sendo necessárias em seus times e identificar indivíduos com tais habilidades.
+		\item<1> \textbf{Desafio} $\rightarrow$ balancear habilidades técnicas com sociais (ou \textit{hard} e \textit{soft skills}).
+		\item<2> Para ter sucesso o gerente precisa 
+		\begin{itemize}
+			\justifying
+			\item<2> Ter um entendimento claro das necessidades da empresa e/ou dos projetos futuros.
+			\item<2> Saber quais as qualidades buscar nos candidatos e trabalhar junto com o RH, usando de sua \textit{expertise} técnica para \textbf{criar descrições de vaga de emprego efetivas} e \textbf{conduzir entrevistas}.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
-    \begin{columns}
-        \begin{column}{0.4\textwidth}
-            \begin{itemize}
-                \justifying
-                \footnotesize
-                \item Os sistemas de rastreamento de problemas permitem que qualquer pessoa relate um defeito ou faça uma sugestão de mudança no sistema, e controlam como o time de desenvolvimento respondeu a essas questões
-            \end{itemize}
-        \end{column}
-        
-        \begin{column}{0.6\textwidth}
-            \centering
-            \includegraphics[width=0.95\textwidth]{imagens/figura04_02.png}
-        \end{column}
-    \end{columns}
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Organização do grupo}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}{Organização do grupo}
+	%\centering
+	\begin{tblr}{colspec={Q[0.48\textwidth] Q[0.48\textwidth]}, hlines, vlines, row{1}={c}, hline{1,2}={1.5pt, solid}, vline{1-3}={1}{1.5pt, solid}}
+		\textbf{Grupos hierárquicos} & \textbf{Grupos pequenos}\\
+		\justifying\scriptsize O líder do grupo está no topo da hierarquia, tem autoridade mais formal do que os membros do grupo e, portanto, pode dirigir o trabalho deles. & \justifying\scriptsize Normalmente são organizados de maneira informal e o líder se envolve no desenvolvimento de software com outros membros do grupo.\\
+		\justifying\scriptsize Há uma estrutura organizacional clara e as decisões são tomadas na direção do topo da hierarquia e implementadas pelas pessoas mais abaixo. & \justifying\scriptsize Todos discutem o trabalho a ser executado, e as tarefas são alocadas de acordo com a capacidade e a experiência.\\
+		\justifying\scriptsize Conseguem trabalhar bem quando um problema bem compreendido pode ser facilmente dividido em componentes de software que possam ser desenvolvidos em diferentes partes da hierarquia. & \justifying\scriptsize Podem ser bem sucedidos quando a maioria dos membros do grupo é experiente e competente. Se um grupo for composto principalmente de membros pouco experientes ou pouco competentes o resultado pode ser a falta de coordenação entre os membros do grupo e, possivelmente, o eventual fracasso do projeto.
+	\end{tblr}
 \end{frame}
 
-\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
-    \begin{columns}
-        \begin{column}{0.4\textwidth}
-            \begin{itemize}
-                \justifying
-                \footnotesize
-                \item Depois de uma solicitação de mudança ter sido enviada. ela é conferida para garantir que seja válida.
-                \item A solicitação de mudança pode ser rejeitada nesse estágio
-                    \begin{itemize}
-                        \justifying
-                        \tiny
-                        \item O \textbf{defeito} pode já ter sido relatado e \textbf{corrigido}.
-                        \item O que as pessoas \textbf{acreditam ser problemas} pode ser, na verdade, um \textbf{mal-entendido} quanto ao que se espera que o sistema faça.
-                        \item As pessoas \textbf{pedem características} que \textbf{já foram implementadas}, \textbf{mas} sobre as quais elas \textbf{ainda não sabiam}.
-                    \end{itemize}
-            \end{itemize}
-        \end{column}
-        
-        \begin{column}{0.6\textwidth}
-            \centering
-            \includegraphics[width=0.95\textwidth]{imagens/figura04_03.png}
-        \end{column}
-    \end{columns}
+\begin{frame}{Organização do grupo}
+	\begin{itemize}
+		\justifying
+		\item As \textbf{principais responsabilidades} do gerente incluem:
+		\begin{itemize}
+			\justifying
+			\item Determinar os cargos necessários.
+			\item Definir quem melhor se encaixa em cada cargo.
+			\item Estabelecer canais eficientes de comunicação.
+		\end{itemize}
+		\item<2-> \textbf{Desafio}: alinhar o design do time com as demandas do projeto enquanto balanceia talentos e proficiências individuais.
+		\item<3> \textbf{Para ter sucesso} o gerente precisa \textbf{ter um conhecimento robusto sobre os processos de desenvolvimento}, \textbf{inteligência emocional} (para relacionamentos interpessoais efetivos) e \textbf{habilidade de planejamento estratégico} para organização adaptável dos times.
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
-    \begin{columns}
-        \begin{column}{0.4\textwidth}
-            \begin{itemize}
-                \justifying
-                \footnotesize
-                \item Para as solicitações de mudança \textbf{válidas}, a próxima etapa do processo é a \textbf{avaliação da mudança} e o \textbf{cálculo dos custos}.
-            \end{itemize}
-        \end{column}
-        
-        \begin{column}{0.6\textwidth}
-            \centering
-            \includegraphics[width=0.95\textwidth]{imagens/figura04_04.png}
-        \end{column}
-    \end{columns}
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.4 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Comunicação}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_6b9mzp6b9mzp6b9m.png}};
+}
+
+\begin{frame}{Comunicação}
+	\begin{itemize}
+		\justifying
+		\item É \textbf{absolutamente essencial} que os membros do grupo se comuniquem com \textbf{eficácia} e \textbf{eficiência} uns com os outros e com os outros \textit{stakeholders} do projeto.
+		\item Os membros do grupo devem trocar informações sobre
+		\begin{itemize}
+			\justifying
+			\item O status do seu trabalho.
+			\item As decisões de projeto que foram tomadas.
+			\item As mudanças nas decisões de projeto anteriores.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
-    \begin{columns}
-        \begin{column}{0.4\textwidth}
-            \begin{itemize}
-                \justifying
-                \footnotesize
-                \item Um grupo à parte decide se é rentável para a empresa fazer a mudança no software.
-                \item Nesse momento é considerado o impacto da mudança de um ponto de vista estratégico e organizacional, em vez de técnico.
-            \end{itemize}
-        \end{column}
-        
-        \begin{column}{0.6\textwidth}
-            \centering
-            \includegraphics[width=0.95\textwidth]{imagens/figura04_05.png}
-        \end{column}
-    \end{columns}
+\begin{frame}{Comunicação}
+	\begin{itemize}
+		\justifying
+		\item<1> A eficácia e a eficiência da comunicação são influenciadas por:
+		\begin{enumerate}
+			\item<1> Tamanho do grupo.
+			\item<1> Estrutura do grupo.
+			\item<1> Composição do grupo.
+			\item<1> Ambiente físico de trabalho.
+			\item<1> Canais de comunicação disponíveis.
+		\end{enumerate}
+		\item<2> A comunicação eficaz é alcançada quando é \textbf{bidirecional} e as pessoas envolvidas podem discutir questões e informações e estabelecer um entendimento comum das propostas e problemas.
+		\begin{itemize}
+			\justifying
+			\item<2> Isso pode ser feito por meio de \textbf{reuniões}.
+			\item<2> Mas pode ser feito também através de \textbf{discussões informais}, nas quais um gerente se reúne com o time para um café (muitas vezes mais eficazes).
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
-    \begin{itemize}
-        \justifying
-        \item<1> Os fatores que influenciam a decisão sobre a implementação, ou não, de uma mudança incluem:
-            \begin{itemize}
-                \justifying
-                \item<1> As consequências de não fazer a mudança.
-                \item<1> Os benefícios da mudança.
-                \item<1> O número de usuários afetados pela mudança.
-                \item<1> Os custos de fazer a mudança.
-                \item<1> O ciclo de lançamento do produto.
-            \end{itemize}
-        \item<2> Conforme o time de desenvolvimento altera os componentes de software, ele deve manter um \textbf{registro das alterações} feitas em cada componente. Ex.: \textbf{changelog}.
-    \end{itemize}
+\begin{frame}{Comunicação}
+	\begin{itemize}
+		\justifying
+		\item Cada vez mais times de projeto incluem membros remotos, o que também torna mais difícil fazer reuniões [presenciais]. ara envolvê-los na comunicação, também é possível usar:
+		\begin{itemize}
+			\justifying
+			\item \textbf{Wikis}: apoiam a criação colaborativa e a edição de documentos.
+			\item \textbf{Blogs}: apoiam discussões encadeadas sobre perguntas e comentários feitos pelos membros do grupo.
+			\item \textbf{Aplicativos mensageiros}: WhatsApp ou Telegram.
+			\item \textbf{Teleconferências}: Google Meet, MS Teams, etc.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-%===============================================================================
-% SECTION 3 ====================================================================
-%===============================================================================
-\section{Atividade}
+\setbeamertemplate{background canvas}[default]
 
-\begin{frame}{Atividade}
-    \begin{itemize}
-        \justifying
-        \item Testar os softwares das outras equipes, e na aba \textbf{issues} do github
-            \begin{itemize}
-                \justifying
-                \item Sugerir alterações.
-                \item Reportar bugs.
-            \end{itemize}
-        \item A equipe que receber as sugestões de alteração e bugs deve fazer e registrar o gerenciamento de mudanças.
-    \end{itemize}
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.5 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Avaliação de desempenho}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_fhwp3yfhwp3yfhwp.png}};
+}
+
+
+\begin{frame}{Avaliação de desempenho}
+	\begin{itemize}
+		\justifying
+		\item A avaliação de desempenho consiste em fornecer \textbf{regularmente} \textbf{\textit{feedbacks} construtivos} aos membros equipe.
+		\item Uma responsabilidade fundamental é avaliar o desempenho dos membros da equipe no cumprimento de suas metas de entrega e na contribuição para os projetos. 
+		\item É crucial \textbf{definir métricas} de resultados \textbf{claras} e \textbf{manter um diálogo constante sobre o progresso}.
+	\end{itemize}
 \end{frame}
 
-%\setbeamertemplate{background canvas}[default]
+\begin{frame}{Avaliação de desempenho}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Desafio}
+		\begin{itemize}
+			\justifying
+			\item Encontrar um ponto de equilíbrio entre a crítica e o reconhecimento.
+			\item É essencial manter perspectiva justa e sem enviesamento, e comunicar o \textit{feedback} de forma construtiva.
+		\end{itemize}
+		\item Para ter sucesso um Gerente precisa ter uma \textbf{forte habilidade em comunicação}, \textbf{empatia}, e um foco maior sobre resolução de problemas, em vez de ficar procurando falhas.
+		\item Ao promover um ambiente aberto e transparente onde as discussões relacionadas ao desempenho são incentivadas, os Gerentes podem garantir o desenvolvimento e o crescimento consistentes dentro da equipe.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.6 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Planejamento do desenvolvimento de carreira}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}{Planejamento do desenvolvimento de carreira}
+	\begin{itemize}
+		\justifying
+		\item O suporte do Gerente ao crescimento na carreira de seu time é imprescindível. Isso requer um \textbf{alinhamento de crescimento individual} com os \textbf{objetivos da empresa} e as \textbf{necessidades de habilidades do time}.
+		\item Não consiste apenas em discutir sobre cargos futuros, mas também em promover um \textbf{crescimento profissional e aprendizado em longo prazo}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Planejamento do desenvolvimento de carreira}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Desafio}
+		\begin{itemize}
+			\justifying
+			\item Encontrar um ponto de equilíbrio entre a carga de trabalho atual e as necessidades de desenvolvimento de cada membro.
+		\end{itemize}
+		\item Para ter sucesso, um gerente precisa ter \textbf{fortes habilidades de comunica-ção}, \textbf{empatia} e \textbf{compromisso com o desenvolvimento do time}. 
+		\item Um gerente eficaz precisa estar apto a \textbf{guiar o seu time} e garantir que \textbf{estejam com sua carreira em crescimento}, ao mesmo tempo em que \textbf{atingem as metas da empresa}.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 1.7 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Mentoria e treinamento (\textit{coaching})}
+
+\setbeamertemplate{background canvas}{%
+	\tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/Gemini_Generated_Image_8gu9xk8gu9xk8gu9.png}};
+}
+
+\begin{frame}{Mentoria e treinamento (\textit{coaching})}
+	\begin{itemize}
+		\justifying
+		\item Um Gerente de Projetos frequentemente de mentoria e treinamento de seu time. Ele é responsável por \textbf{fornecer \textit{feedbacks} regulares}, \textbf{aconselhando sobre} o \textbf{desenvolvimento técnico e profissional}, e também sobre \textbf{quais objetivos traçar}.
+		\item Esse envolvimento ajuda a cultivar uma cultura de aprendizado e crescimento contínuos.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Mentoria e treinamento (\textit{coaching})}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Desafio}
+		\begin{itemize}
+			\justifying
+			\item Encontrar o ponto certo entre dar suporte ou incentivar os membros da equipe a encontrarem uma solução por conta própria.
+			\item Manter a imparcialidade e a consistência na abordagem que adotam em relação a diferentes indivíduos.
+		\end{itemize}
+		\item Para ter sucesso um Engenheiro precisa de forte habilidade de comunicação, empatia e um bom entendimento de pontos fortes e fracos de cada membro de sua equipe.
+		\item Além disso, é adotar um pensamento mais voltado ao treinamento, de forma ajudar sua equipe a sobrepor obstáculos, desenvolver novas habilidades e alcançar seu potencial completo.
+	\end{itemize}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
 
 
 %===============================================================================
