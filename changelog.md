@@ -1,49 +1,53 @@
 - 2026.1.3
   - Adicionado o arquivo `changelog.md`.
   - AULAS/02/
-    - aula02.[pdf/tex] e preambulo.tex ajustados.
+    - `aula02.[pdf/tex]` e `preambulo.tex` ajustados.
   - AULAS/03/
-    - aula03.[pdf/tex] e preambulo.tex atualizados.
+    - `aula03.[pdf/tex]` e `preambulo.tex` atualizados.
     - novas imagens.
 - 2026.1.3.1
   - AULAS/03/
     - Removido arquivo .txt
 - 2026.1.4
   - AULAS/04/
-    - aula04.[pdf/tex] e preambulo.tex atualizados.
+    - `aula04.[pdf/tex]` e `preambulo.tex` atualizados.
 - 2026.1.5
   - AULAS/05/
-    - aula05.[pdf/tex] e preambulo.tex atualizados.
+    - `aula05.[pdf/tex]` e `preambulo.tex` atualizados.
 - 2026.1.5.1
   - AULAS/05/
-    - aula05.[pdf/tex] foi separado nos arquivos exercicios-cp1-2.[pdf/tex] e exercicios-principios.[pdf/tex].
+    - `aula05.[pdf/tex]` foi separado nos arquivos `exercicios-cp1-2.[pdf/tex]` e `exercicios-principios.[pdf/tex]`.
     - Exercícios sobre Princípios do Gerenciamento de Projetos adicionados ao arquivo "homônimo".
 - 2026.1.5.2
   - AULAS/05/
-    - aula05.[pdf/tex] recriada, agora com conteúdo novo.
+    - `aula05.[pdf/tex]` recriada, agora com conteúdo novo.
     - Os arquivos de exercícios foram movidos para a pasta `Exercícios/slides`.
   - Ajuste no arquivo `.gitignore`.
 - 2026.1.6
   - AULAS/05/
-    - aula05.[pdf/tex]: consertado o subtítulo.
+    - `aula05.[pdf/tex]`: consertado o subtítulo.
   - AULAS/06/
-    - aula06.[pdf/tex] e preambulo.tex atualizados.
+    - `aula06.[pdf/tex]` e `preambulo.tex` atualizados.
   - AULAS/memes/
     - Imagens de memes unificados em uma pasta específica.
 - 2026.1.7
   - AULAS/07/
-    - aula07.[pdf/tex] e preambulo.tex atualizados.
+    - `aula07.[pdf/tex]` e `preambulo.tex` atualizados.
     - Novas imagens.
   - AULAS/backgrounds/
     - Novas imagens.
 - 2026.1.8
   - AULAS/07/
-    - aula07.[pdf/tex] dividida.
+    - `aula07.[pdf/tex]` dividida.
   - AULAS/08/
-    - aula08.[pdf/tex] atulizado com conteúdo vindo da aula07.
-    - preambulo.tex atualizado.
+    - `aula08.[pdf/tex]` atulizado com conteúdo vindo da aula07.
+    - `preambulo.tex` atualizado.
 - 2026.1.9
   - AULAS/09/
-    - aula09.[pdf/tex] e preambulo.tex atualizados.
-    - atividade.md adicionado.
-  - .gitignore atualizado.
+    - `aula09.[pdf/tex]` e `preambulo.tex` atualizados.
+    - `atividade.md` adicionado.
+  - `.gitignore` atualizado.
+- 2026.1.10
+  - AULAS/10/
+    - `aula10.[pdf/tex]` e `preambulo.tex` atualizados.
+    - Arquivos desnecessários excluídos.
