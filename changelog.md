@@ -51,3 +51,9 @@
   - AULAS/10/
     - `aula10.[pdf/tex]` e `preambulo.tex` atualizados.
     - Arquivos desnecessários excluídos.
+- 2026.1.11
+  - AULAS/11/
+    - `aula11.[pdf/tex]` e `preambulo.tex` atualizados.
+    - Pasta `imagens/`
+      - Arquivo `draw.io` excluído.
+      - Novas imagens adicionadas.
