@@ -27,110 +27,186 @@
 %===============================================================================
 % SECTION 1 ====================================================================
 %===============================================================================
-\section{Revisões e Inspeções}
+\section{Desenvolvimento Dirigido por Plano}
 
 %\setbeamertemplate{background canvas}{%
-%    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
+ %   \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/planejamento.jpeg}};
 %}
 
-\begin{frame}{Revisões e Inspeções}
+\begin{frame}{Desenvolvimento Dirigido por Plano}
     \begin{itemize}
         \justifying
-        \item São \textbf{atividades} de garantia da qualidade \textbf{que verificam a qualidade dos entregáveis do projeto}.
-        \item Envolvem a verificação do software, sua documentação e seus registros de processo, para descobrir erros e omissões, bem como violações de padrões. A revisão abrange:
-            \begin{itemize}
-                \item<2-> As especificações de software; 
-                \item<3-> Os projetos (\textit{design}); 
-                \item<4-> O código; 
-                \item<5-> Os modelos de processo; 
-                \item<6-> Os planos de teste; 
-                \item<7-> Os procedimentos de gerenciamento de configuração; 
-                \item<8> Os padrões de processo e os manuais de usuário.
-            \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Revisões e Inspeções}
-    \begin{itemize}
-        \justifying
-        \item As revisões \textbf{não consistem apenas na checagem da conformidade aos padrões}. Também são usadas para \textbf{ajudar a descobrir problemas e omissões na documentação} de software ou de projeto.
-            \begin{itemize}
-                \justifying
-                \item<2-> Se forem descobertos problemas, os comentários dos revisores devem ser passados ao \alert<3>{autor do software} ou a quem quer que seja responsável por corrigir erros ou omissões.
-                \item<3> As revisões e inspeções \textbf{não servem para avaliar o desempenho das pessoas} no time de desenvolvimento, \textbf{mas para melhorar a qualidade de software}.
-            \end{itemize}
+        \item É uma abordagem ``tradicional'' para a Engenharia de Software na qual o processo de desenvolvimento é planejado em detalhes.
+        \item É uma ferramenta para os gerentes como apoio na tomada de decisões, e também como uma maneira de medir o progresso.
     \end{itemize}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 % SUBSECTION 1.1 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{O processo de revisão}
+\subsection{Planos de Projeto}
 
-\begin{frame}{O processo de revisão}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura01.png}
-\end{frame}
-
-\begin{frame}{O processo de revisão}
+\begin{frame}{Planos de Projeto}
     \begin{itemize}
         \justifying
-        \item Embora existam muitas variações nos detalhes, os processos de revisão estão estruturados em três fases:
+        \item Um plano de projeto estabelece os \textbf{recursos disponíveis} para o projeto. a \textbf{divisão de trabalho} e um \textbf{cronograma} para executar o trabalho.
+        \item Também, o plano deve \textbf{identificar} a \textbf{abordagem} adotada para o \textbf{gerenciamento de risco}, bem como os \textbf{riscos para o projeto} e o \textbf{software} em desenvolvimento.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Planos de Projeto}
+    \begin{itemize}
+        \justifying
+        \item Os planos costumam incluir as seguintes seções:
             \begin{enumerate}
-                \justifying
-                \item \textbf{Atividades pré-revisão}: trata-se de atividades preparatórias essenciais para que a revisão seja eficaz. Normalmente, as atividades pré-revisão estão relacionadas ao \alert<2>{planejamento} e com a \alert<3>{preparação da revisão}.
+                \item \alert<2>{Introdução}
                     \begin{itemize}
                         \justifying
-                        \item<2> Envolve a criação de uma equipe de revisão, a organização de um tempo e um lugar para a revisão e a distribuição dos documentos a serem revisados.
-                        \item<3> Consiste em uma reunião da equipe para obter uma visão geral do software a ser revisto.
+                        \item<2> \textbf{Descreve} resumidamente os \textbf{objetivos} do projeto e \textbf{estabelece} as \textbf{restrições} (por exemplo, orçamento e tempo) que afetam o gerenciamento do projeto.
                     \end{itemize}
+                \item \alert<3>{Organização do projeto}
+                    \begin{itemize}
+                        \justifying
+                        \item<3> \textbf{Descreve} a maneira como o time de desenvolvimento é organizado, \textbf{as pessoas envolvidas} e \textbf{seus papéis no time}.
+                    \end{itemize}
+                \item Análise de risco
+                \item \alert<4>{Requisitos de recursos de hardware e software}
+                    \begin{itemize}
+                        \justifying
+                        \item<4> \textbf{Especifica} o \textbf{hardware} e o \textbf{software} de apoio \textbf{necessários} para realizar o desenvolvimento. Se houver necessidade de adquirir hardware, as estimativas de preço e de cronograma de entrega podem ser incluídas.
+                    \end{itemize}
+                \item Divisão de trabalho.
+                \item Cronograma de projeto.
+                \item Mecanismos de monitoramento e de divulgação.
             \end{enumerate}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{O processo de revisão}
+\begin{frame}{Planos de Projeto}
     \begin{itemize}
         \justifying
-        \item Embora existam muitas variações nos detalhes, os processos de revisão estão estruturados em três fases:
+        \item Os planos costumam incluir as seguintes seções:
         \begin{enumerate}
-            \justifying
-            \item \textbf{Atividades pré-revisão}
-            \item \textbf{Reunião da revisão}\uncover<1>{: durante a reunião de revisão, um autor do documento ou programa que está sendo revisado deve `percorrer passo a passo' o documento com a equipe de revisão. Um membro da equipe deve presidir a revisão e outro deve registrar formalmente todas as decisões de revisão, comentários e as ações a serem tomadas.}
-            \item \textbf{Atividades pós-revisão}\uncover<2>{: depois que uma reunião de revisão terminou, devem ser abordados as questões e os problemas levantados durante a revisão. Depois que foram feitas as altera-ções, o membro da equipe que preside a de revisão pode verificar se foram levadas em conta todas as observações da revisão.}
+            \item Introdução
+            \item Organização do projeto
+            \item Análise de risco
+            \item Requisitos de recursos de hardware e software
+            \item \alert<1>{Divisão de trabalho}
+                \begin{itemize}
+                    \justifying
+                    \item<1> \textbf{Estabelece a divisão} do projeto \textbf{em atividades} e \textbf{identifica} as \textbf{entradas} e as \textbf{saídas} \textbf{de cada atividade} de projeto.
+                \end{itemize}
+            \item \alert<2>{Cronograma de projeto}
+                \begin{itemize}
+                    \justifying
+                    \item<2> \textbf{Mostra} as \textbf{dependências entre as atividades}, o \textbf{tempo} estimado necessário \textbf{para alcançar cada marco} e a \textbf{alocação de pessoas} às atividades.
+                \end{itemize}
+            \item \alert<3>{Mecanismos de monitoramento e de divulgação}
+                \begin{itemize}
+                    \justifying
+                    \item<3> \textbf{Define} os \textbf{relatórios} de gestão \textbf{que devem ser produzidos}, \textbf{quando} devem ser produzidos e os \textbf{mecanismos de monitoramento} de projeto a serem utilizados.
+                \end{itemize}
         \end{enumerate}
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Planos de Projeto}
+    \begin{itemize}
+        \justifying
+        \item Também é possível desenvolver uma série de planos suplementares.
+    \end{itemize}
+    \vspace{10pt}
+    \includegraphics[width=\textwidth]{imagens/figura01.png}
 \end{frame}
 
 %-------------------------------------------------------------------------------
 % SUBSECTION 1.2 ---------------------------------------------------------------
 %-------------------------------------------------------------------------------
-\subsection{Inspeções de programa}
+\subsection{O Processo de Planejamento}
 
-\begin{frame}{Inspeções de programa}
+\begin{frame}{O Processo de Planejamento}
     \begin{itemize}
         \justifying
-        \item São \textbf{revisões por pares} em que os membros do time, os quais possuem diferentes conhecimentos, colaboram para encontrar \textit{bugs} no programa que está sendo desenvolvido.
-        \item<2-> Versões incompletas do sistema podem ser verificadas, assim como representações, como modelos UML, e também os testes.
-        \item<3-> Durante uma inspeção, frequentemente se usa um \textbf{\textit{checklist}} de erros comuns de programação.
-        \item<4> Os defeitos e problemas encontrados são descritos em uma reunião de inspeção.
+        \item O planejamento de projeto é um \textbf{processo iterativo} que \textbf{começa} na \textbf{criação de um plano de projeto inicial} durante a fase inicial do projeto.
+        \item À medida que \textbf{mais informações} sobre o sistema e o time de projeto \textbf{são disponibilizadas}, é necessário \textbf{revisar o plano} regularmente para refletir as alterações.
     \end{itemize}
 \end{frame}
 
-\setbeamertemplate{background canvas}{%
-    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/debate-istockphoto-1186244173-612x612.jpg}};
-}
+\begin{frame}{O Processo de Planejamento}
+    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\end{frame}
 
-\begin{frame}{Inspeções de programa}
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Definição de Cronograma de Projeto}
+
+\setbeamertemplate{background canvas}{%
+       \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/gantt-chart.png}};
+    }
+    
+\begin{frame}{Definição de Cronograma de Projeto}
     \begin{itemize}
         \justifying
-        \item Estudos mais antigos mostram que inspeções são eficazes na busca de defeitos.
-        \item \textbf{Discussão}: a inspeção ``manual'' ainda é cabível nos nossos dias?
+        \item A definição do cronograma de projeto é o processo de \textbf{decidir} \textbf{como o trabalho} em um projeto \textbf{será organizado} em tarefas distintas, \textbf{quando} e \textbf{de que maneira} essas tarefas serão \textbf{executadas}.
+        \item<2-> São \textbf{estimados} os \textbf{prazos} necessários para realizar cada tarefa e o \textbf{esforço} necessário, além de serem \textbf{indicadas} as \textbf{pessoas} que trabalharão nas tarefas que foram identificadas, e também os recursos de \textbf{hardware} e de \textbf{software} necessários para completar cada tarefa.
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Definição de Cronograma de Projeto}
+    \begin{itemize}
+        \justifying
+        \item E se algo der errado?
+        \item<2> Uma boa regra geral é estimar como se nada desse errado e, em seguida, aumentar a estimativa para cobrir os problemas previstos e, se possível aumentar também para imprevistos.
+    \end{itemize}
+    \vspace{20pt}
+    \uncover<2>{
+        \includegraphics[width=\textwidth]{imagens/figura03.png}
+    }
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Apresentação do Cronograma}
+
 \setbeamertemplate{background canvas}{%
-    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/obras.jpg}};
+    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/gantt-chart.png}};
 }
+
+\begin{frame}{Apresentação do Cronograma}
+    \begin{itemize}
+        \justifying
+        \item Os cronogramas de projeto podem ser documentados simplesmente em uma tabela ou em uma planilha mostrando as tarefas, o esforço estimado, a duração e as dependências das tarefas.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \includegraphics[width=\textwidth]{imagens/figura04.png}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \begin{itemize}
+        \justifying
+        \item Esse estilo de apresentação dificulta a visualização das relações e das dependências entre as diferentes atividades. 
+        \item Por essa razão, foram desenvolvidas visualizações gráficas alternativas dos cronogramas de projeto, que são mais fáceis de ler e de entender.
+        \item Ex.: Diagrama/Gráfico de Gantt.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/figura05.png}
+\end{frame}
+
+\begin{frame}{Apresentação do Cronograma}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagens/figura06.png}
+\end{frame}
+
+\setbeamertemplate{background canvas}[default]
 
 %===============================================================================
 % SECTION 3 ====================================================================
@@ -138,10 +214,18 @@
 \section{Atividade}
 
 \begin{frame}{Atividade}
-    \begin{itemize}
-        \justifying
-        \item Criar scripts de teste para o sistema que está sendo desenvolvido.
-    \end{itemize}
+	\begin{itemize}
+		\justifying
+		\item Reunir-se em grupo para iniciar o planejamento do aplicativo que tiverem escolhido.
+		\item Criar o planejamento inicial e esboçar um cronograma.
+		\item Aplicativo recomendado: Clickup.
+		\item Alternativas com versões gratuitas:
+		\begin{itemize}
+			\justifying
+			\item \href{https://everhour.com/blog/clickup-alternative/}{Top ClickUp Alternatives for 2025: Best Project Management Tools}.
+			\item \href{https://startinfinity.com/blog/clickup-alternatives}{13 ClickUp Alternatives Worth Checking Out in 2025}.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \setbeamertemplate{background canvas}[default]

@@ -54,6 +54,12 @@
 - 2026.1.11
   - AULAS/11/
     - `aula11.[pdf/tex]` e `preambulo.tex` atualizados.
-    - Pasta `imagens/`
+    - `imagens/`
       - Arquivo `draw.io` excluído.
+      - Novas imagens adicionadas.
+- 2026.1.12
+  - AULAS/12/
+    - `aula11.[pdf/tex]` e `preambulo.tex` atualizados.
+    - `imagens/`
+      - Arquivo anterior exlcuído.
       - Novas imagens adicionadas.
