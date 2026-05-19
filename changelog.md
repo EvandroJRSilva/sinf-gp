@@ -63,3 +63,9 @@
     - `imagens/`
       - Arquivo anterior exlcuído.
       - Novas imagens adicionadas.
+- 2026.1.13
+  - AULAS/13/
+    - `aula11.[pdf/tex]` e `preambulo.tex` atualizados.
+    - `imagens/`
+      - Arquivo anterior exlcuído.
+      - Novas imagens adicionadas.
