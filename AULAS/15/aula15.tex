@@ -27,242 +27,496 @@
 %===============================================================================
 % SECTION 1 ====================================================================
 %===============================================================================
-\section{Domínios de desempenho de projeto}
+\section{Gerenciamento de configuração}
 
 %\setbeamertemplate{background canvas}{%
 %    \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{imagens/backgrounds/Git-logo.png}};
 %}
 
-\begin{frame}{Domínios de desempenho de projeto}
-    \begin{itemize}
-        \justifying
-        \item<1> Os domínios de desempenho de projetos são \textbf{áreas de foco interativas}, \textbf{inter-relacionadas} e \textbf{interdependentes} que \textbf{trabalham em uníssono} para \textbf{alcançar os resultados desejados} do projeto.
-        \item<2> O PMBOK define oito domínios:
-            \begin{enumerate}
-                \item Partes interessadas.
-                \item Equipe.
-                \item Abordagem de desenvolvimento e ciclo de vida.
-                \item Planejamento.
-                \item Trabalho do projeto.
-                \item Entrega.
-                \item Medição.
-                \item Incerteza.
-            \end{enumerate}
-    \end{itemize}
+\begin{frame}{Gerenciamento de configuração}
+	\begin{itemize}
+		\justifying
+		\item<1-5> Os softwares \textbf{mudam constantemente} durante seu desenvolvimento e uso
+		\begin{itemize}
+			\justifying
+			\item<2-5> Defeitos são descobertos.
+			\item<3-5> Requisitos mudam.
+			\item<4-5> Novas versões de hardware e software.
+			\item<5> Concorrentes lançam novidades.
+		\end{itemize}
+		\item<6> À medida em que são feitas alterações no software, uma nova versão de um sistema é criado. A \textbf{maioria dos sistemas}, portanto, pode ser encarada como um \textbf{conjunto de versões}, \textbf{cada uma} delas tendo que ser \textbf{mantida e gerenciada}.
+	\end{itemize}
 \end{frame}
 
-% https://unichrone.com/blog/project-management/pmbok-guide-7th-edition/#What_does_the_PMBOK_Guide_consist_of
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.1 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Partes interessadas}
-
-\begin{frame}{Partes interessadas}
-    \begin{itemize}
-        \justifying
-        \small
-        \item Envolve engajar e trabalhar com as partes interessadas para promover relacionamentos positivos e a satisfação.
-        \item Para isso são muito importantes as habilidades interpessoais e de liderança.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura01.png}
+\begin{frame}{Gerenciamento de configuração}
+	\begin{itemize}
+		\justifying
+		\item O gerenciamento de configuração
+		\begin{itemize}
+			\justifying
+			\item<1-> Está relacionado às \textbf{políticas}, aos \textbf{processos} e às \textbf{ferramentas} para o gerenciamento de sistemas de software que mudam.
+			\item<2-> É \textbf{útil} para \textbf{projetos individuais}, pois é fácil para uma pessoa esquecer quais alterações foram feitas.
+			\item<3> É \textbf{essencial} para \textbf{projetos em equipe}, nos quais vários desenvolvedores trabalham em um sistema de software ao mesmo tempo.
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-% SUBSUBSECTION 1.1.1  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-%\subsubsection{Engajamento das partes interessadas}
-%
-%\begin{frame}{Engajamento das partes interessadas}
-%    \begin{itemize}
-%        \justifying
-%        \item Inclui a implementação de estratégias e ações para promover o envolvimento produtivo delas.
-%    \end{itemize}
-%    \vspace{10pt}
-%    \centering
-%    \includegraphics[width=0.6\textwidth]{imagens/figura01_01.png}
-%\end{frame}
-
-%\begin{frame}{Engajamento das partes interessadas}
-%    \begin{itemize}
-%        \item<1-> \textbf{Identificar}
-%            \begin{itemize}
-%                \justifying
-%                \item<1> \textbf{Algumas partes interessadas são fáceis de identificar}, como: cliente, patrocinador, equipe do projeto, usuários finais e assim por diante, \textbf{mas outras podem ser difíceis} quando não estão diretamente conectadas ao projeto.
-%            \end{itemize}
-%        \item<2-> \textbf{Compreender} e \textbf{Analisar}
-%            \begin{itemize}
-%                \justifying
-%                \item<2> O gerente do projeto e a equipe do projeto devem procurar entender os sentimentos, as emoções, crenças e os valores das partes interessadas.
-%                \item<2> A \textbf{compreensão e análise} desses elementos resulta em informa-ções que \textbf{ajudam a equipe} do projeto a \textbf{considerar as interações que podem influenciar} as partes interessadas.
-%            \end{itemize}
-%        \item<3-> \textbf{Priorizar}
-%            \begin{itemize}
-%                \justifying
-%                \item<3> Com base em sua análise, a equipe do projeto pode priorizar alguns \textit{stakeholders} em específico. É comum \textbf{focar nas partes interessadas com mais poder e interesse}.
-%            \end{itemize}
-%    \end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Engajamento das partes interessadas}
-%    \begin{itemize}
-%        \item \textbf{Identificar}
-%        \item \textbf{Compreender} e \textbf{Analisar}
-%        \item \textbf{Priorizar}
-%        \item<1-> \textbf{Engajar}
-%            \begin{itemize}
-%                \item 
-%            \end{itemize}
-%        \item<2> \textbf{Monitorar}
-%    \end{itemize}
-%\end{frame}
-
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.2 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Equipe}
-
-\begin{frame}{Equipe}
-    \begin{itemize}
-        \justifying
-        \item Envolve estabelecer a cultura e o ambiente que permitem que um grupo de diversos indivíduos evolua para uma equipe de projeto de alto desempenho.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura02.png}
+\begin{frame}{Gerenciamento de configuração}
+	\begin{itemize}
+		\justifying
+		\item Quatro atividades principais
+		\begin{enumerate}
+			\justifying
+			\item<1> \textbf{Controle de versão}: envolve manter o controle das várias versões dos componentes do sistema e garantir que as mudanças feitas em componentes por diferentes desenvolvedores não interfiram umas com as outras.
+			\item<2> \textbf{Construção de sistema}: processo de reunir componentes, dados e bibliotecas do programa, compilando-os e ligando-os para criar um sistema executável.
+			\item<3> \textbf{Gerenciamento de mudanças}: envolve manter o controle das solicita-ções de mudança de clientes e desenvolvedores no software já entregue, elaborar os custos e o impacto de fazer essas mudanças e decidir se e quando as alterações devem ser implementadas.
+			\item<4> \textbf{Gerenciamento de lançamentos} (\textit{releases}): envolve a preparação de software para o lançamento externo e o acompanhamento das versões de sistema que foram lançadas para uso do cliente.
+		\end{enumerate}
+	\end{itemize}
 \end{frame}
 
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.3 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Abordagem de desenvolvimento e ciclo de vida}
-
-\begin{frame}{Abordagem de desenvolvimento e ciclo de vida}
-    \begin{itemize}
-        \justifying
-        \item Envolve o estabelecimento da abordagem de desenvolvimento, cadência de entrega e ciclo de vida do projeto necessários para otimizar os resultados do projeto.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura03.png}
+\begin{frame}{Gerenciamento de configuração}
+	\centering
+	\includegraphics[width=\textwidth]{imagens/figura01.png}
 \end{frame}
 
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.4 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Planejamento}
-
-\begin{frame}{Planejamento}
-    \begin{itemize}
-        \justifying
-        \item O planejamento organiza, elabora e coordena o trabalho do projeto, durante todo o projeto.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagens/figura04.png}
+\begin{frame}{Gerenciamento de configuração}
+	\centering
+	\includegraphics[width=\textwidth]{imagens/figura02.png}
 \end{frame}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.5 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Trabalho do projeto}
-
-\begin{frame}{Trabalho do projeto}
-    \begin{itemize}
-        \justifying
-        \item Está associado ao estabelecimento dos processos e à execução do trabalho para permitir que a equipe do projeto gere as entregas e os resultados esperados.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=0.9\textwidth]{imagens/figura05.png}
-\end{frame}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.6 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Entrega}
-
-\begin{frame}{Entrega}
-    \begin{itemize}
-        \justifying
-        \item Concentra-se em atender aos requisitos, escopo e expectativas de qualidade para produzir as entregas esperadas que conduzirão aos resultados pretendidos.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=0.9\textwidth]{imagens/figura06.png}
-\end{frame}
-
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.7 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Medição}
-
-\begin{frame}{Medição}
-    \begin{itemize}
-        \justifying
-        \item Avalia o grau em que o trabalho realizado no domínio de desempenho da entrega está cumprindo as métricas identificadas no domínio de desempenho do planejamento.
-    \end{itemize}
-    \vspace{5pt}
-    \centering
-    \includegraphics[width=\textwidth]{imagens/figura07.png}
-\end{frame}
-
-%-------------------------------------------------------------------------------
-% SUBSECTION 1.8 ---------------------------------------------------------------
-%-------------------------------------------------------------------------------
-\subsection{Incerteza}
-
-\begin{frame}{Incerteza}
-    \begin{itemize}
-        \justifying
-        \item Aborda os vários aspectos da incerteza, suas implicações, como o risco do projeto, bem como as opções para navegar pelas várias formas de incerteza.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Incerteza}
-    \centering
-    \includegraphics[width=0.9\textwidth]{imagens/figura08.png}
-\end{frame}
-
-\setbeamertemplate{background canvas}{%
-        \tikz[remember picture,overlay] \node[opacity=0.15,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{../backgrounds/obras.jpg}};
-    }
 
 %===============================================================================
 % SECTION 2 ====================================================================
+%===============================================================================
+\section{Gerenciamento de versões}
+
+\begin{frame}{Gerenciamento de versões}
+	\begin{itemize}
+		\justifying
+		\item O que é controle de versão? Onde vive? O que faz? Do que se alimenta?
+		\begin{itemize}
+			\justifying
+			\item<2-> É um \textbf{sistema} que \textbf{armazena modificações} em um arquivo ou conjunto de arquivos em função do tempo, e \textbf{permite o acesso a versões específicas a qualquer momento}.
+			\item<3> Em nosso contexto usamos para versionar códigos-fonte, mas um controle de versionamento pode ser aplicado sobre praticamente qualquer tipo de arquivo.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de versões}
+	\begin{itemize}
+		\justifying
+		\item Com um \textbf{Sistema de Controle de Versionamento} (VCS) é possível
+		\begin{itemize}
+			\justifying
+			\item<2-> Voltar ao estado anterior dos arquivos selecionados;
+			\item<3-> Voltar ao estado anterior de todo o projeto;
+			\item<4-> Comparar diferentes modificações;
+			\item<5-> Caguetar a pessoa que fez uma modificação que está causando erro;
+			\item<6-> Saber quem adicionou alguma nota (sobre problema ou sugestão), onde e quando;
+			\item<7-> Se você sem querer apagou tudo, com um VCS é maior a probabilidade de você conseguir recuperar o que perdeu;
+			\item<8> Tudo isso sem muito custo computacional.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{VCS Local}
+
+\begin{frame}{VCS Local}
+	\begin{itemize}
+		\justifying
+		\item<1> O mais comum:\\ \vspace{5pt}
+		\includegraphics[width=0.8\textwidth]{imagens/figura03.png}
+		\item<2> De repente um pouco mais organizado
+		\begin{itemize}
+			\justifying
+			\item<2> \texttt{arquivo\_2026-05-26\_0800.doc} 
+			\item<2> $\rightarrow$ \texttt{arquivo\_2026-05-26\_1000.doc}.
+			\item<2> $\rightarrow$ \texttt{arquivo\_2025-05-26\_1435.doc}.
+		\end{itemize}
+		\item<3> O que são programadores senão as pessoas que fazem programas para solucionar problemas? Ou facilitar a vida?
+		\item<3> Então criaram sistemas de controle de versão local
+		\begin{itemize}
+			\justifying
+			\item<3> Basicamente um banco de dados simples que armazena todas as modificações.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{VCS Local}
+	\centering
+	\includegraphics[width=0.8\textwidth]{../memes/meme_quesomos.jpg}
+\end{frame}
+
+\begin{frame}{VCS Local}
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagens/figura04.jpeg}
+\end{frame}
+
+\begin{frame}{VCS Local}
+	\begin{itemize}
+		\justifying
+		\item \href{https://www.gnu.org/software/rcs/}{\textit{Revision Control System} (RCS)} é (ou foi) um bastante popular.
+		\item Como funciona: mantém a cópia mais recente de um arquivo e modificações \textit{reversas} (chamadas \textit{deltas}), ou seja, o que tinha de diferente antes.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{VCS Centralizado}
+
+\begin{frame}{VCS Centralizado}
+	\begin{itemize}
+		\justifying
+		\item Versionamento local: OK
+		\item Versionamento de colaborações com outros desenvolvedores
+	\end{itemize}
+	\centering
+	\uncover<2->{\includegraphics[width=0.25\textwidth]{../memes/dieMeme.jpg}}
+	\begin{itemize}    
+		\justifying
+		\item<3> E novamente os desenvolvedores:
+	\end{itemize}
+	\centering
+	\uncover<3>{\includegraphics[width=0.25\textwidth]{../memes/challengeAcceptedMeme.jpg}}
+\end{frame}
+
+\begin{frame}{VCS Centralizado}
+	\centering
+	\includegraphics[width=0.5\textwidth]{imagens/figura05.jpeg}
+	\begin{itemize}
+		\item Alguns conhecidos: CVS, Subversion e Perforce.
+		\item Porém, ainda assim temos algumas desvantagens
+		\begin{itemize}
+			\justifying
+			\item Se o servidor cair, ninguém vai conseguir colaborar ou salvar novas versões enquanto o servidor não voltar.
+			\item<2-> Se o HD ou SSD onde o repositório estiver armazenado for corrompido e o último backup foi duas semanas atrás ....
+		\end{itemize}
+	\end{itemize}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\centering
+			\uncover<3->{\includegraphics[width=0.7\textwidth]{../memes/depressionMeme.jpg}}
+		\end{column}
+		
+		\begin{column}{0.5\textwidth}
+			\uncover<4>{Solução: VCS Distribuído}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{VCS Centralizado}
+	\centering
+	\includegraphics[width=\textwidth]{../memes/meme_glorificar.jpg}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{VCS Distribuído}
+
+\begin{frame}{VCS Distribuído}
+	\begin{itemize}
+		\justifying
+		\item Agora os clientes (programadores) não somente verificam o último estado dos arquivos (como era no centralizado).
+		\item Cada um espelha o repositório por completo, incluindo todo o seu histórico.
+		\item Portanto, todos os envolvidos naquele projeto são, por si só, backups.
+		\item<2> Outros VCS Distribuídos além do Git: Mercurial, Bazaar e Darcs.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{VCS Distribuído}
+	\centering
+	\includegraphics[height=0.9\textheight]{imagens/figura06.jpeg}
+\end{frame}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Gerenciamento de mudanças}
+
+\begin{frame}{Gerenciamento de mudanças}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying
+				\footnotesize
+				\item É o \textbf{processo de analisar} os \textbf{custos} e os \textbf{benefícios} das mudanças propostas, \textbf{aprovando} as que têm bom custo-benefício e \textbf{controlando} quais componentes do sistema foram modificados.
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{imagens/figura07_01.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 3.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Ferramentas para apoiar o gerenciamento de mudanças}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+	\begin{itemize}
+		\justifying
+		\item Podem ser tanto \alert<2>{\textbf{sistemas relativamente simples de rastreamento de problemas ou defeitos}} quanto um \alert<3>{\textbf{software integrado a um pacote de gerenciamento de configuração de sistemas de larga escala}}.
+		\begin{itemize}
+			\justifying
+			\item<2> \href{https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues}{Github Issues}.
+			\item<3> \href{https://www.ibm.com/br-pt/products/rational-clearcase}{IBM Rational ClearCase}.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying
+				\footnotesize
+				\item Os sistemas de rastreamento de problemas permitem que qualquer pessoa relate um defeito ou faça uma sugestão de mudança no sistema, e controlam como o time de desenvolvimento respondeu a essas questões
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=0.95\textwidth]{imagens/figura07_02.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying
+				\footnotesize
+				\item Depois de uma solicitação de mudança ter sido enviada. ela é conferida para garantir que seja válida.
+				\item A solicitação de mudança pode ser rejeitada nesse estágio
+				\begin{itemize}
+					\justifying
+					\tiny
+					\item O \textbf{defeito} pode já ter sido relatado e \textbf{corrigido}.
+					\item O que as pessoas \textbf{acreditam ser problemas} pode ser, na verdade, um \textbf{mal-entendido} quanto ao que se espera que o sistema faça.
+					\item As pessoas \textbf{pedem características} que \textbf{já foram implementadas}, \textbf{mas} sobre as quais elas \textbf{ainda não sabiam}.
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=0.95\textwidth]{imagens/figura07_03.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying
+				\footnotesize
+				\item Para as solicitações de mudança \textbf{válidas}, a próxima etapa do processo é a \textbf{avaliação da mudança} e o \textbf{cálculo dos custos}.
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=0.95\textwidth]{imagens/figura07_04.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+	\begin{columns}
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\justifying
+				\footnotesize
+				\item Um grupo à parte decide se é rentável para a empresa fazer a mudança no software.
+				\item Nesse momento é considerado o impacto da mudança de um ponto de vista estratégico e organizacional, em vez de técnico.
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.6\textwidth}
+			\centering
+			\includegraphics[width=0.95\textwidth]{imagens/figura07_05.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Ferramentas para apoiar o gerenciamento de mudanças}
+	\begin{itemize}
+		\justifying
+		\item<1> Os fatores que influenciam a decisão sobre a implementação, ou não, de uma mudança incluem:
+		\begin{itemize}
+			\justifying
+			\item<1> As consequências de não fazer a mudança.
+			\item<1> Os benefícios da mudança.
+			\item<1> O número de usuários afetados pela mudança.
+			\item<1> Os custos de fazer a mudança.
+			\item<1> O ciclo de lançamento do produto.
+		\end{itemize}
+		\item<2> Conforme o time de desenvolvimento altera os componentes de software, ele deve manter um \textbf{registro das alterações} feitas em cada componente. Ex.: \textbf{changelog}.
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 4 ====================================================================
+%===============================================================================
+\section{Gerenciamento de lançamentos}
+
+\begin{frame}{Gerenciamento de lançamentos}
+	\begin{itemize}
+		\justifying
+		\item Um lançamento (\textit{release}) de sistema é \textbf{uma versão} do sistema de software distribuída para os clientes.
+		\item Em alguns casos é possível identificar 2 tipos de lançamentos:
+		\begin{itemize}
+			\justifying
+			\item \textit{\textbf{Major releases}}: em alguns casos referidos como \textbf{LTS} (\textit{Long Term Service}), os quais oferecem novas funcionalidades significativas. Costuma ser pago.
+			\item \textit{\textbf{Minor releases}}: que consertam defeitos e solucionam problemas relatados por clientes. Costuma ser gratuito.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de lançamentos}
+	\begin{itemize}
+		\item Python
+		
+		\begin{tabular}{lccl}
+			\href{https://peps.python.org/pep-0569/}{3.8} & (2019-10-14) & $\rightarrow$ & 3.8.20 \\
+			\href{https://peps.python.org/pep-0596/}{3.9} & (2020-10-05) & $\rightarrow$ & 3.9.24\\
+			\href{https://peps.python.org/pep-0619/}{3.10} & (2021-10-04) & $\rightarrow$ & 3.10.19\\
+			\href{https://peps.python.org/pep-0664/}{3.11} & (2022-10-24) & $\rightarrow$ & 3.11.14\\
+			\href{https://peps.python.org/pep-0693/}{3.12} & (2023-10-02) & $\rightarrow$ & 3.12.12\\
+			\href{https://peps.python.org/pep-0719/}{3.13} & (2024-10-07) & $\rightarrow$ & 3.13.9 \\
+			\href{https://peps.python.org/pep-0745/}{3.14} & (2025-10-07) & $\rightarrow$ & a cada 2 meses\\
+			\href{https://peps.python.org/pep-0790/}{3.15} & (2026-10-07) &  & \\
+		\end{tabular}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Gerenciamento de lançamentos}
+	\begin{itemize}
+		\justifying
+		\item Um lançamento de produto de software não é apenas o código executável do sistema. O lançamento também pode incluir:
+		\begin{itemize}
+			\justifying
+			\item<2-> \textbf{Arquivos de configuração}, que definem como o lançamento deve ser configurado para instalações específicas.
+			\item<3-> \textbf{Arquivos de dados}, como arquivos de mensagens de erro em diferentes idiomas, que são necessários para a operação bem-sucedida do sistema.
+			\item<4-> \textbf{Programa de instalação}, que é usado para ajudar a instalar o sistema no hardware de destino.
+			\item<5-> \textbf{Documentação}, eletrônica e em papel, que descreva o sistema.
+			\item<6> \textbf{Embalagens e publicidade associada}, que foram concebidas para esse lançamento.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 4.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Marketing}
+
+\begin{frame}{Marketing}
+	\begin{itemize}
+		\justifying
+		\item Além do trabalho técnico envolvido na criação de uma distribuição do lançamento, é preciso preparar \textbf{material de propaganda e publicidade}
+		\begin{itemize}
+			\justifying
+			\item<2-> Pode ser necessário conceber estratégias de marketing para convencer os clientes a comprarem o novo lançamento do sistema.
+			\item<3-> É preciso pensar muito no momento dos lançamentos:
+			\begin{itemize}
+				\justifying
+				\item<4> Se eles forem \textbf{frequentes demais} ou exigirem \textbf{atualizações de hardware}, os clientes podem não passar para o novo lançamento, especialmente se tiverem que pagar por ele.
+				\item<4> Se os lançamentos do sistema forem \textbf{pouco frequentes}, a participação de mercado pode diminuir à medida que os clientes mudarem para sistemas alternativos.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 4.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Criação do lançamento}
+
+\begin{frame}{Criação do lançamento}
+	\begin{itemize}
+		\justifying
+		\item É o \textbf{processo de criar o conjunto de arquivos e documentação} que inclui todos os componentes do lançamento do sistema. Esse processo envolve várias etapas, destacadas a seguir:
+		\begin{enumerate}
+			\justifying
+			\item<2> O \textbf{código executável} dos programas e todos os arquivos de dados associados devem ser identificados no sistema de controle de versão e marcados com o identificador de lançamento.
+			\item<3> \textbf{Descrições de configuração} podem ter de ser escritas para diferentes sistemas operacionais e de hardware.
+			\item<4> \textbf{Instruções atualizadas} podem ter de ser escritas para os clientes que precisam configurar seus próprios sistemas.
+			\item<5> \textbf{Scripts} para o programa \textbf{de instalação} podem ter de ser escritos.
+			\item<6> \textbf{Páginas da web} precisam ser criadas descrevendo o lançamento, \textbf{com links} para a \textbf{documentação} do sistema.
+			\item<7> Finalmente, quando todas as informações estão disponíveis, uma \textbf{imagem mestre executável} do software deve ser preparada e entregue para distribuição a clientes ou para revendas.
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 4.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Documentação}
+
+\begin{frame}{Documentação}
+	\begin{itemize}
+		\justifying
+		\item Para documentar um lançamento
+		\begin{itemize}
+			\justifying
+			\item<1> Devem ser registradas as \textbf{versões específicas dos componentes do código-fonte} que foram utilizadas para criar o código executável.
+			\item<2> É necessário \textbf{manter cópias} dos arquivos \textbf{do código-fonte}, \textbf{dos executáveis} correspondentes e de todos os \textbf{arquivos de dados e configurações}.
+			\item<3> Pode ser necessário manter \textbf{cópias} dos \textbf{sistemas operacionais mais antigos} e de outro software de apoio porque eles ainda podem estar em operação (Docker e/ou máquina virtual).
+			\item<4> \textbf{Registrar} as \textbf{versões do sistema operacional}, as \textbf{bibliotecas}, os \textbf{compiladores} e \textbf{outras ferramentas} utilizadas para construir o software.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 4.4 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Instalação}
+
+\begin{frame}{Instalação}
+	\begin{itemize}
+		\justifying
+		\item Quando se planeja a instalação de novos lançamentos do sistema, não se deve assumir que os clientes sempre instalarão esses novos lançamentos.
+		\begin{itemize}
+			\justifying
+			\item Alguns usuários podem estar felizes com um sistema atual e podem não considerar justificável absorver  o custo de mudar para um novo lançamento.
+			\item Os novos lançamentos do sistema, portanto, não podem se basear na instalação dos lançamentos prévios.
+			\item Opção viável: \textbf{SaaS}.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 5 ====================================================================
 %===============================================================================
 \section{Atividade}
 
 \begin{frame}{Atividade}
     \begin{itemize}
         \justifying
-        \item Acrescentar ao documento do trabalho
-            \begin{itemize}
-                \item Domínio de \textbf{Partes interessadas}
-                    \begin{itemize}
-                        \item Mapeamento dos \textit{stakeholders}.
-                    \end{itemize}
-                \item Domínio de \textbf{Desenvolvimento e ciclo de vida} e \textbf{Planejamento}
-                    \begin{itemize}
-                        \justifying
-                        \item Definição e descrição resumida do método de desenvolvimento utilizado.
-                        \item Atualização no cronograma para incluir o período de manutenção. Ex.: a cada X meses patch de segurança, e a cada Y meses nova versão.
-                    \end{itemize}
-                \item Domínio de \textbf{Entrega}
-                    \begin{itemize}
-                        \item Se o grupo estiver utilizando Scrum, acrescentar um \textit{roadmap} definindo os entregáveis e \textit{backlog}.
-                    \end{itemize}
-                \item Domínio de \textbf{Medição}
-                    \begin{itemize}
-                        \justifying
-                        \item Definir e apresentar a evolução de 3 ou mais métricas.
-                    \end{itemize}
-            \end{itemize}
+        \item Iniciar o gerenciamento de configuração
+        	\begin{itemize}
+        		\justifying
+        		\item Escolher e justificar o uso de um VCS distribuído.
+        		\item Criar o repositório e fazer os \textit{commits} (todos do grupo, não necessariamente somente commits com código).
+        		\item Testar o software da outra equipe, e na aba de \textit{Issues} (ou equivalente do VCS escolhido):
+        			\begin{itemize}
+        				\item Sugerir alterações (tenham bom senso).
+        				\item Reportar bugs.
+        			\end{itemize}
+        		\item Implementar as alterações que façam sentido, e consertar os bugs.
+        		\item Registrar as mudanças (\texttt{changelog} ou equivalente).
+        	\end{itemize}
+        \item Ter, pelo menos, 2 \textit{releases} (1 \textit{major} e 1 \textit{minor}) do sistema --- não necessariamente um instalável, ou código fonte.
     \end{itemize}
 \end{frame}
 

@@ -76,3 +76,8 @@
       - Imagens substituídas.
   - AULAS/backgrounds/
     - Duas novas imagens.
+- 2026.1.15
+  - AULAS/15/
+    - `aula15.[pdf/tex]` e `preambulo.tex` atualizados.
+    - `imagens/`
+      - Imagens substituídas.
