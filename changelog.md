@@ -81,3 +81,8 @@
     - `aula15.[pdf/tex]` e `preambulo.tex` atualizados.
     - `imagens/`
       - Imagens substituídas.
+- 2026.1.16
+  - AULAS/16/
+    - `aula15.[pdf/tex]` e `preambulo.tex` criados.
+    - `imagens/`
+      - Imagens adicionadas.
