@@ -1,0 +1,231 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 17]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 17}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Engenharia de segurança de software}
+
+\begin{frame}{Engenharia de segurança de software}
+	\begin{itemize}
+		\justifying
+		\item Temos software em todo lugar: celular, tablet, notebook, geladeira, microondas, máquina de lavar, carro, caixa eletrônico, sistema financeiro, \href{https://theconversation.com/hacking-the-grid-how-digital-sabotage-turns-infrastructure-into-a-weapon-272874}{rede elétrica}, etc.
+		\item Todo produto de software tem o potencial de ser hackeado.
+			\begin{itemize}
+				\justifying
+				\item<2> \textit{Malwares} podem interceptar comandos legítimos enviados por operadores do sistema e trocá-los por instruções maliciosas.
+				\item<2> Ao mesmo tempo, o \href{https://www.ndss-symposium.org/ndss2017/ndss-2017-programme/hey-my-malware-knows-physics-attacking-plcs-physical-model-aware-rootkit/}{\textit{malware}} calcula quais deveriam ser as leituras dos sensores da rede se estivessem operando normalmente, e envia esses valores fictícios para a sala de controle.
+				\item<3> Por exemplo, o \textit{malware} pode ficar enviando comandos para os disjuntores fiquem abrindo e fechando rapidamente. Isso pode causar incêndios e explosões.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Engenharia de segurança de software}
+	\begin{itemize}
+		\justifying
+		\item Exemplos reais
+			\begin{itemize}
+				\justifying
+				\item \href{https://industrialcyber.co/industrial-cyber-attacks/zetter-details-how-stuxnet-marked-a-turning-point-in-cyberwarfare-by-enabling-physical-sabotage-through-code/}{\textbf{Stuxnet}}: destruiu centrífugas enriquecedoras de urânio do Irã, em 2009.
+				\item<2-> \href{https://www.securityweek.com/industroyer-ics-malware-linked-ukraine-power-grid-attack/}{\textbf{Industroyer}}: ataque de malware Russo contra a Ucrânica em 2016, utilizou os próprios protocolos de comunicação da rede elétrica da Ucrânica para abrirem disjuntores e cortassem o fornecimento de eletricidade para Kyiv.
+				\item<3> \href{https://www.securityweek.com/china-admitted-to-us-that-it-conducted-volt-typhoon-attacks-report/}{\textbf{Volt Typhoon}}: taque da China contra a infraestrutura crítica dos EUA, exposta em 2023, em resposta ao suporte dos EUA a Taiwan. Nesse ataque os hackers conseguiram acesso a redes de comunicação, construção, governo, transporte, energia, dentre outros.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Engenharia de segurança de software}
+	\begin{itemize}
+		\justifying
+		\item<1> Vulnerabilidade de cadeia de suprimentos
+		\begin{itemize}
+			\justifying
+			\item<1> A vulnerabilidade reside sobre a cadeia de suprimentos de \textbf{controladores}. Alguns usam códigos de bibliotecas datadas, ou sem suporte, e também existem os controladores que possuem seus sites administrativos, os quais podem ser pontos de vulnerabilidade.
+			\item<1> Quando algum operador de uma fábrica fizer o login, um código malicioso pode ser ativado para se aproveitar de uma sessão legítima, contornando \textit{firewalls} e enviando comandos para o equipamento físico, sem a necessidade de quebra de senha do dispositivo.
+			\item<1> Esses controladores estão em diversos equipamentos, inclusive equipamentos médicos.
+		\end{itemize}
+		\item<2> \href{https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents}{Lista} de cyber incidentes significativos, desde 2006.
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{\textit{Security Development Lifecycle} - SDL}
+
+\begin{frame}{\textit{Security Development Lifecycle} - SDL}
+	\begin{itemize}
+		\justifying
+		\item<1> É um processo de segurança de software de iniciativa da Microsoft.
+		\item<1> O SDL introduz a segurança e a privacidade no início do trabalho e em todas as fases do processo de desenvolvimento. É o modelo do ciclo de vida do desenvolvimento da segurança mais conhecido e mais utilizado.
+		\item<2> A Microsoft definiu um conjunto de princípios chamados de \textit{Seguro por Design}, \textit{Seguro por Padrão (Default)}, \textit{Seguro na Implantação (Deployment) e Comunicações} (SD3+C) para ajudar a determinar onde os esforços de segurança são necessários.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\textit{Security Development Lifecycle} - SDL}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Seguro por \textit{Design}}
+			\begin{itemize}
+				\justifying
+				\item<1> Arquitetura, projeto e estrutura seguros.
+				\item<1> Modelagem de ameaças e mitigação.
+				\item<1> Eliminação de vulnerabilidades.
+				\item<1> Melhorias na segurança.
+			\end{itemize}
+		\item \textbf{Seguro por Padrão (\textit{Default})}
+			\begin{itemize}
+				\item<2> Privilégios mínimos.
+				\item<2> Defesa em profundidade.
+				\item<2> Configurações de padrões conservadoras.
+				\item<2> Evitar alterações arriscadas de padrões.
+				\item<2> Serviços menos usados desabilitados por padrão.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{\textit{Security Development Lifecycle} - SDL}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Seguro na Implantação (\textit{Deplyment})}
+			\begin{itemize}
+				\item Guias de implantação.
+				\item Ferramentas de análise e gestão.
+				\item Ferramentas de implantação de \textit{patches}.
+			\end{itemize}
+		\item \textbf{Comunicações}
+			\begin{itemize}
+				\item Resposta de segurança.
+				\item Envolvimento da comunidade.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 3 ====================================================================
+%===============================================================================
+\section{Pontos de contato}
+
+\begin{frame}{Pontos de contato}
+	\begin{itemize}
+		\justifying
+		\item É independente do modelo de ciclo de vida.
+		\item Algumas organizações consideram os pontos de contato como o conjunto mínimo de atividades que devem ser realizadas no desenvolvimento seguro de software.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Pontos de contato}
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\begin{frame}{Pontos de contato}
+	\begin{itemize}
+		\justifying
+		\item A partir do SDL e dos pontos de contato é possível definir e implementar políticas e atividades de segurança ao longo do desenvolvimento, como por exemplo:
+			\begin{itemize}
+				\justifying
+				\item<1-> \textbf{Engenharia de requisitos de segurança}.
+				\item<2-> \textbf{Levantamento de casos de mau uso, abuso e padrões de ataque}.
+				\item<3-> \textbf{Análise de risco de segurança}.
+				\item<4-> \textbf{Modelagem de ameaças, priorização e mitigação}\uncover<4>{: uma abordagem para criar uma abstração de um sistema de software com o objetivo de identificar as habilidades e os objetivos dos invasores e utilizar essa abstração para gerar e catalogar possíveis ameaças que o sistema deve mitigar.}
+				\item<5-> \textbf{Superfície de ataque}\uncover<5>{: descreve todos os diferentes pontos nos quais um invasor pode entrar em um sistema e dos quais ele poderia extrair dados.}
+				\item<6> \textbf{Codificação segura}.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 4 ====================================================================
+%===============================================================================
+\section{OWASP}
+
+\begin{frame}{OWASP}
+	\begin{itemize}
+		\justifying
+		\item O OWASP (\textit{Open Worldwide Application Security Project}) é uma fundação sem fins lucrativos que trabalha para melhorar a segurança de software.
+		\item Consiste em uma comunidade aberta dedicada a capacitar organizações a conceber, desenvolver, adquirir, operar e manter aplicações confiáveis.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{OWASP}
+	\begin{itemize}
+		\justifying
+		\item Alguns de seus principais projetos são:
+			\begin{itemize}
+				\justifying
+				\item<1> \href{https://owasp.org/www-project-top-ten/}{OWASP Top Ten Web Application Security Risks}: é um documento padrão de conscientização para desenvolvedores e segurança de aplica-ções web. Ele representa um amplo consenso sobre os riscos de segurança mais críticos para aplicações web.
+				\item<2> \href{https://owasp.org/www-project-application-security-verification-standard/}{OWASP Application Security Verification Standard (ASVS)}: fornece uma base para testar os controles técnicos de segurança de aplicações web e também oferece aos desenvolvedores uma lista de requisitos para o desenvolvimento seguro.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{OWASP}
+	\begin{itemize}
+		\justifying
+		\item Alguns de seus principais projetos são:
+			\begin{itemize}
+				\justifying
+				\item<1> \href{https://owasp.org/www-project-mobile-app-security/}{OWASP Mobile Application Security}: fornece um padrão de segurança e privacidade para aplicativos mobile (OWASP MASVS), uma coleção de pontos fracos específicos de aplicativos mobile (OWASP MASWE) e um guia de teste completo (OWASP MASTG) que cobre os processos, técnicas e ferramentas usados durante o teste de segurança, como também um conjunto exaustivo de casos de teste que permite aos testadores fornecerem resultados consistentes e completos.
+				\item<2> \href{https://owasp.org/www-project-web-security-testing-guide/}{OWASP Web Security Testing Guide} (WSTG): é um guia completo para o teste de segurança de aplicações web e \textit{web services}, e fornece um \textit{framework} das melhores práticas usadas por \textit{pen testers} e organizações ao redor do mundo.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 5 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Para sala de aula
+        	\begin{itemize}
+        		\justifying
+        		\item Pesquisar e apresentar o \href{https://owasp.org/Top10/2025/0x00_2025-Introduction/}{Top 10 2025 do OWASP}.
+        		\item A turma será dividida em dois grupos, e cada grupo ficará responsável por cinco riscos.
+        	\end{itemize}
+        \item Para o trabalho (AV3)
+        	\begin{itemize}
+        		\item Implementar pelo menos cinco requisitos (\textit{requirements}) de nível 1 do \href{https://raw.githubusercontent.com/OWASP/ASVS/v5.0.0/5.0/OWASP_Application_Security_Verification_Standard_5.0.0_en.pdf}{ASVS}.
+        		\item Conduzir pelo menos três testes do \href{https://owasp.org/www-project-web-security-testing-guide/stable/}{WSTG}.
+        	\end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}
