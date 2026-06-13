@@ -1,0 +1,239 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 19]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 19}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Suporte de Software}
+
+\begin{frame}{Suporte de Software}
+	\begin{itemize}
+		\justifying
+		\item<1> O suporte de software pode ser considerado uma atividade de apoio que inclui muitas atividades: gerenciamento/gestão de \textbf{mudanças}, gerenciamento de \textbf{riscos}, gerenciamento de \textbf{processo}, gerenciamento de \textbf{configuração} e gerenciamento de \textbf{qualidade}.
+		\item<2> Para fornecer suporte eficaz ao software a empresa deve ser capaz de fazer correções, adaptações e melhorias inerentes à atividade de \textbf{manutenção}.
+		\item<2> E, além disso, desempenhar outras atividades que incluem \textbf{suporte operacional continuado}, \textbf{suporte ao usuário} e atividades de \textbf{reengenharia}.
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Manutenção de Software}
+
+\begin{frame}{Manutenção de Software}
+	\begin{itemize}
+		\justifying
+		\item<1> Grande parte das funções da engenharia de software é criar sistemas que apresentem alta \textbf{manutenibilidade}.
+		\item<2-6> Um software ``manutenível''
+			\begin{itemize}
+				\justifying
+				\item<2> Apresenta uma \textbf{modularidade} eficaz;
+				\item<3> Utiliza \textbf{padrões de projeto} que permitem entendê-lo facilmente;
+				\item<4> Foi construído usando \textbf{padrões e convenções de codificação bem definidos}, levando a um código-fonte autodocumentado e inteligível.
+				\item<5> Passou por técnicas de \textbf{garantia de qualidade} que descobriram problemas de manutenção em potencial antes que o software fosse lançado.
+				\item<6> Foi criado por engenheiros de software que reconhecem que não estarão por perto quando as alterações tiverem de ser feitas.
+			\end{itemize}
+		\item<7> Portanto, o projeto e a implementação do software devem ``ajudar'' a pessoa que for fazer a alteração.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Tipos de manutenção}
+
+\begin{frame}{Tipos de manutenção}
+	\begin{itemize}
+		\justifying
+		\item A manutenção é definida como as atividades necessárias para manter o software operacional após ele ser aceito e entregue (lançado) no ambiente do usuário.
+		\item Existem quatro tipos básicos de manutenção:
+	\end{itemize}
+	\centering
+	\vspace{10pt}
+	\includegraphics[width=\textwidth]{imagens/tipos-manutenção.png}
+\end{frame}
+
+\begin{frame}{Tipos de manutenção}
+	\begin{itemize}
+		\justifying
+		\item<1> \textbf{Manutenção corretiva}
+			\begin{itemize}
+				\justifying
+				\item<1> É a modificação reativa do software para consertar problemas descobertos após o software ter sido entregue ao consumidor final.
+			\end{itemize}
+		\item<2> \textbf{Manutenção adaptativa}
+			\begin{itemize}
+				\justifying
+				\item<2> É a modificação reativa do software após a entrega para mantê-lo utilizável em um ambiente do usuário em mutação.
+			\end{itemize}
+		\item<3> \textbf{Manutenção perfectiva}
+			\begin{itemize}
+				\justifying
+				\item<3> É a modificação proativa do software após a entrega para adicionar novos recursos para o usuário, melhor estrutura do código do programa ou melhor documentação.
+			\end{itemize}
+		\item<4> \textbf{Manutenção preventiva}
+			\begin{itemize}
+				\item<4> É a modificação proativa do software após a entrega para detectar e corrigir falhas do artefato antes que sejam descobertas pelos usuários.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Tipos de manutenção}
+	\begin{itemize}
+		\justifying
+		\item E também três classes básicas:
+			\begin{itemize}
+				\item Engenharia reversa;
+				\item Refatoração;
+				\item Reengenharia/evolução.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Engenharia reversa}
+
+\begin{frame}{Engenharia reversa}
+	\begin{itemize}
+		\justifying
+		\item A \textbf{primeira tarefa} que os engenheiros de software precisam completar antes de responder a qualquer solicitação de manutenção é \textbf{entender o sistema} que precisa ser modificado.
+		\item A engenharia reversa exige que os desenvolvedores avaliem o sistema de software antigo por meio de uma análise do código-fonte (muitas vezes não documentado) e também para entender:
+			\begin{itemize}
+				\justifying
+				\item Os dados e suas estruturas.
+				\item A estrutura do banco de dados.
+				\item O processamento.
+				\item As interfaces do usuário.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.3 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Refatoração}
+
+\begin{frame}{Refatoração}
+	\begin{itemize}
+		\justifying
+		\item A refatoração modifica o código-fonte e/ou os dados para torná-lo mais amigável para futuras alterações.
+		\item Em geral, não modifica a arquitetura geral do programa, mas tende a se concentrar nos detalhes de projeto dos módulos e nas estruturas de dados locais definidas nos módulos.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Refatoração}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Refatoração de dados}
+			\begin{itemize}
+				\justifying
+				\item Antes de iniciar a refatoração de dados, deve ser feita uma atividade de engenharia reversa chamada de \textit{análise do código-fonte}.
+				\item A finalidade é extrair itens de dados e objetos para obter informações sobre fluxo de dados e para entender as estruturas de dados existentes que precisam ser implementadas.
+				\item Uma vez concluída a análise, inicia-se o \textit{reprojeto dos dados}: (1) padroni-zação e (2) racionalização, para garantir que os padrões sejam seguidos.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Refatoração}
+	\begin{itemize}
+		\justifying
+		\item \textbf{Refatoração de código}
+			\begin{itemize}
+				\justifying
+				\item É feita para gerar um projeto que produz a mesma função, mas com mais qualidade do que o programa original.
+			\end{itemize}
+		\item \textbf{Refatoração da arquitetura}
+			\begin{itemize}
+				\justifying
+				\item É o ajuste necessário para quando o fluxo de controle de um software está caótico.
+				\item Pode ser caro e demorado.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.4 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Reengenharia/evolução}
+
+\begin{frame}{Reengenharia/evolução}
+	\begin{itemize}
+		\justifying
+		\item A reengenharia é um trabalho de reforma.
+	\end{itemize}
+	\centering
+	\vspace{10pt}
+	\includegraphics[width=0.8\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\begin{frame}{Reengenharia/evolução}
+	\begin{enumerate}
+		\justifying
+		\item \textbf{Análise de inventário}
+			\begin{itemize}
+				\justifying
+				\item Toda organização de software deve ter um inventário de todas as aplicações.
+				\item O inventário pode ser nada mais do que uma planilha com informações detalhadas (p. ex., tamanho, idade, criticalidade nos negócios) para cada aplicação ativa.
+			\end{itemize}
+		\item \textbf{Reestruturação dos documentos}
+			\begin{itemize}
+				\justifying
+				\item Dependendo da situação, pode ser necessário criar nova documentação, quando não existe ou quando são feitas alterações.
+			\end{itemize}
+		\item \textbf{Engenharia reversa}
+		\item \textbf{Refatoração de código} e \textbf{dados}
+		\item \textbf{Engenharia direta}
+	\end{enumerate}
+\end{frame}
+
+
+%===============================================================================
+% SECTION 5 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Realizar manutenção do sistema onde houver necessidade. Ex.: refato-ração de uma parte do código.
+    \end{itemize}
+\end{frame}
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}
