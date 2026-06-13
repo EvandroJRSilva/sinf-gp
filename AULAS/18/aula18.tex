@@ -1,0 +1,323 @@
+\documentclass{beamer}
+
+\usetheme{Antibes}
+
+% Loading preambulo
+\input{preambulo.tex}
+
+% Title
+\title[GP 18]{Gerência de Projetos}
+% Subtitle
+\subtitle{Aula 18}
+% Author of the presentation
+\author[E.J.R. Silva]{Evandro J.R. Silva}
+% date of the presentation
+\date{}
+
+\begin{document}
+    
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+
+%===============================================================================
+% SECTION 1 ====================================================================
+%===============================================================================
+\section{Testes}
+
+\begin{frame}{Testes}
+	\begin{itemize}
+		\justifying
+		\item Parte da garantia da qualidade se dá com a realização de testes de software.
+		\item Em geral existem quatro níveis de teste:
+			\begin{enumerate}
+				\item Teste de unidade (\textit{Unity Test})
+				\item Teste de integração (\textit{Integration Testing})
+				\item Teste de sistema (\textit{System Testing})
+				\item Teste de aceitação (\textit{Acceptance Testing})
+			\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Testes}
+	\begin{itemize}
+		\justifying
+		\item Teste de unidade (\textit{Unity Test})
+			\begin{itemize}
+				\justifying
+				\item Teste sobre funções ou componentes individuais.
+				\item Garante o comportamento correto no menor nível.
+				\item Serve para encontrar e corrigir os primeiros erros.
+				\item Técnicas (não se resumem somente ao teste de unidade)
+					\begin{itemize}
+						\justifying
+						\item \textbf{Black box}: baseado nas saídas esperadas para as respectivas entradas, sem o conhecimento da lógica interna ou do código. Foca sobre a validação de funcionalidades sob a perspectiva do usuário, e que o sistema se comporta corretamente de acordo com as entradas fornecidas.
+						\item \textbf{White box}: a estrutura interna, o código e a lógica são conhecidos. Garante que o fluxo de dados, condições, etc., estão funcionando como esperado.
+						\item \textbf{Gray box}: combinação das técnicas anteriores.
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Testes}
+	\begin{itemize}
+		\justifying
+		\item Teste de integração (\textit{Integration Testing})
+			\begin{itemize}
+				\item Garante o fluxo correto dos dados entre os módulos.
+				\item Serve para encontrar e corrigir os erros que ocorrem durante a interação entre partes diferentes do sistema.
+				\item Técnicas
+					\begin{itemize}
+						\justifying
+						\item \textbf{Big-Bang}.
+						\item \textbf{Bottom-Up}.
+						\item \textbf{Top-Down}.
+						\item \textbf{Mixed}.
+					\end{itemize}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Testes}
+	\begin{itemize}
+		\justifying
+		\item Teste de sistema (\textit{System Testing})
+		\begin{itemize}
+			\item Avalia o sistema totalmente integrado para garantir que o software alcance os requisitos especificados.
+			\item Checa se o sistema inteiro funciona como esperado em um ambiente de mundo real.
+			\item Processo
+			\begin{enumerate}
+				\justifying
+				\item Configuração do ambiente de teste.
+				\item Criação de casos de teste.
+				\item Criação de dados de teste.
+				\item Execução dos casos teste.
+				\item Relatório de defeitos.
+				\item Teste de regressão (teste sobre os efeitos colaterais do processo de teste).
+				\item Correção de defeitos.
+				\item Reteste, se necessário.
+			\end{enumerate}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Testes}
+	\centering
+	\includegraphics[width=0.8\textwidth]{imagens/figura01.png}
+\end{frame}
+
+\begin{frame}{Testes}
+	\begin{itemize}
+		\justifying
+		\item Teste de aceitação (\textit{Acceptance Testing})
+		\begin{itemize}
+			\item O(s) cliente(s) verifica(m) se o sistema atende às suas necessidades e expectativas.
+			\item Tipos de teste
+			\begin{itemize}
+				\justifying
+				\item \textit{User Acceptance Testing} (UAT).
+				\item \textit{Business Acceptance Testing} (BAT).
+				\item \textit{Contract Acceptance Testing} (CAT).
+				\item \textit{Regulations Acceptance Testing} (RAT).
+				\item \textit{Operational Acceptance Testing} (OAT).
+				\item \textit{Alpha Testing}.
+				\item \textit{Beta Testing}.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+\section{Métricas e Análise de Software}
+
+\begin{frame}{Métricas e Análise de Software}
+	\begin{itemize}
+		\justifying
+		\item Medições podem ser aplicadas ao processo de software com a intenção de melhorá-lo continuamente.
+		\item Elas podem ser usadas durante um projeto de software para ajudar nas \textbf{estimativas}, no \textbf{controle de qualidade}, na \textbf{produtividade} e no \textbf{controle de projeto}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Métricas e Análise de Software}
+	\begin{itemize}
+		\justifying
+		\item No contexto do processo de software uma equipe de software se preocupa principalmente com as \textbf{métricas de produtividade e qualidade} --- medidas da ``saída'' do desenvolvimento de software em função do esforço e do tempo aplicados e medidas da ``adequação para uso'' dos artefatos produzidos.
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Medidas, métricas e indicadores}
+
+\begin{frame}{Medidas, métricas e indicadores}
+	\begin{itemize}
+		\justifying
+		\item<1-4> Embora os termos \alert<2>{\textbf{medida}}, \alert<3>{\textbf{medição}} e \alert<4>{\textbf{métricas}} sejam, com frequência, usados indistintamente, é importante notar as diferenças sutis entre eles.
+			\begin{itemize}
+				\justifying
+				\item<2> Quando um único dado é coletado (p. ex., o número de erros descobertos em um componente de software).
+				\item<3> Ocorre como resultado da coleta de um ou mais pontos de dados (p. ex., um conjunto de revisões de componente e testes de unidade são investigados para coletar medidas do número de erros para cada um).
+				\item<4> Relaciona as medidas individuais de alguma maneira (p. ex., o número médio de erros encontrados por revisão ou o número médio de erros encontrados por teste de unidade).
+			\end{itemize}
+		\item<5-> Um engenheiro de software coleta medidas e desenvolve métricas para obter \alert<6>{\textbf{indicadores}}.
+			\begin{itemize}
+				\justifying
+				\item<6> É uma métrica ou combinação de métricas que fornecem informações sobre o processo de software, em um projeto de software ou no próprio produto.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Medidas, métricas e indicadores}
+	\begin{itemize}
+		\justifying
+		\item Classificação das métricas (de acordo com Pressman \& Maxim --- Capítulo 23):
+			\begin{itemize}
+				\item Métricas de produto
+					\begin{itemize}
+						\justifying
+						\item Métricas para o modelo de requisitos
+						\item Métricas de projeto para software convencional
+						\item Métricas de projeto para software orientado a objetos
+						\item Métricas de projeto de interface de usuário
+						\item Métricas para código-fonte
+					\end{itemize}
+				\item Métricas para teste
+				\item Métricas para manutenção
+				\item Métricas de processo e de projeto
+				\item Medição de software
+				\item Métricas para qualidade de software
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Análise de dados de software}
+
+\begin{frame}{Análise de dados de software}
+	\begin{itemize}
+		\justifying
+		\item As métricas são usadas para avaliar a qualidade ou o desempenho de um produto ou processo.
+		\item Os \textbf{indicadores-chave de desempenho} (KPI - \textit{Key Performance Indicators}) são métricas usadas para acompanhar o desempenho e ativar ações compensatórias quando seus valores cam abaixo de uma faixa predeterminada.
+		\item Mas como saber se as métricas são mesmo significativas?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Análise de dados de software}
+	\begin{itemize}
+		\justifying
+		\item<1> A \textbf{análise de software} (\textit{software analytics}) é a análise computacional sistemática de dados ou estatísticas de engenharia de software para fornecer aos gerentes e engenheiros de software ideias e observações significativas e capacitar suas equipes para a tomada de melhores decisões.
+		\item<2> Por exemplo: saber o número de defeitos em um artefato de software hoje é menos relevante do que saber que o número de defeitos é 5\% maior do que era no mês passado.
+			\begin{itemize}
+				\justifying
+				\item<2> A análise pode ajudar os desenvolvedores a prever o número esperado de defeitos, onde realizar testes para descobri-los e quanto tempo demorará para consertá-los.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%===============================================================================
+% SECTION 2 ====================================================================
+%===============================================================================
+%\section{Métricas de produto}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.1 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%\subsection{Métricas para o modelo de requisitos}
+%
+%\begin{frame}{Métricas para o modelo de requisitos}
+%	\begin{itemize}
+%		\justifying
+%		\item \textbf{Software convencional}: \textit{ambiguidade}, \textit{completeza}, \textit{quão correto}, \textit{entendível}/\textit{inteligível}, \textit{verificável}, \textit{consistente interna/externamente}, \textit{realizável}, \textit{conciso}, \textit{rastreável}, \textit{modificável}, \textit{preciso} e \textit{reutilizável}.
+%			\begin{itemize}
+%				\justifying
+%				\item Embora muitas dessas características pareçam ser qualitativas em sua natureza, cada uma delas pode ser representada usando uma ou mais métricas. 
+%				\item Por exemplo: $r = r_f + r_{nf}$, 
+%					\begin{itemize}
+%						\item $r$ é a quantidade total de requisitos;
+%						\item $r_f$ é a quantidade de requisitos funcionais;
+%						\item $r_{nf}$ é a quantidade de requisitos não funcionais.
+%					\end{itemize}
+%				\item $Ambiguidade = \dfrac{r_i}{r}$, 
+%					\begin{itemize}
+%						\item $r$ é a quantidade total de requisitos;
+%						\item $r_i$ é a quantidade de requisitos com interpretações idênticas.
+%					\end{itemize}
+%			\end{itemize}
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Métricas para o modelo de requisitos}
+%	\begin{itemize}
+%		\justifying
+%		\item \textbf{Software móvel}: \textit{número de telas estáticas}, \textit{número de telas dinâmicas}, \textit{número de objetos de dados persistentes}, \textit{número de interfaces de sistemas externos}, \textit{número de objetos de conteúdo estático}, \textit{número de objetos de conteúdo dinâmico}, \textit{número de funções executáveis}.
+%		\begin{itemize}
+%			\justifying
+%			\item $P = \dfrac{T_d}{T_e + T_d}$, 
+%			\begin{itemize}
+%				\item $P$ é o grau de personalização;
+%				\item $T_e$ é a quantidade de telas estáticas;
+%				\item $T_d$ é a quantidade de telas dinâmicas.
+%			\end{itemize}
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
+
+%-------------------------------------------------------------------------------
+% SUBSECTION 2.2 ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%\subsection{Métricas de projeto para software convencional}
+%
+%\begin{frame}{Métricas de projeto para software convencional}
+%	\begin{itemize}
+%		\item Métricas de projeto de arquitetura: complexidade estrutural, complexidade de dados e complexidade de sistema
+%			\begin{itemize}
+%				\justifying
+%				\item<1> $C\_Estrutural(i) = f_{out}(i)$
+%					\begin{itemize}
+%						\justifying
+%						\item<1> $f_{out}$, também conhecido como \textit{fan-out}, é definido como o número de módulos imediatamente subordinados ao módulo $i$; ou seja, o número de módulos chamados diretamente pelo módulo $i$.
+%					\end{itemize}
+%				\item<2> $C\_Dados(i) = \dfrac{v(i)}{f_{out}(i) + 1}$
+%					\begin{itemize}
+%						\justifying
+%						\item<2> $v(i)$ é o número de variáveis de entrada e saída passadas para e do módulo $i$.
+%					\end{itemize}
+%				\item<3> $C\_Sistema = C\_Estrutural(i) + C\_Dados(i)$
+%			\end{itemize}
+%	\end{itemize}
+%\end{frame}
+
+%===============================================================================
+% SECTION 5 ====================================================================
+%===============================================================================
+\section{Atividade}
+
+\begin{frame}{Atividade}
+    \begin{itemize}
+        \justifying
+        \item Fazer testes (de unidade, integração, etc.) no sistema.
+        \item Coletar, pelo menos 10 métricas e indicadores do sistema.
+    \end{itemize}
+\end{frame}
+
+
+%===============================================================================
+% FIM ==========================================================================
+%===============================================================================
+
+\begin{frame}
+    \centering
+    \Large
+    FIM
+\end{frame}
+    
+\end{document}

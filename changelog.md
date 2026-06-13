@@ -91,3 +91,8 @@
   - `aula17.[pdf/tex]` e `preambulo.tex` criados.
   - `imagens/`
       - Imagem adicionada.
+- 2026.1.18
+  - AULAS/18/
+    - `aula18.[pdf/tex]` e `preambulo.tex` criados.
+  - `imagens/`
+      - Imagem adicionada.
